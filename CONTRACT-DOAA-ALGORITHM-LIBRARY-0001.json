@@ -11,7 +11,7 @@
     "science": ["mathematics", "physics", "chemistry", "biology", "earth_space"],
     "industry": ["manufacturing", "energy", "healthcare", "agriculture", "logistics"],
     "software": ["programming", "testing", "data", "security", "architecture"],
-    "business": ["strategy", "operations", "finance", "marketing", "customer_support"],
+    "business": ["strategy", "operations", "finance", "marketing", "sales", "customer_support"],
     "education": ["curriculum", "assessment", "research", "instruction", "accessibility"],
     "language": ["translation", "summarization", "writing", "linguistics", "localization"],
     "general": ["analysis", "planning", "question_answering", "classification", "other"]
