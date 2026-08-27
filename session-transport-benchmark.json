@@ -1,0 +1,11 @@
+{
+  "requests": 20,
+  "cold_proxy_tokens": 4860,
+  "warm_proxy_tokens": 1497,
+  "proxy_saving_tokens": 3363,
+  "proxy_saving_pct": 69.2,
+  "handshakes_sent": 1,
+  "note": "proxy estimate only; provider usage requires a real session-aware adapter",
+  "execution_authority": "none",
+  "automatic_execution": false
+}
