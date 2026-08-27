@@ -1,0 +1,13 @@
+{
+  "contract": "doaa.algorithm_library.v1",
+  "purpose": "Store and retrieve validated algorithmic messages for explicit reuse.",
+  "storage": "local_only",
+  "learning": "no_automatic_capability_creation",
+  "matching": ["exact_algorithm_id", "declared_reference", "normalized_request_fingerprint"],
+  "required_entry_fields": ["entry_id", "algorithm_id", "protocol", "message", "source_request_fingerprint", "validation_status", "authority", "automatic_execution"],
+  "acceptance_rules": ["protocol_must_be_doaa.alg.v1", "authority_must_be_none", "automatic_execution_must_be_false", "validation_status_must_be_validated", "message_must_be_json_object"],
+  "rejection_rules": ["unknown_algorithm", "unvalidated_result", "ambiguous_match", "stale_contract", "authority_violation"],
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "human_review_required_for": ["new_algorithm", "changed_parameters", "semantic_similarity_match", "expired_entry"]
+}
