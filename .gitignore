@@ -15,3 +15,9 @@ run-*.json
 *.sqlite3
 .DS_Store
 Thumbs.db
+*.exe
+*.msi
+*-installer*
+*-diagnosis.json
+nvidia-*.json
+ollama-*.json
