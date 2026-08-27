@@ -1,0 +1,826 @@
+{
+  "test_files": 102,
+  "passed_files": 102,
+  "failed_or_timeout_files": 0,
+  "results": [
+    {
+      "file": "test_doaa_acceptance_artifact_binding.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{'tests': 3, 'status': 'passed', 'release_bound': True, 'automatic_execution': False, 'execution_authority': 'none'}"
+      ]
+    },
+    {
+      "file": "test_doaa_algorithm_catalog.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":5,\"status\":\"passed\",\"catalog_mutated\":false,\"authority\":\"none\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_algorithm_registry.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":5,\"status\":\"passed\",\"exact_match_only\":true,\"automatic_execution\":false}"
+      ]
+    },
+    {
+      "file": "test_doaa_algorithmic_cli.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":3,\"status\":\"passed\",\"network\":false,\"automatic_execution\":false}"
+      ]
+    },
+    {
+      "file": "test_doaa_algorithmic_mediator.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":4,\"status\":\"passed\",\"model_result_trusted\":false,\"authority\":\"none\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_algorithmic_protocol.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":8,\"status\":\"passed\",\"authority\":\"none\",\"automatic_execution\":false}"
+      ]
+    },
+    {
+      "file": "test_doaa_arabic_block_messages.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 2, \"status\": \"passed\", \"arabic_reason\": \"ok\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_artifact_approval_guard.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"registration_authorized\": false, \"fail_closed\": true}"
+      ]
+    },
+    {
+      "file": "test_doaa_artifact_boundary_verifier.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"secrets_blocked\": true, \"write_paths_blocked\": true}"
+      ]
+    },
+    {
+      "file": "test_doaa_artifact_release_consistency.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"release_bound\": true, \"read_only\": true}"
+      ]
+    },
+    {
+      "file": "test_doaa_audit_log.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"status\":\"passed\",\"audit_schema\":\"DOAA-AUDIT-0001\",\"dsl_execution\":false,\"external_network_request\":false}"
+      ]
+    },
+    {
+      "file": "test_doaa_capability_advisor.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 3, \"status\": \"passed\", \"new_goal_not_built\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_capability_validator.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 2, \"status\": \"passed\", \"independent_read_only_check\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_compact_reference.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":6,\"status\":\"passed\",\"reusable_reference\":true,\"authority\":\"none\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_daily_ui.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":3,\"status\":\"passed\",\"request_only\":true,\"execution_started\":false}"
+      ]
+    },
+    {
+      "file": "test_doaa_decision_chain_consistency.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"decision_bound\": true, \"execution_started\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_decision_execution_separation.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"gate_only\": true, \"execution_started\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_deterministic_retrieval.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":3,\"status\":\"passed\",\"exact_signature_only\":true,\"model_calls\":0,\"automatic_execution\":false}"
+      ]
+    },
+    {
+      "file": "test_doaa_distillation.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":5,\"status\":\"passed\",\"library_mutation\":false,\"model_update\":false,\"authority\":\"none\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_dsl_contract_verifier.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 4, \"status\": \"passed\", \"verified\": \"normalize_ascii_spaces\", \"unknown\": \"rejected\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_dsl_dry_run.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":2,\"status\":\"passed\",\"execution_started\":false,\"source_modified\":false}"
+      ]
+    },
+    {
+      "file": "test_doaa_dsl_execute_test.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":2,\"status\":\"passed\",\"output_created\":true,\"real_user_data_used\":false}"
+      ]
+    },
+    {
+      "file": "test_doaa_dsl_normalize_spaces.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 4, \"status\": \"passed\", \"new_operation\": \"normalize_ascii_spaces\", \"execution_authority\": \"none\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_event_completeness.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"complete\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_event_context_match.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"exact_match\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_event_identity.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"single_identity\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_event_order_verifier.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"ordered\": true, \"execution_before_review\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_event_type_validator.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"known_type_only\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_excel_safe_execute.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"execution_started\":false,\"model_execution_authority\":\"none\",\"reason\":\"proposal_not_allowed\",\"source_modified\":false,\"status\":\"excel_execution_blocked\"}",
+        "",
+        "{\"tests\":4,\"status\":\"passed\",\"changed_cell_count\":2,\"other_worksheet_preserved\":true,\"rejection_cases\":3,\"source_modified\":false}"
+      ]
+    },
+    {
+      "file": "test_doaa_execution_receipt_binding.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"bound\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_execution_state_consistency.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"consistent\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_final_audit_completeness.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{'tests': 4, 'status': 'passed'}"
+      ]
+    },
+    {
+      "file": "test_doaa_full_integration.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 6, \"status\": \"passed\", \"full_chain_verified\": true, \"automatic_execution\": false, \"model_authority\": \"none\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_full_ui_flow.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"status\": \"full_ui_flow_passed\", \"preview_changed\": 1, \"human_review\": \"accepted_by_human\", \"execution_started\": true, \"source_modified\": false, \"output_exists\": true}"
+      ]
+    },
+    {
+      "file": "test_doaa_governed_chain_audit.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"single_chain\": true, \"execution_started\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_hallucination_rejection.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 11, \"status\": \"passed\", \"unknown_operation_rejected\": true, \"unknown_column_rejected\": true, \"executable_content_rejected\": true, \"execution_authority\": \"none\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_handshake.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":4,\"status\":\"passed\",\"weights_modified\":false,\"authority\":\"none\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_human_approval_decision.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"gate_only_accept\": true, \"default_reject\": true}"
+      ]
+    },
+    {
+      "file": "test_doaa_human_review.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":4,\"status\":\"passed\",\"execution_started\":false,\"source_modified\":false}"
+      ]
+    },
+    {
+      "file": "test_doaa_identifier_validator.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"bounded\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_independent_evidence_verifier.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"independent\": true, \"read_only\": true}"
+      ]
+    },
+    {
+      "file": "test_doaa_literal_gate.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"fail_closed\": true, \"execution_authority\": \"none\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_literal_mediator.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 2, \"status\": \"passed\", \"pass_path\": \"mediation_completed\", \"block_path\": \"literal_compliance\", \"execution_authority\": \"none\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_local.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":2,\"status\":\"passed\",\"diagnostics_passed\":true,\"automatic_execution\":false}"
+      ]
+    },
+    {
+      "file": "test_doaa_local_boundary_static.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{'tests': 8, 'status': 'passed', 'local_only': True, 'system_primitives_absent': True, 'automatic_execution': False}"
+      ]
+    },
+    {
+      "file": "test_doaa_local_integration.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 10, \"status\": \"passed\", \"xlsx_unicode_envelope\": true, \"commands_rejected\": true, \"code_rejected\": true, \"path_write_rejected\": true, \"invalid_id_rejected\": true, \"authority_rejected\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_model_mediation.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 6, \"status\": \"passed\", \"model_role\": \"proposal_assistant\", \"automatic_execution\": false, \"generated_code_rejected\": true}"
+      ]
+    },
+    {
+      "file": "test_doaa_model_route_isolation.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 8, \"status\": \"passed\", \"cache_hit_model_call\": false, \"cache_miss_non_executable\": true, \"execution_authority\": \"none\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_natural_algorithm_proposer.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":5,\"status\":\"passed\",\"proposal_only\":true,\"authority\":\"none\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_next_step_safety.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"single_descriptive_step\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_ollama_algorithm_bridge.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":3,\"status\":\"passed\",\"local_only\":true,\"model_result_trusted\":false,\"authority\":\"none\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_ollama_proposal_adapter.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 6, \"status\": \"passed\", \"local_only\": true, \"raw_untrusted_output\": true, \"external_rejected\": true, \"executable_prompt_rejected\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_ollama_review_ui.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 3, \"status\": \"passed\", \"default_reject\": true, \"gate_only_accept\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_path_safety.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"gate_safe\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_premodel_router.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":3,\"status\":\"passed\",\"cache_hit_skips_model\":true,\"cache_miss_is_governed\":true,\"automatic_execution\":false}"
+      ]
+    },
+    {
+      "file": "test_doaa_preview.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 4, \"status\": \"passed\", \"writes_files\": false, \"execution_started\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_preview_staleness.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"status\": \"trim_ascii_spaces_blocked\", \"reason\": \"preview_source_hash_mismatch\", \"execution_started\": false, \"source_modified\": false, \"model_execution_authority\": \"none\", \"network_request\": false}",
+        "{\"tests\": 1, \"status\": \"passed\", \"reason\": \"preview_source_hash_mismatch\", \"output_exists\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_proposal_gate.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":7,\"status\":\"passed\",\"dsl_execution\":false}"
+      ]
+    },
+    {
+      "file": "test_doaa_proposal_repair.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":5,\"status\":\"passed\",\"execution_authority\":\"none\",\"dsl_execution\":false}"
+      ]
+    },
+    {
+      "file": "test_doaa_raw_proposal_boundary.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{'tests': 4, 'status': 'passed', 'raw_is_untrusted': True, 'requires_gate': True, 'automatic_execution': False}"
+      ]
+    },
+    {
+      "file": "test_doaa_readonly_health.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 3, \"status\": \"passed\", \"read_only\": true, \"automatic_repair\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_readonly_monitor.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 2, \"status\": \"passed\", \"read_only\": true, \"self_repair\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_readonly_run_report.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 4, \"status\": \"passed\", \"read_only\": true, \"scheduling\": false, \"automatic_repair\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_receipt_event_consistency.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"identity_bound\": true, \"ordered\": true}"
+      ]
+    },
+    {
+      "file": "test_doaa_registry_contract_gate.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 3, \"status\": \"passed\", \"contract_gate\": \"enforced\", \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_registry_human_gate.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 3, \"status\": \"passed\", \"cache_hit_does_not_execute\": true, \"human_gate\": \"required\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_registry_normalize_spaces.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"cache\": \"hit\", \"operation\": \"normalize_ascii_spaces\", \"execution_authority\": \"none\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_registry_phone_contract.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 4, \"status\": \"passed\", \"operation\": \"remove_ascii_phone_separators\", \"contract_gate\": \"enforced\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_registry_trim_contract.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 4, \"status\": \"passed\", \"trim_contract_gate\": \"enforced\", \"execution_authority\": \"none\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_request_builder.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":4,\"status\":\"passed\",\"natural_to_algorithm\":\"validated_only\",\"authority\":\"none\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_research_report.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 2, \"status\": \"passed\", \"read_only_report\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_review_audit_binding.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 7, \"status\": \"passed\", \"audit_review_bound\": true, \"execution_authority\": \"none\", \"execution_started\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_run_report.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 2, \"status\": \"passed\", \"arabic_summary\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_safe_file_execute.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":4,\"status\":\"passed\",\"source_modified\":false,\"real_user_data_used\":false}"
+      ]
+    },
+    {
+      "file": "test_doaa_security_rejection_matrix.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 4, \"status\": \"passed\", \"rejection_matrix\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_session_protocol.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":5,\"status\":\"passed\",\"handshake_once\":true,\"weights_modified\":false,\"authority\":\"none\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_source_registry.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 2, \"status\": \"passed\", \"append_only\": true, \"hash_verified\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_space_normalize_execute.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":2,\"status\":\"passed\",\"target_column_isolated\":true,\"automatic_execution\":false}"
+      ]
+    },
+    {
+      "file": "test_doaa_state_resume.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"one_next_step\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_state_transition_safety.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"safe\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_static_verifier.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 2, \"status\": \"passed\", \"static_scan_read_only\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_tabs_to_space_contract.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"operation\": \"tabs_to_ascii_space\", \"execution_authority\": \"none\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_tabs_to_space_execute.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 1, \"status\": \"passed\", \"only_target_column_changed\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_terminal_state_safety.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"receipt_audited\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_token_metrics.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":4,\"status\":\"passed\",\"model_usage\":false,\"estimator\":\"unicode_word_punctuation_proxy\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_transition_idempotency.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"single_application\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_trim_ascii_spaces_execute.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 2, \"status\": \"passed\", \"only_target_column_changed\": true, \"automatic_execution\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_ui_arabic_path.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 1, \"status\": \"passed\", \"ui_arabic_message\": \"ok\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_ui_contract.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 4, \"status\": \"passed\", \"execution_authority\": \"none\", \"output_exists\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_unicode_csv_execute.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 6, \"status\": \"passed\", \"arabic_bom\": true, \"only_allowed_codepoints\": true, \"source_modified\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_unicode_csv_execution_contract.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 10, \"status\": \"passed\", \"unicode_csv_contract\": \"bounded\", \"allowed_codepoints\": [\"U+00A0\", \"U+202F\"], \"execution_authority\": \"none\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_unicode_execution_block.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 4, \"status\": \"passed\", \"unicode_operation_execution\": \"blocked\", \"output_created\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_unicode_whitespace_contract.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 3, \"status\": \"passed\", \"unicode_policy\": \"U+00A0,U+202F only\", \"other_unicode_preserved\": true}"
+      ]
+    },
+    {
+      "file": "test_doaa_unicode_xlsx_execute.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 6, \"status\": \"passed\", \"arabic_utf8\": true, \"only_target_column\": true, \"preview_hash_guard\": true, \"human_gate\": true, \"source_unchanged\": true}"
+      ]
+    },
+    {
+      "file": "test_doaa_unicode_xlsx_unified_flow.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 8, \"status\": \"passed\", \"gate\": \"accepted_proposal\", \"human_review\": \"accepted_by_human\", \"execution\": \"normalize_unicode_xlsx_executed_safe_file\", \"registry\": \"registered\", \"authority\": \"none\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_unified_flow.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\":4,\"status\":\"passed\",\"flow_completed\":true,\"rejected_flow_no_output\":true,\"audit_non_executable\":true,\"automatic_execution\":false}"
+      ]
+    },
+    {
+      "file": "test_doaa_utf8_bom.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"status\": \"passed\", \"bom_input\": true, \"arabic_header\": true, \"changed_cell_count\": 1}"
+      ]
+    },
+    {
+      "file": "test_doaa_verification_artifact.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 5, \"status\": \"passed\", \"redaction\": true, \"explicit_write_only\": true}"
+      ]
+    },
+    {
+      "file": "test_doaa_web_research_gate.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 3, \"status\": \"passed\", \"read_only\": true, \"result_to_execution\": \"forbidden\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_xlsx_hash_contract.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 4, \"status\": \"passed\", \"missing_hash\": \"blocked\", \"mismatch_hash\": \"blocked\", \"accepted\": \"executed\"}"
+      ]
+    },
+    {
+      "file": "test_doaa_xlsx_preview.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{\"tests\": 3, \"status\": \"passed\", \"changed_cell_count\": 1, \"output_exists\": false}"
+      ]
+    },
+    {
+      "file": "test_doaa_zip_manifest_verifier.py",
+      "returncode": 0,
+      "passed": true,
+      "tail": [
+        "{'tests': 4, 'status': 'passed', 'files_verified': 1, 'read_only': True, 'automatic_execution': False}"
+      ]
+    }
+  ]
+}
