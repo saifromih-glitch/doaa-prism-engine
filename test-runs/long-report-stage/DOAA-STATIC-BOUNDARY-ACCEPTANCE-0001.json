@@ -1,0 +1,15 @@
+﻿{
+  "artifact_id": "DOAA-STATIC-BOUNDARY-ACCEPTANCE-0001",
+  "release_id": "DOAA-GOVERNED-MVP-0001",
+  "scope": "local integration and Ollama adapter static boundary review",
+  "status": "accepted",
+  "tests_passed": 87,
+  "static_boundary_cases_passed": 8,
+  "automatic_execution": false,
+  "execution_authority": "none",
+  "raw_model_output": "untrusted_data_requires_gate",
+  "clean_restore": true,
+  "source_modified_by_model": false,
+  "self_update": false,
+  "deployment": false
+}

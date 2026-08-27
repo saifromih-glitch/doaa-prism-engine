@@ -1,0 +1,13 @@
+{
+  "contract_id": "CONTRACT-OLLAMA-CPU-0003",
+  "status": "frozen_before_execution",
+  "predecessor": "CONTRACT-OLLAMA-CPU-0002",
+  "purpose": "obtain persisted raw local API evidence using Windows PowerShell 5.1 compatible file writing",
+  "model": "qwen3.5:4b",
+  "server": {"host":"127.0.0.1","port":11437,"temporary":true,"environment":{"CUDA_VISIBLE_DEVICES":"-1","OLLAMA_LLM_LIBRARY":"cpu_avx2","OLLAMA_KEEP_ALIVE":"0s"}},
+  "request": {"endpoint":"/api/generate","prompt":"Return exactly: CPU_PERSIST_OK","stream":false,"think":false,"options":{"num_ctx":2048,"num_predict":8,"temperature":0},"timeout_seconds":600},
+  "evidence": {"raw_response_writer":"System.IO.File.WriteAllText UTF8 without BOM","must_persist_before_analysis":true,"synthetic_input_only":true},
+  "acceptance": {"raw_response_must_be_valid_json":true,"response_field_must_contain":"CPU_PERSIST_OK","dsl_execution":false,"external_network_request":false},
+  "stop_conditions": ["free_memory_below_5_gib","server_not_ready_within_60_seconds","request_timeout","raw_persistence_failure","unexpected_nonlocal_listener"],
+  "cleanup": ["terminate_only_temporary_listener_on_port_11437","confirm_default_ollama_has_no_active_model","do_not_delete_models_or_modify_windows_or_doaa_source"]
+}

@@ -1,0 +1,38 @@
+{
+  "contract_id": "CONTRACT-LLM-0002-GOVERNED-PROPOSAL-GATEWAY",
+  "status": "frozen_before_implementation",
+  "purpose": "local model may propose a DSL program, but Doaa remains the only deterministic validator and executor",
+  "input": {
+    "accepted_keys": ["goal", "table_schema", "dsl_version"],
+    "goal": {"type":"string","min_length":1,"max_length":1000},
+    "table_schema": {"type":"array","max_items":64,"items":{"type":"object","accepted_keys":["name","type"],"name_max_length":128,"type_values":["text","number","boolean","null"]}},
+    "dsl_version": {"type":"string","allowed_values":["1.4"]}
+  },
+  "model_boundary": {
+    "transport": "localhost_only",
+    "model_output_is_untrusted_data": true,
+    "model_may_not": ["read_files","write_files","modify_source","modify_tests","modify_registry","modify_contracts","execute_commands","spawn_processes","use_network","read_secrets","install","upgrade","merge","publish","execute_dsl"]
+  },
+  "output": {
+    "kind_values":["proposal","governed_capability_request","rejection"],
+    "execution_authority_values":["none"],
+    "schemas_by_kind": {
+      "proposal": {"exact_keys":["kind","execution_authority","operation","column","arguments","rationale"],"operation_type":"string","column_type":"string","arguments_type":"object","rationale_type":"string","max_rationale_length":1000},
+      "governed_capability_request": {"exact_keys":["kind","execution_authority","requested_goal","rationale"],"requested_goal_type":"string","rationale_type":"string","max_rationale_length":1000},
+      "rejection": {"exact_keys":["kind","execution_authority","rationale"],"rationale_type":"string","max_rationale_length":1000}
+    }
+  },
+  "deterministic_gate": {
+    "require_exact_output_keys_by_kind": true,
+    "allow_only_operations_registered_for_dsl_version": true,
+    "require_column_in_declared_schema": true,
+    "reject_unknown_arguments": true,
+    "reject_execution_authority_other_than_none": true,
+    "reject_commands_paths_urls_secrets_or_code": true,
+    "never_execute_or_promote": true
+  },
+  "failure_modes": ["malformed_json","extra_key","wrong_type","unknown_operation","missing_column","invalid_arguments","oversized_input","timeout","model_error"],
+  "prohibited_capabilities": ["filesystem","source_write","command_execution","process_creation","network","secrets","installation","self_update","registry_write","deployment"],
+  "acceptance_evidence": ["deterministic_validator_tests","static_boundary_check","independent_read_only_verifier","synthetic_smoke_only"],
+  "security_scope": "This contract reduces authority and validates structure; it does not guarantee absence of hallucination or provide absolute security."
+}

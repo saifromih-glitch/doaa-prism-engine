@@ -1,0 +1,29 @@
+{
+  "contract_id": "CONTRACT-DSL-UNICODE-XLSX-EXECUTION-0001",
+  "version": "1.0",
+  "status": "approved_for_build",
+  "operation": "normalize_unicode_whitespace",
+  "format": "xlsx",
+  "purpose": "Replace only U+00A0 and U+202F with U+0020 in one declared worksheet column.",
+  "accepted_keys": ["input_path", "output_path", "allowed_root", "worksheet", "proposal", "human_review"],
+  "proposal": {
+    "kind": "proposal",
+    "execution_authority": "none",
+    "operation": "normalize_unicode_whitespace",
+    "column": "non_empty_string",
+    "arguments": {}
+  },
+  "human_review": {
+    "status": "accepted_by_human",
+    "execution_authority": "none",
+    "proposal_sha256": "sha256(canonical(proposal))",
+    "preview_input_sha256": "sha256(exact_input_bytes)",
+    "audit_record_sha256": "64_hex_characters"
+  },
+  "allowed_transform": {"U+00A0": "U+0020", "U+202F": "U+0020"},
+  "output_policy": {"new_path_only": true, "source_modified": false, "overwrite": false},
+  "rejection_reasons": ["xlsx_input_required", "output_policy_violation", "proposal_not_allowed", "human_acceptance_required", "proposal_hash_mismatch", "audit_hash_required", "preview_source_hash_required_or_mismatch", "worksheet_not_unique", "worksheet_empty", "target_column_missing", "target_cell_not_text", "invariant_failure", "xlsx_read_failure"],
+  "execution_authority": "none",
+  "network_request": false,
+  "model_generated_code_execution": false
+}

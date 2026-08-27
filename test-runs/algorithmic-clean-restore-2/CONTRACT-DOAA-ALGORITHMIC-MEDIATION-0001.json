@@ -1,0 +1,15 @@
+{
+  "contract_id": "DOAA-ALGORITHMIC-MEDIATION-0001",
+  "protocol": "doaa.alg.v1",
+  "purpose": "compressed algorithmic mediation",
+  "request_required": ["protocol", "request_id", "algorithm", "parameters", "context", "input", "output_policy", "authority", "automatic_execution"],
+  "result_required": ["protocol", "request_id", "algorithm", "status", "authority", "automatic_execution"],
+  "registered_algorithms": ["answer.compose.v1", "answer.summarize.v1", "task.plan.v1"],
+  "status_enum": ["completed", "incomplete", "refused"],
+  "limits": {"request_bytes": 65536, "result_bytes": 131072, "max_depth": 6, "input_chars": 32768},
+  "forbidden": ["shell", "subprocess", "source_code", "generated_code", "tool_call", "write_path", "credentials", "secret_access", "network_instruction", "model_update", "self_update", "execution_authority"],
+  "failure_policy": "closed",
+  "model_role": "proposal_assistant_only",
+  "execution_authority": "none",
+  "automatic_execution": false
+}

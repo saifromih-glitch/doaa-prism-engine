@@ -1,0 +1,512 @@
+{
+  "release_id": "DOAA-GOVERNED-MVP-0001",
+  "contract_id": "CONTRACT-RELEASE-0001",
+  "created_at_utc": "2026-08-25T12:17:05.675676Z",
+  "scope": "CSV input with explicit phone column and new output path only",
+  "model_execution_authority": "none",
+  "automatic_execution": false,
+  "network_request": false,
+  "files": [
+    {
+      "path": "doaa_proposal_gate.py",
+      "size": 4310,
+      "sha256": "5afdb2cb1a687ba2ae075bb3186877c3635cdc3ce9baa905c84698b0d9c1cfbe"
+    },
+    {
+      "path": "doaa_proposal_repair.py",
+      "size": 1861,
+      "sha256": "69546bef57dbbf99a1efaa8350379e595a37054af441eb8418559f27751be233"
+    },
+    {
+      "path": "doaa_audit_log.py",
+      "size": 2067,
+      "sha256": "fce9cdc623f260f4fc2801045194bc2f5067a3984b76b5b16e0bb9df43e892a4"
+    },
+    {
+      "path": "doaa_human_review.py",
+      "size": 2065,
+      "sha256": "01d0db9405304e18e078c0ed4808f65da7b1b366f23a90b7121b1105e2fd9d74"
+    },
+    {
+      "path": "doaa_dsl_dry_run.py",
+      "size": 3357,
+      "sha256": "bbd61cba9cfb929ca99ba44b42216085274a44f0bdd70ce39e58073c3613860d"
+    },
+    {
+      "path": "doaa_safe_file_execute.py",
+      "size": 4341,
+      "sha256": "5f95023454aae5c918d57a476b59485e565b6b490534c2d419caced0f655e228"
+    },
+    {
+      "path": "CONTRACT-LLM-0003-bounded-proposal-repair.json",
+      "size": 1333,
+      "sha256": "a372073dfb9417564bb9f35bb0f87339a2404d46f15e9f062e383584ba846b3d"
+    },
+    {
+      "path": "CONTRACT-HUMAN-REVIEW-0001.json",
+      "size": 911,
+      "sha256": "83c03623100c16f22b00b797c66507167021c9c11fd8fa83d4867d9bff1f629b"
+    },
+    {
+      "path": "CONTRACT-DSL-DRYRUN-0001.json",
+      "size": 926,
+      "sha256": "6c85339370de917e804318f8e5a2f5577591d622837f2a6cad176924dcd88aee"
+    },
+    {
+      "path": "CONTRACT-SAFE-FILE-EXECUTION-0002.json",
+      "size": 1050,
+      "sha256": "0ed2a0931d400974baffac2ad0d2b0232b0b5a75e529aa0691c6e1be930608bd"
+    },
+    {
+      "path": "CONTRACT-RELEASE-0001.json",
+      "size": 531,
+      "sha256": "447bcdb5fd71a9bae5fc28b85f971b4fdda3bf6d9ca4c7da119264c3450d0b71"
+    },
+    {
+      "path": "USER-TEST-EXECUTION-0001.md",
+      "size": 1471,
+      "sha256": "42c04c5ef950f4f7075f8bd00bef64843bf026dc0e946c731adf11e6625b9600"
+    },
+    {
+      "path": "CONTRACT-SECURITY-DIAGNOSTICS-0001.json",
+      "size": 682,
+      "sha256": "fc768b0e3efc8ac85d248ffe6283789b5bab78f83dc1778b4aa9c5e988402f3d"
+    },
+    {
+      "path": "CONTRACT-EXCEL-ARABIC-PHONE-0001.json",
+      "size": 858,
+      "sha256": "8a2a1325494938afe238579d1cdea321f21523091ed825acdc2e1edabeed9cdb"
+    },
+    {
+      "path": "CONTRACT-UNIFIED-FLOW-0001.json",
+      "size": 524,
+      "sha256": "d294f40f60a53d4a0f99377b08dce78a9e4ae66a7b31d2fc189fc7a16fed472f"
+    },
+    {
+      "path": "CONTRACT-LOCAL-PACKAGE-0001.json",
+      "size": 697,
+      "sha256": "19a161ce32566db070319bf51a873ce462f75c84e082c26615117422a00f05b3"
+    },
+    {
+      "path": "CONTRACT-DSL-SPACE-NORMALIZE-0001.json",
+      "size": 689,
+      "sha256": "53ecea5c781936595dc778273108f7226cfb222d4551bd20be40e30842e555da"
+    },
+    {
+      "path": "CONTRACT-DSL-PHONE-SEPARATORS-0001.json",
+      "size": 701,
+      "sha256": "6c58712c4a714b3d70153508f62b31982e44bd236e077ab81d732639d3744efd"
+    },
+    {
+      "path": "CONTRACT-DSL-TRIM-ASCII-SPACES-0001.json",
+      "size": 690,
+      "sha256": "c042b1daac241b30bc101a7d3a498cc12a2dc4703c4fb23c938c44359fb37458"
+    },
+    {
+      "path": "CONTRACT-DAILY-UI-0001.json",
+      "size": 585,
+      "sha256": "268dd565dfe0640961564972dd9c143d7a82779c616b964dd9fc1c99ca362a0a"
+    },
+    {
+      "path": "CONTRACT-DETERMINISTIC-RETRIEVAL-0001.json",
+      "size": 452,
+      "sha256": "706d7a7ebbee3ff38835724d343dbd47f234799884012b2ecc76cf14b8c69d97"
+    },
+    {
+      "path": "CONTRACT-ALGORITHM-REGISTRY-0001.json",
+      "size": 656,
+      "sha256": "482b25be4e79b1ba591f55472ff1350e81446d65218e63df3210a3d0bdc9f93a"
+    },
+    {
+      "path": "CONTRACT-PREMODEL-ROUTER-0001.json",
+      "size": 514,
+      "sha256": "10f6e583e00d2c19b51f30e90a071269c1be36f9b38009283e733131b00fdf2c"
+    },
+    {
+      "path": "CONTRACT-LOCAL-INTEGRATION-0001.json",
+      "size": 578,
+      "sha256": "33b7c8a0ffa31db1e545f3f01bf1b14d1821687fb2f61009fdb284e6290ad37d"
+    },
+    {
+      "path": "CONTRACT-MODEL-MEDIATION-0001.json",
+      "size": 643,
+      "sha256": "dd294c2496e09b8699f5949aa87b4c1a4e6df8e486a9cedd5b958dc7482a8df4"
+    },
+    {
+      "path": "CONTRACT-WEB-RESEARCH-0001.json",
+      "size": 703,
+      "sha256": "60bcf06c92595ff39e626d346e15e477b2d8f04256b6ff43524737d35c8a5168"
+    },
+    {
+      "path": "doaa_security_diagnostics.py",
+      "size": 2328,
+      "sha256": "7942adde59c6de0a60c78c28db8c4042ff5868698b7b043699d15ba05ff20871"
+    },
+    {
+      "path": "doaa_excel_safe_execute.py",
+      "size": 7700,
+      "sha256": "3b5543be5541de8f4004520fba40690350069fe2cd1d5941a5803d978c71d252"
+    },
+    {
+      "path": "doaa_unified_flow.py",
+      "size": 1996,
+      "sha256": "3298a529a100ce75b2231650432aa0536d0fabbd98ca856e96f6d6cb0f637258"
+    },
+    {
+      "path": "doaa_local.py",
+      "size": 1969,
+      "sha256": "7c243ec2bc7561d005003dd78fdf66d91a8d18b0f5fe082fe010794b7b0e8d74"
+    },
+    {
+      "path": "doaa_space_normalize_execute.py",
+      "size": 3400,
+      "sha256": "31f59682f2e84bce4b3652b36d8167616b36733623a322fc8356a4ea77edad21"
+    },
+    {
+      "path": "doaa_trim_ascii_spaces_execute.py",
+      "size": 4337,
+      "sha256": "383ee274e2bd841a4c67230583cfa30a841992b49dd5a2306b09abff765f21a5"
+    },
+    {
+      "path": "doaa_tabs_to_space_execute.py",
+      "size": 3129,
+      "sha256": "c39075ded653e83ff22e974d67393551c330334e492917f06927d3fcdde2c8b8"
+    },
+    {
+      "path": "doaa_capability_validator.py",
+      "size": 1631,
+      "sha256": "26d5640546160b8208a6a056ee362a764c47482a7e52671c41b83349f92e6964"
+    },
+    {
+      "path": "doaa_static_verifier.py",
+      "size": 932,
+      "sha256": "58459c8012f72b6d8e25237cd8e2e3da4c9666648b885c18d590593f0ebd221d"
+    },
+    {
+      "path": "doaa_local_integration.py",
+      "size": 1967,
+      "sha256": "a52e39879d45e3b98f73382e4a9724d5172803b6a9b9610f9fb9afafc6d90755"
+    },
+    {
+      "path": "doaa_model_mediation.py",
+      "size": 1778,
+      "sha256": "b718c788eb8ba8b3e5614bad498a6f93092135af475a0492ff2cfd5ca2647433"
+    },
+    {
+      "path": "doaa_web_research_gate.py",
+      "size": 1660,
+      "sha256": "bcf2e09f03a6058f3db9d2e53264ba7754c741220d57380c77200f48c9610919"
+    },
+    {
+      "path": "doaa_source_registry.py",
+      "size": 1699,
+      "sha256": "ba2a178b4d63823723349536db949824dcd8909fd182b922c149c96bae21fd98"
+    },
+    {
+      "path": "doaa_research_report.py",
+      "size": 996,
+      "sha256": "863328e2e9f967df54fe0fcfa21be027084f1f2f3c29263ed77e901ed4517f6f"
+    },
+    {
+      "path": "doaa_capability_advisor.py",
+      "size": 1303,
+      "sha256": "112fd7762bf58791be62a41ee95d6970661a3f71208046602915cffa5e8483c1"
+    },
+    {
+      "path": "doaa_readonly_monitor.py",
+      "size": 1374,
+      "sha256": "3586cc79a7333cb6d75388a9e06948d740771863b7b255a9a39861e26f19fd77"
+    },
+    {
+      "path": "doaa_daily_ui.py",
+      "size": 6786,
+      "sha256": "91d694b1c3c104084367128063947d448f23a721a764a6893153be6338966c9c"
+    },
+    {
+      "path": "doaa_deterministic_retrieval.py",
+      "size": 807,
+      "sha256": "798835659b67484f3e94e565b2fc3ff732d80366b3d565690868d6888783eaf9"
+    },
+    {
+      "path": "doaa_algorithm_registry.py",
+      "size": 4018,
+      "sha256": "5f102a2ff41f132c857a782955b13773d9149e31920a953d56975cbced7c1e88"
+    },
+    {
+      "path": "doaa_dsl_contract_verifier.py",
+      "size": 2135,
+      "sha256": "1782eb7066fc251a66cee9f9b79cb1e357dcf4c9e8076fb98024c452f6e624d3"
+    },
+    {
+      "path": "test_doaa_dsl_contract_verifier.py",
+      "size": 1352,
+      "sha256": "c9e382897ab8a04908f47c46764ce5fbf4888469e2965daab4ff68c715c2fae8"
+    },
+    {
+      "path": "test_doaa_registry_phone_contract.py",
+      "size": 1029,
+      "sha256": "1ca2c45b13d6df67813ade1ebd1cd1df4ad3fc470932dd20c1b14237fc76361f"
+    },
+    {
+      "path": "doaa_premodel_router.py",
+      "size": 1236,
+      "sha256": "9615bf45524af96b6574a14ea634a115f3086b95b0290d2d37ab192fddb78f6d"
+    },
+    {
+      "path": "run_governed_with_retrieval.ps1",
+      "size": 1256,
+      "sha256": "678a4e813c740264841cc22c9c3c728a2b12f980e02d8cd9f616b70588650851"
+    },
+    {
+      "path": "benchmark_retrieval.py",
+      "size": 1226,
+      "sha256": "58df9fe7f1123fb074b3f5782230f693b00809b39cdddaf96b7ac9dfc917c7a4"
+    },
+    {
+      "path": "DOAA-LOCAL-README.md",
+      "size": 3679,
+      "sha256": "670859f253c9a4561c685abdebd5fcc081b4790563c335edeb459bdde857cdd9"
+    },
+    {
+      "path": "test_doaa_local.py",
+      "size": 2166,
+      "sha256": "70ecbcd8ebeba91e917f9663e453f8ceaa1ef85c70cceda4e4733739815373ab"
+    },
+    {
+      "path": "test_doaa_space_normalize_execute.py",
+      "size": 1968,
+      "sha256": "f51767dece560ed3b91bf882a4e80964db7fe36fc0962e0e24194a8c43219269"
+    },
+    {
+      "path": "test_doaa_trim_ascii_spaces_execute.py",
+      "size": 1601,
+      "sha256": "c190b8f1516e957c7b966225c36984534a4fc6a532de89f75632d5cb94768f42"
+    },
+    {
+      "path": "test_doaa_tabs_to_space_execute.py",
+      "size": 1007,
+      "sha256": "95dedf243d271283f15adf96e9af785538d648f49faa9cfdb9498088379a646b"
+    },
+    {
+      "path": "test_doaa_capability_validator.py",
+      "size": 904,
+      "sha256": "b847934167b8717925b160bf8d72444b036e0f3681eeaa83a398f1c38ebb1cf5"
+    },
+    {
+      "path": "test_doaa_static_verifier.py",
+      "size": 638,
+      "sha256": "05268f030ee43959d3eb7a39b854280b2ca3f16eb1b5ae2701b637ce172a987d"
+    },
+    {
+      "path": "test_doaa_local_integration.py",
+      "size": 727,
+      "sha256": "3c1fc725525ab4f2b16138b835ebced741031b4b4047801cdc01cbe341f46a41"
+    },
+    {
+      "path": "test_doaa_model_mediation.py",
+      "size": 811,
+      "sha256": "17568656f16fd7b64f68ae976ebba0741161de7b9e60ad57e7ec8b70d1d7ddfd"
+    },
+    {
+      "path": "test_doaa_web_research_gate.py",
+      "size": 731,
+      "sha256": "72fec0932d84448f26c631f3de0db89e3e9bec6b2ecef6c92d5092a48653bddb"
+    },
+    {
+      "path": "test_doaa_source_registry.py",
+      "size": 752,
+      "sha256": "43a51cf63544f21701ec14d78d20d648f0eb2b8528e1c8893c13a4f2da5f3005"
+    },
+    {
+      "path": "test_doaa_research_report.py",
+      "size": 710,
+      "sha256": "24b52a4108c2e32b89c849a5f94741e2eee0416992dfd8b1fca79e1f07f03172"
+    },
+    {
+      "path": "test_doaa_capability_advisor.py",
+      "size": 636,
+      "sha256": "577e6893e78a1cf3160bf7e3b31cac84003b7a0b2d0895210cbd61a1c843cce4"
+    },
+    {
+      "path": "test_doaa_readonly_monitor.py",
+      "size": 726,
+      "sha256": "f98e682ec9cb4b961a4e64f3cdb3556e7784093a67db15b462495d99df8f0258"
+    },
+    {
+      "path": "test_doaa_full_integration.py",
+      "size": 1741,
+      "sha256": "ad34cc76238c0e00ee904989005eb9b967db2a97e9c7865f9b40ff8919cc6273"
+    },
+    {
+      "path": "test_doaa_security_rejection_matrix.py",
+      "size": 848,
+      "sha256": "e372f806818a4ec989708782aa22b9592f5b507664cc4c0ddc91594ab1c53e1a"
+    },
+    {
+      "path": "test_doaa_daily_ui.py",
+      "size": 1274,
+      "sha256": "a69efe7ec9a36d105f809581629d7170c79594b1df958be934f10e2bd83a16f8"
+    },
+    {
+      "path": "test_doaa_deterministic_retrieval.py",
+      "size": 1351,
+      "sha256": "5330d3cc80df490f5ad37311b21cf0b8981491e3aad1a6eef610f8a71e452c0f"
+    },
+    {
+      "path": "RETRIEVAL-BENCHMARK-0001.md",
+      "size": 1488,
+      "sha256": "d49019e8c30b8de50717e9e00b1bc206c56d9f73d4bb937556c46a3af9314173"
+    },
+    {
+      "path": "ADR-ALGORITHM-REGISTRY-0001.md",
+      "size": 1884,
+      "sha256": "c8fe139e329ddb6e64d4c24783f8cc821d71cc1774625daf411b1cdf116e29ec"
+    },
+    {
+      "path": "ADR-DSL-TRIM-ASCII-SPACES-0001.md",
+      "size": 1956,
+      "sha256": "cd510d585732f67e8b2ccaf34f6f445926d4ca19b57817c338e2204781b371b8"
+    },
+    {
+      "path": "DOAA-CAPABILITY-BUILD-PROTOCOL-0001.md",
+      "size": 4440,
+      "sha256": "194546ee066058f30086cde8383c3a61a5b228e30ca63b06d965aa3977435591"
+    },
+    {
+      "path": "DOAA-RELEASE-ACCEPTANCE-0001.md",
+      "size": 2616,
+      "sha256": "f2c4115b05e9843cc6ad36b3ee5d27ebcb8d2157c704d8906dd81797235dd6b4"
+    },
+    {
+      "path": "DOAA-SECURITY-ACCEPTANCE-0001.md",
+      "size": 2800,
+      "sha256": "e1cb5cc0d4c414c5b3af82a9ae9235bfe7bb2b74b009004ee486d67422336097"
+    },
+    {
+      "path": "DOAA-TRIAL-ACCEPTANCE-0001.md",
+      "size": 2554,
+      "sha256": "98cc3e535681c4ebd64b06dd5129d7db301616a64007d46b692a49c1668f4acb"
+    },
+    {
+      "path": "DOAA-RELEASE-INTEGRITY-0001.md",
+      "size": 865,
+      "sha256": "0adb887b00678c5ee1cc1f81b8b405f88e6bdf6861bd8b0fc3ffc5764acd7537"
+    },
+    {
+      "path": "DOAA-OPERATIONS-GUIDE-0001.md",
+      "size": 2037,
+      "sha256": "e09122d0b268d55197e479509d35af6ced67f342363cbbf621fe2f83ede193c4"
+    },
+    {
+      "path": "test_doaa_utf8_bom.py",
+      "size": 1284,
+      "sha256": "df16177ced6ba33250b7947e8d52fe2d8eaab00577a1de292e5b1cc2a959eca9"
+    },
+    {
+      "path": "ADR-CSV-UTF8-BOM-ARABIC-0001.md",
+      "size": 1022,
+      "sha256": "f8d5d251def2228f857ed729401529585292d8a38660463df37138c978bc0f9d"
+    },
+    {
+      "path": "CONTRACT-PREVIEW-0001.json",
+      "size": 728,
+      "sha256": "ccb195a0ebf8d647067049c8959a68e71b761e80cf3fc13140851cc4994f81e5"
+    },
+    {
+      "path": "ADR-PREVIEW-0001.md",
+      "size": 972,
+      "sha256": "6c9431ad59452350d139ab3af138bec8c41341c668d42376d97f1ddff316e7f9"
+    },
+    {
+      "path": "doaa_preview.py",
+      "size": 2673,
+      "sha256": "c0bda9fd1feab83c3a38c6621f95a3cbfa6b38066d5de77090c1202fbca9d4d7"
+    },
+    {
+      "path": "doaa_xlsx_preview.py",
+      "size": 4056,
+      "sha256": "797f96895a5c68e2468a971c6af0b34d82a829c6342dd32d7de1f2a2b343fbbf"
+    },
+    {
+      "path": "test_doaa_xlsx_preview.py",
+      "size": 1946,
+      "sha256": "98e8fafae3359ea9b9fe012def1e30ac639a209e056c32d401481e1587456792"
+    },
+    {
+      "path": "test_doaa_preview.py",
+      "size": 979,
+      "sha256": "f04ff2bda78e426b47bdc799749119892d24f1dd506f91ff9d703da5810bacca"
+    },
+    {
+      "path": "test_doaa_full_ui_flow.py",
+      "size": 1484,
+      "sha256": "7bdd302dcaa6e19c506928ba03b1dd0a039ccea0a1cd155aceb0e679dffe2649"
+    },
+    {
+      "path": "test_doaa_preview_staleness.py",
+      "size": 1134,
+      "sha256": "b83d8f5ea5f7694f1eb77ed510efea366850c991605056c963307666d8778dd4"
+    },
+    {
+      "path": "test_doaa_ui_contract.py",
+      "size": 868,
+      "sha256": "fd6993f6efede70941e0fb5215e54d0453494d8d59b6be1b1dcbca74597ba6b4"
+    },
+    {
+      "path": "ADR-UI-PREVIEW-APPROVAL-0001.md",
+      "size": 803,
+      "sha256": "d993ea30a2d41954a3724b3fbef618e49741a339ae95211d2ad03985567b0e73"
+    },
+    {
+      "path": "DOAA-PREVIEW-ACCEPTANCE-0001.md",
+      "size": 1832,
+      "sha256": "bf5504e5a4aa30578d541fe2f9d95dda44d95300bf2159a9235ae11046e9a4d1"
+    },
+    {
+      "path": "verify_trial_run.py",
+      "size": 1392,
+      "sha256": "b1f7566dd09b4cc396220c0cdcf28b1b7df3159c3d1559d931c4ca5e4146150b"
+    },
+    {
+      "path": "trial-run-001/trial-verification.json",
+      "size": 440,
+      "sha256": "808d7cdc006a7b43c9ab87251efd972feef2b13c920dfcf61061ac5c74ba3c73"
+    },
+    {
+      "path": "KNOWLEDGE-REUSE-0001-DECISION.md",
+      "size": 2022,
+      "sha256": "6fdc93d11efcd015e0e19056fe88eda546e8f790fb8e39974f68f6cdfa3d9b96"
+    },
+    {
+      "path": "premodel-router-receipt.json",
+      "size": 395,
+      "sha256": "32d002181e59a7231bcfe3204557e18f83b11d800e1f2ccab648a35ef93c2173"
+    },
+    {
+      "path": "test_doaa_excel_safe_execute.py",
+      "size": 3005,
+      "sha256": "bf38c0ca0b114984ce606589bfbbcdcb904830a8a443b20837bec96cd9f2de66"
+    },
+    {
+      "path": "UNIFIED-FLOW-0001-DECISION.md",
+      "size": 1940,
+      "sha256": "bdbf7c1d94853dbb5c2c262c760c102f3164848a91c35d8f2615a57325d46f26"
+    },
+    {
+      "path": "EXCEL-ARABIC-PHONE-0001-DECISION.md",
+      "size": 2396,
+      "sha256": "5a5c74b8eaa68c07ef811b5d374e0a3ec41acaebd566f77905b6a43cbc6a57e7"
+    },
+    {
+      "path": "SECURITY-DIAGNOSTICS-0001-DECISION.md",
+      "size": 2080,
+      "sha256": "ab6ae19a31ea771a4605ff49496038fb9d929c146a2156ce15ebe095e22a9c56"
+    },
+    {
+      "path": "FULL-SPACE-FLOW-0001-DECISION.md",
+      "size": 2201,
+      "sha256": "1ea77e386961d24410fcfdb2830c87a054783f95c3b50b34a88247411504ce22"
+    }
+  ],
+  "manifest_sha256": "1ef4727298a223efbaea68bb9b7f03c470a2f145b5785db4ce4630974e311569"
+}

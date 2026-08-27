@@ -1,0 +1,12 @@
+{
+  "contract_id": "CONTRACT-UNIFIED-FLOW-0001",
+  "flow_id": "PROPOSAL_TO_SAFE_OUTPUT",
+  "ordered_layers": ["proposal_input","bounded_repair","deterministic_gate","audit_record","human_review","safe_executor","receipt"],
+  "required_order": true,
+  "executor_requires": ["accepted_proposal","accepted_by_human","proposal_hash_match","new_output_path"],
+  "model_authority": "none",
+  "automatic_execution": false,
+  "network_request": false,
+  "fail_closed": true,
+  "unsupported_input": "reject_without_transformation"
+}

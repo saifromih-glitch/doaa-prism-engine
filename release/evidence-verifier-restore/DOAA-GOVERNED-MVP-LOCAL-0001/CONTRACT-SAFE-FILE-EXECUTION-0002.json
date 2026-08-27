@@ -1,0 +1,16 @@
+{
+  "contract_id": "CONTRACT-SAFE-FILE-EXECUTION-0002",
+  "status": "frozen_before_implementation",
+  "input_policy": "explicit_external_file_allowed_read_only",
+  "output_policy": "new_file_under_Doaa_Local_output_root_only",
+  "overwrite_original": false,
+  "allowed_input_extensions": [".csv"],
+  "required_input_header": "phone",
+  "allowed_operation": "remove_ascii_phone_separators",
+  "required_preconditions": ["accepted_proposal","accepted_by_human","proposal_hash_match","audit_hash_present","input_exists","output_absent"],
+  "prohibited_actions": ["modify_input","overwrite_input","delete_input","read_unneeded_sheets","network_request","secret_access"],
+  "fail_closed_conditions": ["missing_phone_header","input_output_same","output_outside_Doaa_Local","proposal_hash_mismatch","unsupported_extension","invariant_failure"],
+  "required_invariants": ["row_count_unchanged","column_set_unchanged","non_target_columns_unchanged","only_ascii_spaces_and_hyphens_removed"],
+  "model_execution_authority": "none",
+  "network_request": false
+}

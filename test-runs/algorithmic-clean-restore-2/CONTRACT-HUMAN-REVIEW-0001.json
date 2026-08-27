@@ -1,0 +1,13 @@
+{
+  "contract_id": "CONTRACT-HUMAN-REVIEW-0001",
+  "status": "frozen_before_implementation",
+  "purpose": "present a validated proposal for explicit human accept or reject decision",
+  "input_requirements": ["validated_gate_result","raw_response_sha256","audit_record_sha256"],
+  "allowed_decisions": ["accepted_by_human","rejected_by_human"],
+  "decision_requires": ["explicit_user_action","proposal_identity","audit_record_identity"],
+  "prohibited_actions": ["auto_accept","auto_execute_dsl","modify_source","modify_proposal","modify_audit_record","network_request","secret_access"],
+  "acceptance_meaning": "human approval to make the proposal eligible for a later separate executor review; not execution authorization",
+  "execution_authority": "none",
+  "audit_requirements": ["decision_timestamp_utc","decision","proposal_sha256","audit_record_sha256","execution_started_false"],
+  "fail_closed": true
+}

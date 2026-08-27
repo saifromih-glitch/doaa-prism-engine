@@ -1,0 +1,16 @@
+{
+  "contract_id": "DOAA-HANDSHAKE-0001",
+  "protocol": "doaa.handshake.v1",
+  "purpose": "Introduce a compact intermediate language at session start",
+  "mode": "session_prompt_only",
+  "model_weights_modified": false,
+  "network_scope": "caller_selected",
+  "handshake_required_once_per_session": true,
+  "language_mapping": {"ar": "model_native_or_english", "en": "model_native_or_english", "zh": "model_native_or_english"},
+  "message_fields": ["protocol", "version", "rules", "symbols", "response_contract", "authority", "automatic_execution"],
+  "limits": {"rules_count": 12, "symbols_count": 64, "serialized_bytes": 8192},
+  "forbidden": ["shell", "tool_call", "generated_code", "write_path", "credentials", "secret_access", "model_update", "self_update", "execution_authority"],
+  "failure_policy": "closed",
+  "execution_authority": "none",
+  "automatic_execution": false
+}

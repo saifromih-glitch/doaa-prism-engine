@@ -1,0 +1,12 @@
+{
+  "contract_id": "CONTRACT-RELEASE-0001",
+  "release_id": "DOAA-GOVERNED-MVP-0001",
+  "purpose": "freeze and inventory the governed proposal-to-safe-file flow",
+  "included_layers": ["proposal_gate","bounded_repair","audit_log","human_review","dry_run","safe_file_execution"],
+  "manifest_hashes_required": true,
+  "source_modification": false,
+  "network_request": false,
+  "automatic_execution": false,
+  "model_execution_authority": "none",
+  "release_scope": "CSV input with explicit phone column and new output path only"
+}

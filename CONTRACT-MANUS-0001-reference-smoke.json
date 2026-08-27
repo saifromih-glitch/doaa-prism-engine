@@ -1,0 +1,55 @@
+{
+  "contract_id": "CONTRACT-MANUS-0001",
+  "status": "frozen_before_execution",
+  "runtime": "Manus built-in LLM proxy",
+  "model": "gpt-5-mini",
+  "model_selected_from_live_catalog": true,
+  "network_scope": "single authenticated request to the Manus built-in LLM proxy only",
+  "request_count_max": 1,
+  "tools_allowed": false,
+  "synthetic_data_only": true,
+  "dsl_execution_allowed": false,
+  "source_modification_allowed": false,
+  "input": {
+    "task": "Propose a Prism DSL 1.4 JSON program that removes ASCII U+0020 spaces and ASCII U+002D hyphens only from column phone. Preserve every other character and every other field.",
+    "synthetic_rows": [
+      {"name": "Amina", "phone": "+20 (10) 123-45-67", "amount": 125},
+      {"name": "Basil", "phone": "+20\u00a0010- 456", "amount": 80}
+    ]
+  },
+  "required_output_schema": {
+    "type": "object",
+    "properties": {
+      "dsl_version": {"type": "string", "const": "1.4"},
+      "steps": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 1,
+        "items": {
+          "type": "object",
+          "properties": {
+            "op": {"type": "string", "const": "remove_ascii_phone_separators"},
+            "column": {"type": "string", "const": "phone"}
+          },
+          "required": ["op", "column"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": ["dsl_version", "steps"],
+    "additionalProperties": false
+  },
+  "prohibited": [
+    "tools",
+    "real customer data",
+    "secret data",
+    "DSL execution",
+    "source changes",
+    "model self-modification"
+  ],
+  "artifacts": [
+    "manus-reference-request.json",
+    "manus-reference-response.json",
+    "manus-reference-receipt.json"
+  ]
+}

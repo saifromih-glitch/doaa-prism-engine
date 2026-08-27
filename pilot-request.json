@@ -1,0 +1,19 @@
+{
+  "proposal": {
+    "kind": "proposal",
+    "execution_authority": "none",
+    "operation": "remove_ascii_phone_separators",
+    "column": "phone",
+    "arguments": {},
+    "rationale": "Remove ASCII spaces and hyphens from phone only."
+  },
+  "human_review": {
+    "status": "accepted_by_human",
+    "execution_authority": "none",
+    "proposal_sha256": "9a2b15575ccac4c2ddbfb83a0011758452e77e1e0e58af7c77a76903d97cb44c",
+    "audit_record_sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+  },
+  "input_path": "C:\\Users\\saifr\\Downloads\\Doaa-phone-test.csv",
+  "output_path": "C:\\Users\\saifr\\OneDrive\\Desktop\\Doaa-Local\\test-runs-pilot\\Doaa-phone-test-pilot-output.csv",
+  "allowed_root": "C:\\Users\\saifr\\OneDrive\\Desktop\\Doaa-Local\\test-runs-pilot"
+}

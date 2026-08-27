@@ -1,0 +1,13 @@
+{
+  "contract_id": "CONTRACT-DETERMINISTIC-RETRIEVAL-0001",
+  "purpose": "check exact local algorithm registry before model proposal",
+  "matching": "exact_signature_only",
+  "model_call_on_cache_hit": false,
+  "model_call_on_cache_miss": "allowed_only_as_separate_governed_stage",
+  "semantic_similarity": false,
+  "guessing": false,
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "network_request": false,
+  "fail_closed": true
+}

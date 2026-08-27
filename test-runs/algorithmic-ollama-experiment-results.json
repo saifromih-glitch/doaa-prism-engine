@@ -1,0 +1,82 @@
+{
+  "experiment": "doaa-algorithmic-mediation-v1",
+  "timestamp_utc": "2026-08-27T02:18:16.392473+00:00",
+  "endpoint_scope": "localhost_only",
+  "model": "rabie-udda-cs:latest",
+  "cases": [
+    {
+      "id": "case-1",
+      "natural": {
+        "elapsed_ms": 21175.34,
+        "response": "دعاء وسيط يحول المطالبات الطبيعية إلى خوارزميات مضغوطة لتقليل التوكنات ثم يعيد النتيجة بلغة طبيعية.",
+        "prompt_eval_count": 938,
+        "eval_count": 34,
+        "eval_duration": 5302599000,
+        "load_duration": 32727700,
+        "done": true
+      },
+      "algorithmic": {
+        "elapsed_ms": 3637.4,
+        "response": "{\n  \"protocol\": \"doaa.alg.v1\",\n  \"request_id\": \"case-1\",\n  \"algorithm\": \"answer.summarize.v1\",\n  \"status\": \"success\",\n  \"result\": \"دعاء وسيط هو أداة ذكاء اصطناعي تحول المطالبات الطبيعية إلى خوارزميات مضغوطة لتقليل التوكنات، ثم يعيد النتيجة بلغة طبيعية مفهومة. هذه التقنية تساعد في تحسين كفاءة النماذج وتقليل استهلاك الموارد الحسابية مع الحفاظ على دقة المحتوى الأصلي.\",\n  \"authority\": \"none",
+        "prompt_eval_count": 1051,
+        "eval_count": 128,
+        "eval_duration": 2720271000,
+        "load_duration": 50279300,
+        "done": true
+      },
+      "algorithmic_prompt": "{\"algorithm\":{\"id\":\"answer.summarize.v1\",\"version\":\"1\"},\"authority\":\"none\",\"automatic_execution\":false,\"context\":{\"algorithm_refs\":[\"answer.summarize.v1\"],\"user_constraints\":[]},\"input\":{\"kind\":\"text\",\"value\":\"دعاء وسيط يحول المطالبات الطبيعية إلى خوارزميات مضغوطة لتقليل التوكنات ثم يعيد النتيجة بلغة طبيعية.\"},\"output_policy\":{\"format\":\"natural_language\",\"language\":\"ar\"},\"parameters\":{\"language\":\"ar\",\"max_sentences\":3},\"protocol\":\"doaa.alg.v1\",\"request_id\":\"case-1\"}",
+      "model": "rabie-udda-cs:latest"
+    },
+    {
+      "id": "case-2",
+      "natural": {
+        "elapsed_ms": 1711.08,
+        "response": "الحوكمة تُفصل بوضوح بين مرحلة اقتراح النموذج وتنفيذه لضمان عدم الخلط بينهما. كما تلزم إجراء تحقق ومراجعة بشرية صارمة قبل تنفيذ أي أفعال حساسة أو حرجة.",
+        "prompt_eval_count": 928,
+        "eval_count": 48,
+        "eval_duration": 1043805000,
+        "load_duration": 24130500,
+        "done": true
+      },
+      "algorithmic": {
+        "elapsed_ms": 2753.89,
+        "response": "{\n  \"protocol\": \"doaa.alg.v1\",\n  \"request_id\": \"case-2\",\n  \"algorithm\": \"answer.summarize.v1\",\n  \"status\": \"success\",\n  \"result\": \"الحوكمة تفصل بين اقتراح النموذج والتنفيذ، وتلزم التحقق والمراجعة البشرية قبل الأفعال الحساسة.\",\n  \"authority\": \"none\",\n  \"automatic_execution\": false\n}",
+        "prompt_eval_count": 1045,
+        "eval_count": 97,
+        "eval_duration": 2044106000,
+        "load_duration": 22971900,
+        "done": true
+      },
+      "algorithmic_prompt": "{\"algorithm\":{\"id\":\"answer.summarize.v1\",\"version\":\"1\"},\"authority\":\"none\",\"automatic_execution\":false,\"context\":{\"algorithm_refs\":[\"answer.summarize.v1\"],\"user_constraints\":[]},\"input\":{\"kind\":\"text\",\"value\":\"الحوكمة تفصل بين اقتراح النموذج والتنفيذ، وتلزم التحقق والمراجعة البشرية قبل الأفعال الحساسة.\"},\"output_policy\":{\"format\":\"natural_language\",\"language\":\"ar\"},\"parameters\":{\"language\":\"ar\",\"max_sentences\":3},\"protocol\":\"doaa.alg.v1\",\"request_id\":\"case-2\"}",
+      "model": "rabie-udda-cs:latest"
+    },
+    {
+      "id": "case-3",
+      "natural": {
+        "elapsed_ms": 1397.74,
+        "response": "القياس الحقيقي يتطلب مقارنة التوكنات والجودة والزمن دون ادعاء نجاح عام بناءً على تجارب صغيرة.",
+        "prompt_eval_count": 929,
+        "eval_count": 27,
+        "eval_duration": 571154000,
+        "load_duration": 115567800,
+        "done": true
+      },
+      "algorithmic": {
+        "elapsed_ms": 3144.2,
+        "response": "{\n  \"protocol\": \"doaa.alg.v1\",\n  \"request_id\": \"case-3\",\n  \"algorithm\": \"answer.summarize.v1\",\n  \"status\": \"success\",\n  \"result\": \"القياس الحقيقي للتوكنات يعتمد على مقارنة الجودة والزمن مع التكلفة، وليس مجرد ادعاءات نجاح عامة. يجب أن تكون التجربة واقعية ومقارنة مباشرة لتقييم الفعالية بشكل موضوعي.\",\n  \"authority\": \"none\",\n  \"automatic_execution\": false\n}",
+        "prompt_eval_count": 1047,
+        "eval_count": 115,
+        "eval_duration": 2425875000,
+        "load_duration": 20604200,
+        "done": true
+      },
+      "algorithmic_prompt": "{\"algorithm\":{\"id\":\"answer.summarize.v1\",\"version\":\"1\"},\"authority\":\"none\",\"automatic_execution\":false,\"context\":{\"algorithm_refs\":[\"answer.summarize.v1\"],\"user_constraints\":[]},\"input\":{\"kind\":\"text\",\"value\":\"القياس الحقيقي يجب أن يقارن التوكنات والجودة والزمن، وألا يدعي نجاحًا عامًا من تجربة صغيرة.\"},\"output_policy\":{\"format\":\"natural_language\",\"language\":\"ar\"},\"parameters\":{\"language\":\"ar\",\"max_sentences\":3},\"protocol\":\"doaa.alg.v1\",\"request_id\":\"case-3\"}",
+      "model": "rabie-udda-cs:latest"
+    }
+  ],
+  "notes": [
+    "Ollama counters are actual when present.",
+    "Outputs are raw and untrusted.",
+    "This is a small experiment, not a general quality guarantee."
+  ]
+}

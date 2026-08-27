@@ -1,0 +1,17 @@
+{
+  "contract_id": "CONTRACT-ALGORITHM-REGISTRY-0001",
+  "purpose": "reuse previously approved deterministic transformations before requesting a model proposal",
+  "storage": "append_only_jsonl",
+  "lookup": "exact_signature_only",
+  "signature_fields": ["operation", "column", "worksheet", "dsl_version"],
+  "accepted_record_required": true,
+  "human_review_required": true,
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "model_training": false,
+  "self_update": false,
+  "network_request": false,
+  "source_modification": false,
+  "unknown_goal_behavior": "return_cache_miss_and_governed_capability_request",
+  "fail_closed": true
+}

@@ -1,0 +1,19 @@
+{
+  "contract_id": "CONTRACT-LLM-0003-BOUNDED-PROPOSAL-REPAIR",
+  "status": "frozen_before_implementation",
+  "purpose": "apply one deterministic presentation-only repair before rejecting a model proposal",
+  "allowed_repairs": [
+    {"id":"trim_outer_json_whitespace","rule":"remove only leading and trailing Unicode whitespace around the complete response"},
+    {"id":"remove_one_complete_json_code_fence","rule":"remove exactly one outer ``` or ```json fence only when the complete trimmed response is enclosed by the matching fence"}
+  ],
+  "repair_limit": 1,
+  "raw_input_must_be_preserved": true,
+  "prohibited_repairs": ["add_key","remove_key","rename_key","change_value","infer_kind","infer_operation","infer_column","infer_arguments","extract_partial_json","translate_goal","execute_dsl"],
+  "sequence": ["preserve_raw","attempt_original_validation","if_rejected_apply_at_most_one_allowed_repair","validate_repaired_value","if_rejected_final_rejection"],
+  "accepted_authority": "none",
+  "no_execution": true,
+  "no_network": true,
+  "no_filesystem_access_by_model": true,
+  "evidence": ["raw_response","repair_id_or_none","repaired_response","validation_result"],
+  "security_scope": "This improves presentation tolerance only; it does not correct semantic errors, prevent hallucination, or provide absolute security."
+}

@@ -1,0 +1,14 @@
+{
+  "contract_id": "CONTRACT-WEB-RESEARCH-0001",
+  "version": "1.0",
+  "purpose": "read_only_source_retrieval_and_citation",
+  "allowed_output": ["source_url", "title", "retrieved_at", "excerpt", "source_hash"],
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "human_review_required": true,
+  "result_to_execution": "forbidden_without_separate_validation",
+  "allowed_actions": ["retrieve_public_text", "record_source", "compute_hash"],
+  "prohibited_actions": ["submit_form", "login", "purchase", "download_and_run", "write_to_user_file", "modify_source", "execute_code", "secrets", "unbounded_crawl"],
+  "network_request": "read_only_explicit_user_request",
+  "fail_closed": true
+}

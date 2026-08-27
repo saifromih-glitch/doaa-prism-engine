@@ -1,0 +1,1 @@
+﻿{"contract_id":"CONTRACT-EVENT-CONTEXT-MATCH-0001","version":"1.0","purpose":"Ensure each event identity exactly matches the approved request context before registration.","required_inputs":["event","request_id","artifact_id","release_id"],"exact_match":true,"writes_files":false,"automatic_execution":false,"execution_authority":"none","fail_closed":true}

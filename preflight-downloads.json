@@ -1,0 +1,19 @@
+{
+  "proposal": {
+    "kind": "proposal",
+    "execution_authority": "none",
+    "operation": "remove_ascii_phone_separators",
+    "column": "phone",
+    "arguments": {},
+    "rationale": "Preflight only"
+  },
+  "human_review": {
+    "status": "accepted_by_human",
+    "execution_authority": "none",
+    "proposal_sha256": "69f7dfd485d1039e51386fa43efe9ff72c0446c2ca382e15d333e4066d8b5977",
+    "audit_record_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  "input_path": "C:\\Users\\saifr\\Downloads\\تقرير-ترشيح-فنادق-مكة-2026-08-19.csv",
+  "output_path": "C:\\Users\\saifr\\OneDrive\\Desktop\\Doaa-Local\\test-runs-safe\\downloads-preflight-output.csv",
+  "allowed_root": "C:\\Users\\saifr\\OneDrive\\Desktop\\Doaa-Local\\test-runs-safe"
+}

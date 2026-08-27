@@ -1,0 +1,16 @@
+{
+  "contract_id": "CONTRACT-DSL-TRIM-ASCII-SPACES-0001",
+  "operation": "trim_ascii_spaces",
+  "dsl_version": "1.5",
+  "allowed_columns": "explicit_single_column_only",
+  "transformation": "remove_ascii_space_characters_from_target_cell_edges_only",
+  "preserve_non_target_columns": true,
+  "preserve_row_count": true,
+  "preserve_column_set": true,
+  "output_policy": "new_output_only",
+  "model_execution_authority": "none",
+  "automatic_execution": false,
+  "network_request": false,
+  "fail_closed": true,
+  "prohibited_actions": ["infer_column", "modify_other_columns", "overwrite_input", "change_non_ascii_whitespace", "network_request", "secret_access", "execute_generated_code"]
+}

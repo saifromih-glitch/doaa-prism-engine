@@ -1,0 +1,15 @@
+{
+  "contract_id": "CONTRACT-DAILY-UI-0001",
+  "purpose": "prepare an explicit governed request for daily local use",
+  "entrypoint": "doaa_daily_ui.py",
+  "mode": "request_builder_only",
+  "reads_file_contents": false,
+  "executes_commands": false,
+  "network_request": false,
+  "source_modification": false,
+  "output_policy": "new_request_json_only",
+  "supported_operations": ["remove_ascii_phone_separators", "normalize_ascii_spaces"],
+  "requires_explicit_fields": ["input_path","output_path","operation","column"],
+  "fail_closed": true,
+  "model_execution_authority": "none"
+}

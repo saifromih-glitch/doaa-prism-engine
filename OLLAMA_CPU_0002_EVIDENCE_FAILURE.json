@@ -1,0 +1,9 @@
+{
+  "contract_id": "CONTRACT-OLLAMA-CPU-0002",
+  "status": "evidence_collection_failed_request_not_repeated",
+  "observed_error": "Windows PowerShell Set-Content does not support -NoNewline; raw response persistence failed after the single permitted request.",
+  "request_repeated": false,
+  "dsl_execution": false,
+  "external_network_request": false,
+  "decision": "close the temporary server and do not assess model correctness from an unpersisted response"
+}

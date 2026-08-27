@@ -1,0 +1,15 @@
+{
+  "contract_id": "CONTRACT-MODEL-MEDIATION-0001",
+  "version": "1.0",
+  "message_kind": "model_proposal_envelope",
+  "required_fields": ["message_id", "model_id", "proposal", "execution_authority"],
+  "proposal_type": "structured_data_only",
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "human_review_required": true,
+  "allowed_model_role": "proposal_assistant",
+  "prohibited_roles": ["executor", "installer", "publisher", "self_modifier"],
+  "prohibited_content": ["shell_command", "source_code", "credentials", "network_instruction", "arbitrary_file_operation"],
+  "fail_closed": true,
+  "network_request": false
+}

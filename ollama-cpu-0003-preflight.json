@@ -1,0 +1,1 @@
+﻿{"contract_id":"CONTRACT-OLLAMA-CPU-0003","ready":true,"temporary_server_pid":22384,"free_memory_gib_before":6.57,"listener":[{"LocalAddress":"127.0.0.1","LocalPort":11437,"State":5,"OwningProcess":19388},{"LocalAddress":"127.0.0.1","LocalPort":11437,"State":2,"OwningProcess":19388}],"model_present":true,"dsl_execution":false}

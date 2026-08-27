@@ -1,0 +1,38 @@
+{
+  "contract_id": "CONTRACT-LLM-0002",
+  "status": "frozen_before_execution",
+  "supersedes": "CONTRACT-LLM-0001 for this one V2 smoke attempt only",
+  "runtime": "ollama",
+  "model": "qwen3.5:4b",
+  "model_installation_or_download_allowed": false,
+  "network_allowed": false,
+  "source_modification_allowed": false,
+  "dsl_execution_allowed": false,
+  "synthetic_data_only": true,
+  "request_count_max": 1,
+  "startup_and_response_timeout_seconds": 300,
+  "preflight": {
+    "minimum_free_ram_gib": 6.0,
+    "requires_no_active_ollama_model": true,
+    "requires_model_already_installed": true
+  },
+  "prompt": "Return exactly this JSON object and no other text: {\"dsl_version\":\"1.4\",\"steps\":[{\"op\":\"remove_ascii_phone_separators\",\"column\":\"phone\"}]}",
+  "acceptance": {
+    "response_must_be_nonempty": true,
+    "response_must_parse_as_json": true,
+    "response_must_equal_exact_proposal": true,
+    "proposal_must_not_be_executed": true
+  },
+  "cleanup": {
+    "may_terminate_lingering_llama_server_only_after_ollama_ps_confirms_no_active_model": true,
+    "must_not_delete_models": true,
+    "must_not_change_windows_configuration": true
+  },
+  "artifacts": [
+    "llm-v2-preflight.json",
+    "llm-v2-request.txt",
+    "llm-v2-response.txt",
+    "llm-v2-receipt.json",
+    "llm-v2-independent-verification.json"
+  ]
+}

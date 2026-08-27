@@ -1,0 +1,15 @@
+{
+  "status": "trial_verified",
+  "original_unchanged": true,
+  "output_exists": true,
+  "changed_cell_count": 2,
+  "non_target_columns_changed": [],
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "report_summary_ar": "تم التنفيذ الآمن بعد المراجعة البشرية",
+  "output_utf8_contains_arabic_header": true,
+  "output_phone_values": [
+    "010-123 456",
+    "011 222-333"
+  ]
+}

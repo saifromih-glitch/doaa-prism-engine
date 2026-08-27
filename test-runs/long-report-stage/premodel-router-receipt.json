@@ -1,0 +1,9 @@
+﻿{
+    "status":  "reuse_candidate",
+    "route":  "reuse_candidate",
+    "model_call":  false,
+    "automatic_execution":  false,
+    "execution_authority":  "none",
+    "registry_path":  "C:\\Users\\saifr\\OneDrive\\Desktop\\Doaa-Local\\test-runs-registry\\router.jsonl",
+    "note":  "Exact registry match found. Continue through human review and safe execution; no model call."
+}

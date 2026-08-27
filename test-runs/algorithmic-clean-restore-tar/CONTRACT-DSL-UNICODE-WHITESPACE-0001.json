@@ -1,0 +1,18 @@
+{
+  "contract_id": "CONTRACT-DSL-UNICODE-WHITESPACE-0001",
+  "operation": "normalize_unicode_whitespace",
+  "dsl_version": "1.4",
+  "allowed_columns": "explicit_single_column_only",
+  "transformation": "replace_only_nbsp_u00a0_and_narrow_nbsp_u202f_with_ascii_space",
+  "unicode_whitespace_codepoints": ["U+00A0", "U+202F"],
+  "preserve_other_unicode_whitespace": true,
+  "preserve_non_target_columns": true,
+  "preserve_row_count": true,
+  "preserve_column_set": true,
+  "output_policy": "new_output_only",
+  "model_execution_authority": "none",
+  "automatic_execution": false,
+  "network_request": false,
+  "fail_closed": true,
+  "prohibited_actions": ["infer_column", "modify_other_columns", "overwrite_input", "change_unlisted_unicode_whitespace", "network_request", "secret_access", "execute_generated_code"]
+}

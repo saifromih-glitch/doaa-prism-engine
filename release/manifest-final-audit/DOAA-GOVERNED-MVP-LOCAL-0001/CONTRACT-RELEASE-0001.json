@@ -1,0 +1,19 @@
+{
+  "contract_id": "CONTRACT-RELEASE-0001",
+  "release_id": "DOAA-GOVERNED-MVP-LOCAL-0001",
+  "purpose": "freeze and inventory the governed proposal-to-safe-file flow",
+  "included_layers": ["proposal_gate", "bounded_repair", "audit_log", "human_review", "deterministic_retrieval", "model_mediation", "dry_run", "safe_file_execution", "xlsx_preview", "xlsx_safe_execution"],
+  "supported_executable_operations": ["remove_ascii_phone_separators", "normalize_ascii_spaces", "trim_ascii_spaces", "tabs_to_ascii_space"],
+  "preview_only_operations": ["normalize_unicode_whitespace"],
+  "manifest_hashes_required": true,
+  "source_modification": false,
+  "network_request": false,
+  "automatic_execution": false,
+  "model_execution_authority": "none",
+  "model_role": "proposal_assistant",
+  "human_review_required": true,
+  "model_output_is_untrusted": true,
+  "generated_code_execution": false,
+  "release_scope": "CSV and XLSX input with explicit target column, preview binding, human approval, and new output path only",
+  "fail_closed": true
+}

@@ -1,0 +1,1 @@
+﻿{"action":"restart_after_ollama_gpu_diagnosis","stopped_ollama_processes":[{"name":"ollama app","id":21508},{"name":"ollama","id":732}],"models_deleted":false,"source_modified":false,"windows_driver_modified":false,"restart_scheduled_seconds":30}

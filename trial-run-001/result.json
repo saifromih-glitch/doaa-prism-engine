@@ -1,0 +1,27 @@
+{
+  "status": "trim_ascii_spaces_executed_safe_file",
+  "operation": "trim_ascii_spaces",
+  "target_column": "الهاتف",
+  "changed_cell_count": 2,
+  "row_count_before": 2,
+  "row_count_after": 2,
+  "columns_before": [
+    "الهاتف",
+    "الاسم",
+    "المبلغ"
+  ],
+  "columns_after": [
+    "الهاتف",
+    "الاسم",
+    "المبلغ"
+  ],
+  "non_target_columns_changed": [],
+  "input_sha256": "f33707f69d720b041b8e0b4c4db88d80cd6c8d1471c15f95eb32c7bcdde86841",
+  "output_sha256": "9fc9dc5ae123711a0f202cb68ccfa9d5eafb7a6634e66cf12af1f9559aef3182",
+  "execution_timestamp_utc": "2026-08-24T11:55:19.887266Z",
+  "source_modified": false,
+  "model_execution_authority": "none",
+  "network_request": false,
+  "execution_started": true,
+  "output_path": "C:\\Users\\saifr\\OneDrive\\Desktop\\Doaa-Local\\trial-run-001\\output.csv"
+}

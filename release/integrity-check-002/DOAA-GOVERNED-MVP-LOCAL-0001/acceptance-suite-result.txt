@@ -1,0 +1,16 @@
+﻿PASS test_doaa_algorithm_registry.py
+PASS test_doaa_audit_log.py
+PASS test_doaa_daily_ui.py
+PASS test_doaa_deterministic_retrieval.py
+PASS test_doaa_dsl_dry_run.py
+PASS test_doaa_dsl_execute_test.py
+PASS test_doaa_excel_safe_execute.py
+PASS test_doaa_human_review.py
+PASS test_doaa_local.py
+PASS test_doaa_premodel_router.py
+PASS test_doaa_proposal_gate.py
+PASS test_doaa_proposal_repair.py
+PASS test_doaa_safe_file_execute.py
+PASS test_doaa_space_normalize_execute.py
+PASS test_doaa_trim_ascii_spaces_execute.py
+PASS test_doaa_unified_flow.py

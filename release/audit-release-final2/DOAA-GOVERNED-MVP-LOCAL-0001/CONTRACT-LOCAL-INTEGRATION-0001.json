@@ -1,0 +1,14 @@
+{
+  "contract_id": "CONTRACT-LOCAL-INTEGRATION-0001",
+  "version": "1.0",
+  "accepted_message_kind": "governed_request_envelope",
+  "required_fields": ["request_id", "payload", "execution_authority"],
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "allowed_transport": "local_in_process_only",
+  "allowed_payload": "structured_json_only",
+  "prohibited_payloads": ["shell_command", "source_code", "subprocess_request", "network_request", "secret", "arbitrary_path_write"],
+  "human_review_required": true,
+  "fail_closed": true,
+  "source_modified": false
+}

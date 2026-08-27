@@ -1,0 +1,44 @@
+{
+  "contract_id": "CONTRACT-LLM-0001",
+  "status": "frozen_before_execution",
+  "runtime": "ollama",
+  "model": "qwen3.5:4b",
+  "network_allowed": false,
+  "installation_or_download_allowed": false,
+  "system_configuration_change_allowed": false,
+  "source_modification_allowed": false,
+  "synthetic_data_only": true,
+  "request_count_max": 1,
+  "timeout_seconds": 120,
+  "role": "produce a non-executable proposed Prism DSL JSON transformation",
+  "input": {
+    "task": "Remove ASCII space and ASCII hyphen only from the phone field of synthetic invoice rows; preserve every other field and character.",
+    "required_output": "A single JSON object with keys dsl_version and steps only. The proposed operation must be remove_ascii_phone_separators on column phone.",
+    "synthetic_rows": [
+      {"name": "Amina", "phone": "+20 (10) 123-45-67", "amount": 125},
+      {"name": "Basil", "phone": "+20\u00a0010- 456", "amount": 80}
+    ]
+  },
+  "prohibited": [
+    "network access",
+    "tool use",
+    "command execution",
+    "source modification",
+    "DSL execution",
+    "real customer data",
+    "secrets"
+  ],
+  "evaluation": [
+    "the local command exits before timeout",
+    "the output is non-empty UTF-8 text",
+    "the output is recorded without execution",
+    "the response is evaluated as a proposal, not evidence of model correctness"
+  ],
+  "artifacts": [
+    "ADR-LLM-0001-local-ollama-qwen35-4b.md",
+    "CONTRACT-LLM-0001-local-ollama-smoke.json",
+    "llm-smoke-request.txt",
+    "llm-smoke-response.txt",
+    "llm-smoke-receipt.json"
+  ]
+}

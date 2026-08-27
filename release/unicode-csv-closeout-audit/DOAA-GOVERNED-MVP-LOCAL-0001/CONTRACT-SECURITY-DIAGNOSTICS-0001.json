@@ -1,0 +1,10 @@
+{
+  "contract_id": "CONTRACT-SECURITY-DIAGNOSTICS-0001",
+  "release_id": "DOAA-GOVERNED-MVP-0001",
+  "purpose": "diagnose local runtime and verify governed release integrity without execution authority",
+  "allowed_checks": ["python_version","ollama_presence","required_files_presence","manifest_hashes","test-runs-boundary","output-overwrite-policy"],
+  "prohibited_actions": ["network_request","model_execution","source_modification","real_file_transformation","secret_access","automatic_repair"],
+  "fail_closed": true,
+  "model_execution_authority": "none",
+  "report_must_include": ["checks","failures","manifest_verification","real_data_used_false","source_modified_false"]
+}

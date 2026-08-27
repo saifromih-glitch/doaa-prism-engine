@@ -1,0 +1,15 @@
+{
+  "contract_id": "CONTRACT-SAFE-FILE-EXECUTION-0001",
+  "status": "frozen_before_implementation",
+  "allowed_mode": "explicit_human_approved_execution",
+  "input_requirements": ["accepted_proposal","accepted_by_human","proposal_sha256_match","audit_record_sha256_present"],
+  "output_policy": "new_output_path_required",
+  "overwrite_original": false,
+  "allowed_operation": "remove_ascii_phone_separators",
+  "allowed_column": "phone",
+  "invariants": ["row_count_unchanged","column_set_unchanged","non_target_columns_unchanged","only_ascii_spaces_and_hyphens_removed"],
+  "fail_closed_conditions": ["missing_approval","hash_mismatch","input_missing","output_equals_input","output_outside_allowed_root","invariant_failure"],
+  "required_receipt": ["input_sha256","output_sha256","row_counts","columns_before","columns_after","changed_cell_count","comparison_result","execution_timestamp_utc"],
+  "network_request": false,
+  "model_execution_authority": "none"
+}

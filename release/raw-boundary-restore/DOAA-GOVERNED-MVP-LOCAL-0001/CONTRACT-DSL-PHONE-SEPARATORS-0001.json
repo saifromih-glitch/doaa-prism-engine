@@ -1,0 +1,16 @@
+{
+  "contract_id": "CONTRACT-DSL-PHONE-SEPARATORS-0001",
+  "operation": "remove_ascii_phone_separators",
+  "dsl_version": "1.4",
+  "allowed_columns": ["phone", "الهاتف"],
+  "transformation": "remove_ascii_spaces_and_hyphens_from_target_phone_column_only",
+  "preserve_non_target_columns": true,
+  "preserve_row_count": true,
+  "preserve_column_set": true,
+  "output_policy": "new_output_only",
+  "model_execution_authority": "none",
+  "automatic_execution": false,
+  "network_request": false,
+  "fail_closed": true,
+  "prohibited_actions": ["infer_column", "modify_other_columns", "overwrite_input", "change_non_ascii_whitespace", "network_request", "secret_access", "execute_generated_code"]
+}

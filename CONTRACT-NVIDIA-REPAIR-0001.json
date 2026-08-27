@@ -1,0 +1,37 @@
+{
+  "contract_id": "CONTRACT-NVIDIA-REPAIR-0001",
+  "status": "frozen_before_download",
+  "device": "HP Victus by HP Gaming Laptop 15-fa2xxx",
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "os": "Windows 11 64-bit",
+  "current_driver_version": "32.0.15.9282",
+  "symptom": "nvidia-smi returns Failed to initialize NVML: Unknown Error after reboot",
+  "source": {
+    "publisher": "NVIDIA",
+    "driver_family": "NVIDIA Studio Driver",
+    "version": "610.88",
+    "release_date": "2026-07-28",
+    "download_url": "https://us.download.nvidia.com/Windows/610.88/610.88-desktop-win10-win11-64bit-international-nsd-dch-whql.exe"
+  },
+  "permitted_actions": [
+    "download one official NVIDIA installer into Doaa-Local",
+    "hash the downloaded installer",
+    "launch the official installer after user approval",
+    "restart Windows when the installer requires it",
+    "verify nvidia-smi and Ollama after restart"
+  ],
+  "prohibited_actions": [
+    "delete Ollama models",
+    "modify Doaa source",
+    "install third-party driver utilities",
+    "install a driver from a non-NVIDIA publisher",
+    "change GPU registry settings",
+    "disable the integrated GPU"
+  ],
+  "success_criteria": [
+    "installer publisher is NVIDIA",
+    "installation finishes without an error reported by the installer",
+    "Windows is restarted",
+    "nvidia-smi returns GPU information rather than an NVML initialization error"
+  ]
+}

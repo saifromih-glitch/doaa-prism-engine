@@ -1,0 +1,43 @@
+{
+  "model": "gpt-5-mini",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Return only a JSON object matching the required schema. You are proposing a non-executable DSL program. Do not call tools or include commentary."
+    },
+    {
+      "role": "user",
+      "content": "Propose a Prism DSL 1.4 program to remove ASCII U+0020 spaces and ASCII U+002D hyphens only from the phone column, preserving every other character and all other fields. Synthetic rows only: [{\"name\":\"Amina\",\"phone\":\"+20 (10) 123-45-67\",\"amount\":125},{\"name\":\"Basil\",\"phone\":\"+20\\u00a0010- 456\",\"amount\":80}]."
+    }
+  ],
+  "max_completion_tokens": 250,
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "prism_phone_separator_program",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "dsl_version": {"type": "string", "const": "1.4"},
+          "steps": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 1,
+            "items": {
+              "type": "object",
+              "properties": {
+                "op": {"type": "string", "const": "remove_ascii_phone_separators"},
+                "column": {"type": "string", "const": "phone"}
+              },
+              "required": ["op", "column"],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": ["dsl_version", "steps"],
+        "additionalProperties": false
+      }
+    }
+  }
+}

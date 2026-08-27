@@ -1,0 +1,19 @@
+{
+  "proposal": {
+    "kind": "proposal",
+    "execution_authority": "none",
+    "operation": "normalize_ascii_spaces",
+    "column": "name",
+    "arguments": {},
+    "rationale": "Normalize ASCII spaces in name only."
+  },
+  "human_review": {
+    "status": "accepted_by_human",
+    "execution_authority": "none",
+    "proposal_sha256": "97d13c967f6eeda79cd79a809cfc87a51ac705748bfb27a6ff814a48b31bc5c4",
+    "audit_record_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+  },
+  "input_path": "C:\\Users\\saifr\\OneDrive\\Desktop\\Doaa-Local\\test-runs-full-space\\input.csv",
+  "output_path": "C:\\Users\\saifr\\OneDrive\\Desktop\\Doaa-Local\\test-runs-full-space\\output.csv",
+  "allowed_root": "C:\\Users\\saifr\\OneDrive\\Desktop\\Doaa-Local\\test-runs-full-space"
+}

@@ -1,0 +1,1 @@
+Return exactly this JSON object and no other text: {"dsl_version":"1.4","steps":[{"op":"remove_ascii_phone_separators","column":"phone"}]}

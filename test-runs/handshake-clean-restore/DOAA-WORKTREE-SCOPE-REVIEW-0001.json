@@ -1,0 +1,16 @@
+﻿{
+    "artifact_id":  "DOAA-WORKTREE-SCOPE-REVIEW-0001",
+    "status":  "reviewed",
+    "manifest_files":  217,
+    "unlisted_files":  279,
+    "classification":  {
+                           "diagnostic_logs":  12,
+                           "python_cache":  64,
+                           "test_runs":  52
+                       },
+    "deletion_performed":  false,
+    "release_scope":  "manifest_only",
+    "automatic_execution":  false,
+    "execution_authority":  "none",
+    "decision":  "retain_unlisted_evidence_outside_release_until_explicit_cleanup_review"
+}

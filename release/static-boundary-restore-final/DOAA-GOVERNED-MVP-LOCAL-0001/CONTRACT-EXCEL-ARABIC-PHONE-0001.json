@@ -1,0 +1,17 @@
+{
+  "contract_id": "CONTRACT-EXCEL-ARABIC-PHONE-0001",
+  "status": "frozen_before_implementation",
+  "allowed_extensions": [".xlsx"],
+  "allowed_header_names": ["phone", "الهاتف"],
+  "header_resolution": "exact_match_only",
+  "worksheet_policy": "explicit_target_worksheet_only",
+  "allowed_operation": "remove_ascii_phone_separators",
+  "output_policy": "new_xlsx_required",
+  "overwrite_original": false,
+  "preserve_non_target_cells": true,
+  "preserve_workbook_structure": true,
+  "prohibited_actions": ["infer_phone_column","modify_other_columns","modify_other_worksheets","delete_worksheet","network_request","secret_access"],
+  "fail_closed_conditions": ["header_missing","multiple_phone_headers","worksheet_ambiguous","output_exists","input_output_same","invariant_failure"],
+  "model_execution_authority": "none",
+  "network_request": false
+}

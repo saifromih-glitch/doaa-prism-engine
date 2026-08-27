@@ -1,0 +1,21 @@
+{
+  "contract_id": "CONTRACT-OLLAMA-PROPOSAL-ADAPTER-0001",
+  "version": "1.0",
+  "purpose": "Local-only Ollama adapter that returns untrusted raw model text for the governed gate.",
+  "required_keys": ["message_id", "model_id", "prompt", "execution_authority"],
+  "prompt_type": "non_empty_structured_text",
+  "endpoint_policy": "localhost_only",
+  "allowed_endpoint_prefixes": ["http://127.0.0.1:", "http://localhost:"],
+  "max_prompt_chars": 12000,
+  "max_response_bytes": 262144,
+  "timeout_seconds_max": 30,
+  "response_kind": "raw_untrusted_text",
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "human_review_required": true,
+  "prohibited_prompt_content": ["shell_command", "source_code", "secret", "password", "write_path", "subprocess"],
+  "network_scope": "local_ollama_only",
+  "writes_files": false,
+  "modifies_source": false,
+  "fail_closed": true
+}

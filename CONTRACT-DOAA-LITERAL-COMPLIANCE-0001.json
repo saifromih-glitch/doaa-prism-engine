@@ -1,0 +1,28 @@
+{
+  "contract_id": "CONTRACT-DOAA-LITERAL-COMPLIANCE-0001",
+  "version": "1.0",
+  "purpose": "Deterministic fail-closed checks for explicitly declared literal output constraints.",
+  "scope": {
+    "input": "Validated doaa.alg.v1 request with context.literal_policy and validated result text",
+    "checks": [
+      "result numeric literals are a subset of source numeric literals",
+      "required_literals are present",
+      "forbidden_patterns are absent",
+      "optional sentence and character limits are respected"
+    ],
+    "not_proven": [
+      "semantic truth",
+      "complete factual entailment",
+      "absence of all paraphrased additions"
+    ]
+  },
+  "failure_policy": {
+    "invalid_policy": "block",
+    "failed_explicit_constraint": "block",
+    "unverifiable_semantic_constraint": "human_review",
+    "automatic_repair": false
+  },
+  "authority": "none",
+  "automatic_execution": false,
+  "forbidden_capabilities": ["tool_execution", "file_write", "source_modification", "network_access", "secret_access", "model_update"]
+}

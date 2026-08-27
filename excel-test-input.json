@@ -1,0 +1,20 @@
+{
+  "proposal": {
+    "kind": "proposal",
+    "execution_authority": "none",
+    "operation": "remove_ascii_phone_separators",
+    "column": "الهاتف",
+    "arguments": {},
+    "rationale": "safe"
+  },
+  "human_review": {
+    "status": "accepted_by_human",
+    "execution_authority": "none",
+    "proposal_sha256": "b3601a0b8a52e4577a30e8a77a721c4731d7f93a234a83d385543c86a938d8d4",
+    "audit_record_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+  },
+  "input_path": "C:\\Users\\saifr\\OneDrive\\Desktop\\Doaa-Local\\test-runs-excel\\input-arabic-phone.xlsx",
+  "output_path": "C:\\Users\\saifr\\OneDrive\\Desktop\\Doaa-Local\\test-runs-excel\\output-arabic-phone.xlsx",
+  "allowed_root": "C:\\Users\\saifr\\OneDrive\\Desktop\\Doaa-Local\\test-runs-excel",
+  "worksheet": "البيانات"
+}

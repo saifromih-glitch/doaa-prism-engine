@@ -1,0 +1,11 @@
+{
+  "contract_id": "CONTRACT-PREMODEL-ROUTER-0001",
+  "order": ["exact_registry_lookup", "governed_model_proposal_on_miss", "repair", "gate", "human_review", "safe_execution"],
+  "cache_hit": {"route":"reuse_candidate","model_call":false,"automatic_execution":false},
+  "cache_miss": {"route":"governed_model_stage","model_call":true,"automatic_execution":false},
+  "model_output_is_untrusted": true,
+  "exact_match_only": true,
+  "execution_authority": "none",
+  "network_request": false,
+  "fail_closed": true
+}

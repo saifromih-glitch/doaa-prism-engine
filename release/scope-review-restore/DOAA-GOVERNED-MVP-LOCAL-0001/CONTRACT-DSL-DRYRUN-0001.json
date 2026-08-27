@@ -1,0 +1,14 @@
+{
+  "contract_id": "CONTRACT-DSL-DRYRUN-0001",
+  "status": "frozen_before_implementation",
+  "mode": "dry_run_only",
+  "accepted_operation": "remove_ascii_phone_separators",
+  "accepted_dsl_version": "1.4",
+  "required_preconditions": ["gate_status=accepted_proposal","human_decision=accepted_by_human","execution_authority=none","proposal_and_audit_identity_match"],
+  "allowed_effect": "compute an in-memory preview and change report only",
+  "prohibited_effects": ["write_input_file","write_output_file","modify_source","delete_data","network_request","secret_access","automatic_execution"],
+  "invariants": ["row_count_unchanged","column_set_unchanged","all_non_target_columns_byte_equivalent","target_column_only_ascii_space_and_hyphen_removal"],
+  "required_receipt": ["input_sha256","preview_sha256","changed_cell_count","invariants","execution_started_false"],
+  "fail_closed": true,
+  "execution_authority": "none"
+}

@@ -1,0 +1,1 @@
+﻿{"action":"restart_after_nvidia_610_88_install","approved_by_user":true,"expected_post_restart_check":"nvidia-smi then Ollama status only","timestamp_utc":"2026-08-23T12:35:17.6844079Z"}

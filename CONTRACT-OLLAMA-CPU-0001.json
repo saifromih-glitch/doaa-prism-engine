@@ -1,0 +1,41 @@
+{
+  "contract_id": "CONTRACT-OLLAMA-CPU-0001",
+  "status": "frozen_before_execution",
+  "purpose": "isolate Ollama engine behavior from the current NVML and GPU discovery failure",
+  "model": "qwen3.5:4b",
+  "server": {
+    "host": "127.0.0.1",
+    "port": 11435,
+    "temporary": true,
+    "environment": {
+      "CUDA_VISIBLE_DEVICES": "-1",
+      "OLLAMA_LLM_LIBRARY": "cpu_avx2",
+      "OLLAMA_KEEP_ALIVE": "0s"
+    }
+  },
+  "request": {
+    "endpoint": "/api/generate",
+    "prompt": "Return exactly: CPU_SMOKE_OK",
+    "stream": false,
+    "options": {"num_ctx": 2048, "num_predict": 8, "temperature": 0},
+    "timeout_seconds": 600
+  },
+  "acceptance": {
+    "response_must_be_nonempty": true,
+    "response_must_contain": "CPU_SMOKE_OK",
+    "dsl_execution": false,
+    "network_request": false,
+    "synthetic_input_only": true
+  },
+  "stop_conditions": [
+    "server_not_ready_within_60_seconds",
+    "request_timeout",
+    "memory_pressure_detected",
+    "unexpected_nonlocal_listener"
+  ],
+  "cleanup": [
+    "terminate_only_the_temporary_server_process",
+    "confirm_no_model_remains_active_on_the_default_server",
+    "do_not_delete_models_or_modify_windows_or_doaa_source"
+  ]
+}

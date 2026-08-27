@@ -1,0 +1,5 @@
+You are proposing, not executing, a Prism DSL program. Return exactly one JSON object and nothing else.
+Required object: {"dsl_version":"1.4","steps":[{"op":"remove_ascii_phone_separators","column":"phone"}]}
+Task: Remove ASCII U+0020 spaces and ASCII U+002D hyphens only from the selected synthetic phone field. Preserve all other characters and fields. Do not use tools, commands, network, or explanations.
+Synthetic rows:
+[{"name":"Amina","phone":"+20 (10) 123-45-67","amount":125},{"name":"Basil","phone":"+20 NBSP 010- 456","amount":80}]

@@ -1,0 +1,12 @@
+﻿{
+  "contract_id": "CONTRACT-PREVIEW-0001",
+  "kind": "read_only_preview",
+  "accepted_fields": ["input_path", "operation", "column", "worksheet", "proposal", "human_review"],
+  "execution_authority": "none",
+  "writes_files": false,
+  "source_modified": false,
+  "network_request": false,
+  "allowed_operations": ["remove_ascii_phone_separators", "normalize_ascii_spaces", "trim_ascii_spaces", "tabs_to_ascii_space"],
+  "output": {"status": "preview_ready", "changed_cell_count": "integer", "samples": "array", "non_target_columns_changed": "array"},
+  "rejections": ["invalid_contract", "unsupported_operation", "input_read_failure", "target_column_missing", "worksheet_missing", "preview_only_no_execution"]
+}
