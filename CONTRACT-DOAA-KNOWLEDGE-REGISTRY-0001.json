@@ -1,0 +1,13 @@
+{
+  "contract": "doaa.knowledge_registry.v1",
+  "purpose": "Governed registry of reusable capabilities and knowledge templates.",
+  "states": ["pending_review", "active", "expired", "revoked"],
+  "libraries": ["science", "industry", "software", "business", "marketing", "sales", "education", "language", "general"],
+  "promotion": "explicit_human_review_only",
+  "automatic_promotion": false,
+  "automatic_capability_creation": false,
+  "source_code_modification": false,
+  "model_invocation": false,
+  "execution_authority": "none",
+  "automatic_execution": false
+}
