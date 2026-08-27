@@ -1,0 +1,13 @@
+{
+  "contract": "doaa.unified_flow.v1",
+  "stages": ["request", "library_lookup", "evidence_check", "knowledge_check", "model_adapter_optional", "result_validation", "render"],
+  "lookup_policy": "exact_first",
+  "semantic_guessing": false,
+  "web_fetch_from_core": false,
+  "model_call_from_core": false,
+  "automatic_library_update": false,
+  "automatic_capability_creation": false,
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "blocked_states": ["invalid_request", "unknown_library", "ambiguous_match", "fresh_evidence_required", "unapproved_knowledge"]
+}
