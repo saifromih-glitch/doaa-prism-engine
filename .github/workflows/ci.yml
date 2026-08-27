@@ -1,0 +1,36 @@
+name: Doaa CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  acceptance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run acceptance suite
+        run: python run_release_acceptance.py
+      - name: Run CLI example
+        run: |
+          python doaa_algorithmic_cli.py --pretty < example-mediation.json > example-output.json
+          python - <<'PY'
+          import json
+          with open('example-output.json', encoding='utf-8') as f:
+              result = json.load(f)
+          assert result['status'] == 'mediation_completed'
+          assert result['execution_authority'] == 'none'
+          assert result['automatic_execution'] is False
+          print('CLI example passed')
+          PY
