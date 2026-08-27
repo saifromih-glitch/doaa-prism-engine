@@ -1,0 +1,15 @@
+{
+  "contract": "doaa.runtime.v1",
+  "purpose": "Coordinate governed local reuse, evidence checks, and explicit adapter handoff.",
+  "stages": ["validate_request", "select_library", "exact_lookup", "knowledge_lookup", "evidence_gate", "adapter_handoff", "result_validation", "render"],
+  "default_route": "local_first",
+  "allowed_outputs": ["local_payload", "active_knowledge", "adapter_required", "blocked"],
+  "automatic_model_call": false,
+  "automatic_web_fetch": false,
+  "automatic_library_update": false,
+  "automatic_capability_creation": false,
+  "source_code_modification": false,
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "human_review_required_for": ["new_capability", "knowledge_promotion", "shared_library_update", "external_write"]
+}
