@@ -30,7 +30,7 @@ The local file-processing path is separate and documented in `DOAA-LOCAL-README.
 
 ## Governed algorithm library
 
-Doaa can store explicitly validated `doaa.alg.v1` messages in a local algorithm library and retrieve them by an exact request fingerprint and algorithm identifier. A miss is safe; semantic similarity is not used to guess a reusable algorithm. Registration is explicit, validation is required, persistence is local, and the library never calls a model or executes a stored message. See `CONTRACT-DOAA-ALGORITHM-LIBRARY-0001.json` and `doaa_algorithm_library.py`.
+Doaa can store explicitly validated `doaa.alg.v1` messages in a local algorithm library and retrieve them by an exact request fingerprint and algorithm identifier. A miss is safe; semantic similarity is not used to guess a reusable algorithm. Registration is explicit, validation is required, persistence is local, and the library never calls a model or executes a stored message. Entries can be browsed under controlled domains: `science`, `industry`, `software`, `business`, `education`, `language`, and `general`, each with fixed subdomains. Classification is for organization and filtering only; it never authorizes reuse. See `CONTRACT-DOAA-ALGORITHM-LIBRARY-0001.json` and `doaa_algorithm_library.py`.
 
 ## Governance boundary
 
