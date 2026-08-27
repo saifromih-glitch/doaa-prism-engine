@@ -1,0 +1,18 @@
+{
+  "session_id": "demo-ar",
+  "model_language": "ar",
+  "algorithm_message": {
+    "protocol": "doaa.alg.v1",
+    "request_id": "demo-001",
+    "algorithm": {
+      "id": "answer.compose.v1",
+      "version": "1"
+    },
+    "parameters": {
+      "language": "ar",
+      "mode": "faithful"
+    },
+    "authority": "none",
+    "automatic_execution": false
+  }
+}
