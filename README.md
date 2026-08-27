@@ -28,9 +28,13 @@ Get-Content -Raw -Encoding UTF8 .\example-mediation.json | py -3 .\doaa_algorith
 
 The local file-processing path is separate and documented in `DOAA-LOCAL-README.md`; it requires explicit human approval and writes only to a new approved output path.
 
+## Governed algorithm library
+
+Doaa can store explicitly validated `doaa.alg.v1` messages in a local algorithm library and retrieve them by an exact request fingerprint and algorithm identifier. A miss is safe; semantic similarity is not used to guess a reusable algorithm. Registration is explicit, validation is required, persistence is local, and the library never calls a model or executes a stored message. See `CONTRACT-DOAA-ALGORITHM-LIBRARY-0001.json` and `doaa_algorithm_library.py`.
+
 ## Governance boundary
 
-Every request and result is bound to `authority: "none"` and `automatic_execution: false`. Unknown capabilities are rejected or returned as governed proposals; they are not inferred into executable behavior. New capabilities require a contract, threat-model review, tests, and human approval.
+Every request and result is bound to `authority: "none"` and `automatic_execution: false. Unknown capabilities are rejected or returned as governed proposals; they are not inferred into executable behavior. New capabilities require a contract, threat-model review, tests, and human approval.
 
 The literal gate is deliberately limited. It can reject new numeric literals, missing required literals, forbidden patterns, and declared shape violations. It does not prove complete semantic entailment. Unverifiable semantic additions must be escalated for human review.
 
