@@ -16,6 +16,8 @@ Doaa (Prism Engine) is an open-source, governed mediator between a human or inte
 | Arabic UTF-8 support | Supported |
 | Ollama bridge | Available as an external/local adapter |
 | Direct hosted-model integration | Intentionally external and not required by the core |
+| Governed web evidence store and allowlisted source adapter | Working; fetch-only, provenance-first, review required |
+| Knowledge and capability registry | Working; proposal-to-active promotion requires explicit human review |
 
 ## Quick start
 
@@ -30,7 +32,7 @@ The local file-processing path is separate and documented in `DOAA-LOCAL-README.
 
 ## Governed algorithm library
 
-Doaa can store explicitly validated `doaa.alg.v1` messages in a local algorithm library and retrieve them by an exact request fingerprint and algorithm identifier. A miss is safe; semantic similarity is not used to guess a reusable algorithm. Registration is explicit, validation is required, persistence is local, and the library never calls a model or executes a stored message. Entries can be browsed under controlled domains: `science`, `industry`, `software`, `business`, `education`, `language`, and `general`, each with fixed subdomains. Classification is for organization and filtering only; it never authorizes reuse. See `CONTRACT-DOAA-ALGORITHM-LIBRARY-0001.json` and `doaa_algorithm_library.py`. The separate [governed web evidence design](WEB-EVIDENCE.md) records sources and review boundaries; it never updates libraries automatically.
+Doaa can store explicitly validated `doaa.alg.v1` messages in a local algorithm library and retrieve them by an exact request fingerprint and algorithm identifier. A miss is safe; semantic similarity is not used to guess a reusable algorithm. Registration is explicit, validation is required, persistence is local, and the library never calls a model or executes a stored message. Entries can be browsed under controlled domains: `science`, `industry`, `software`, `business`, `education`, `language`, and `general`, each with fixed subdomains. Classification is for organization and filtering only; it never authorizes reuse. See `CONTRACT-DOAA-ALGORITHM-LIBRARY-0001.json` and `doaa_algorithm_library.py`. The separate [governed web evidence design](WEB-EVIDENCE.md) records sources and review boundaries; it never updates libraries automatically. The [multi-source architecture](DOAA-MULTI-SOURCE-ARCHITECTURE-0001.md) and `doaa_knowledge_registry.py` define how reusable capabilities can be proposed, versioned, reviewed, activated, expired, or revoked without self-modifying the core.
 
 ## Governance boundary
 
@@ -50,7 +52,7 @@ Many historical tests execute assertions at import time, so their output reports
 
 ## Project map
 
-The central mediation files are `doaa_algorithmic_protocol.py`, `doaa_algorithmic_mediator.py`, `doaa_request_builder.py`, `doaa_handshake.py`, `doaa_session_protocol.py`, and `doaa_literal_gate.py`. Contracts and ADRs define the governance boundary. Experimental benchmark reports are retained as evidence and clearly marked as non-general guarantees.
+The central mediation files are `doaa_algorithmic_protocol.py`, `doaa_algorithmic_mediator.py`, `doaa_request_builder.py`, `doaa_handshake.py`, `doaa_session_protocol.py`, and `doaa_literal_gate.py`. Knowledge files include `doaa_algorithm_library.py`, `doaa_knowledge_registry.py`, `doaa_web_evidence.py`, and `doaa_web_source_connector.py`. Contracts and ADRs define the governance boundary. Experimental benchmark reports are retained as evidence and clearly marked as non-general guarantees.
 
 ## Community tasks
 
