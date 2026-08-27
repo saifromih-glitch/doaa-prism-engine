@@ -48,6 +48,10 @@ Many historical tests execute assertions at import time, so their output reports
 
 The central mediation files are `doaa_algorithmic_protocol.py`, `doaa_algorithmic_mediator.py`, `doaa_request_builder.py`, `doaa_handshake.py`, `doaa_session_protocol.py`, and `doaa_literal_gate.py`. Contracts and ADRs define the governance boundary. Experimental benchmark reports are retained as evidence and clearly marked as non-general guarantees.
 
+## Community tasks
+
+The current contributor tasks are listed in the [GitHub Issues](https://github.com/saifromih-glitch/doaa-prism-engine/issues). Start with [Contributor quickstart examples](https://github.com/saifromih-glitch/doaa-prism-engine/issues/3) if you are new to the codebase, or review [the stateful session transport task](https://github.com/saifromih-glitch/doaa-prism-engine/issues/1) if you are working on model adapters.
+
 ## Contributions
 
 Contributions are welcome. Keep changes narrow, add or update a contract when behavior changes, add deterministic tests, preserve fail-closed behavior, and do not add network access, secret access, autonomous execution, self-modification, or model-training claims to the core without a separately reviewed design.
