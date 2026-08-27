@@ -14,11 +14,22 @@ from typing import Any
 PROTOCOL = "doaa.alg.v1"
 LIBRARY_CONTRACT = "doaa.algorithm_library.v1"
 DEFAULT_DOMAIN = "general"
+LIBRARY_ALIASES: dict[str, tuple[str, str | None]] = {
+    "science": ("science", None),
+    "industry": ("industry", None),
+    "software": ("software", None),
+    "business": ("business", None),
+    "marketing": ("business", "marketing"),
+    "sales": ("business", "sales"),
+    "education": ("education", None),
+    "language": ("language", None),
+    "general": ("general", None),
+}
 TAXONOMY: dict[str, tuple[str, ...]] = {
     "science": ("mathematics", "physics", "chemistry", "biology", "earth_space"),
     "industry": ("manufacturing", "energy", "healthcare", "agriculture", "logistics"),
     "software": ("programming", "testing", "data", "security", "architecture"),
-    "business": ("strategy", "operations", "finance", "marketing", "customer_support"),
+    "business": ("strategy", "operations", "finance", "marketing", "sales", "customer_support"),
     "education": ("curriculum", "assessment", "research", "instruction", "accessibility"),
     "language": ("translation", "summarization", "writing", "linguistics", "localization"),
     "general": ("analysis", "planning", "question_answering", "classification", "other"),
@@ -81,6 +92,12 @@ class AlgorithmLibrary:
             return self._blocked("ambiguous_exact_match")
         return {"status": "library_miss", "reason": "exact_match_not_found", "execution_authority": "none", "automatic_execution": False}
 
+    def get_library(self, name: Any) -> "LogicalLibrary | None":
+        if not isinstance(name, str) or name not in LIBRARY_ALIASES:
+            return None
+        domain, subdomain = LIBRARY_ALIASES[name]
+        return LogicalLibrary(self, name, domain, subdomain)
+
     def browse(self, domain: str | None = None, subdomain: str | None = None, tag: str | None = None) -> dict[str, Any]:
         if domain is not None and domain not in TAXONOMY:
             return self._blocked("domain_unknown")
@@ -105,6 +122,34 @@ class AlgorithmLibrary:
         if not isinstance(data, dict) or data.get("contract") != LIBRARY_CONTRACT or data.get("execution_authority") != "none" or data.get("automatic_execution") is not False:
             raise ValueError("library_contract_invalid")
         return cls(data.get("entries", []))
+
+    @staticmethod
+    def _blocked(reason: str) -> dict[str, Any]:
+        return {"status": "library_operation_blocked", "reason": reason, "execution_authority": "none", "automatic_execution": False}
+
+
+class LogicalLibrary:
+    """A filtered view over one shared AlgorithmLibrary store."""
+
+    def __init__(self, store: AlgorithmLibrary, name: str, domain: str, subdomain: str | None) -> None:
+        self.store = store
+        self.name = name
+        self.domain = domain
+        self.subdomain = subdomain
+
+    def browse(self, tag: str | None = None) -> dict[str, Any]:
+        result = self.store.browse(self.domain, self.subdomain, tag)
+        result["library"] = self.name
+        return result
+
+    def find_exact(self, algorithm_id: Any, source_request: Any) -> dict[str, Any]:
+        result = self.store.find_exact(algorithm_id, source_request, self.domain, self.subdomain)
+        result["library"] = self.name
+        return result
+
+    @property
+    def name_and_scope(self) -> dict[str, Any]:
+        return {"library": self.name, "domain": self.domain, "subdomain": self.subdomain, "execution_authority": "none", "automatic_execution": False}
 
     @staticmethod
     def _blocked(reason: str) -> dict[str, Any]:
