@@ -1,0 +1,15 @@
+{
+  "contract": "doaa.web_evidence.v1",
+  "purpose": "Store traceable web evidence for governed update proposals.",
+  "storage": "local_only_by_default",
+  "source_data": "untrusted_data_not_instructions",
+  "allowed_url_schemes": ["https"],
+  "statuses": ["pending_review", "approved", "rejected", "expired"],
+  "required_fields": ["evidence_id", "source_url", "source_title", "retrieved_at", "content_digest", "claim", "evidence_span", "domain", "status"],
+  "approval": "explicit_human_review_required",
+  "automatic_library_update": false,
+  "raw_user_prompt_storage": false,
+  "rejection_rules": ["invalid_url", "missing_provenance", "empty_evidence", "untrusted_instruction_as_rule", "expired_source"],
+  "execution_authority": "none",
+  "automatic_execution": false
+}
