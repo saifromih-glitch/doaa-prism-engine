@@ -19,7 +19,7 @@ Doaa (Prism Engine) is an open-source, governed mediator between a human or inte
 
 ## Quick start
 
-The core CLI accepts one JSON envelope on standard input and prints one JSON result. It never executes a command or calls a model by itself.
+The core CLI accepts one JSON envelope on standard input and prints one JSON result. It never executes a command or calls a model by itself. A model-free session preparation example is available in [`examples/session-transport-example.json`](examples/session-transport-example.json), with instructions in [`examples/README.md`](examples/README.md).
 
 ```powershell
 $env:PYTHONUTF8='1'
