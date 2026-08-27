@@ -1,0 +1,26 @@
+{
+  "request": {
+    "protocol": "doaa.alg.v1",
+    "request_id": "example-001",
+    "algorithm": {"id": "answer.summarize.v1", "version": "1"},
+    "parameters": {"language": "ar"},
+    "context": {
+      "algorithm_refs": ["answer.summarize.v1"],
+      "user_constraints": ["جملتان فقط"],
+      "literal_policy": {"mode": "literal_only", "exact_sentence_count": 2}
+    },
+    "input": {"kind": "text", "value": "بدأ الاختبار في يناير 2026. شارك فيه خمسة أشخاص ولم يعتمد خارجيًا بعد."},
+    "output_policy": {"format": "natural_language", "language": "ar"},
+    "authority": "none",
+    "automatic_execution": false
+  },
+  "raw_model_result": {
+    "protocol": "doaa.alg.v1",
+    "request_id": "example-001",
+    "algorithm": {"id": "answer.summarize.v1", "version": "1"},
+    "status": "completed",
+    "authority": "none",
+    "automatic_execution": false,
+    "result": "بدأ الاختبار في يناير 2026. شارك فيه خمسة أشخاص ولم يعتمد خارجيًا بعد."
+  }
+}
