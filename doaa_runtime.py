@@ -12,6 +12,7 @@ from doaa_command_language import parse_command
 from doaa_multi_source_coordinator import MultiSourceCoordinator
 from doaa_reuse_ledger import ReuseLedger
 from doaa_template_reconstruction import TemplateRegistry
+from doaa_context_extractor import extract_supported_answer
 
 CONTRACT = "doaa.runtime.v1"
 
@@ -50,6 +51,12 @@ class DoaaRuntime:
         result = self.prepare(envelope)
         result["reconstruction"] = rebuilt
         return result
+
+    def prepare_local_answer(self, question: Any, context: Any) -> dict[str, Any]:
+        result = extract_supported_answer(question, context)
+        if result["status"] != "candidate":
+            return {"status": "runtime_governed_review", "local_answer": result, "next_action": "explicit_adapter_or_human_review", "execution_authority": "none", "automatic_execution": False}
+        return {"status": "runtime_local_candidate", "local_answer": result, "next_action": "verify_against_source_before_delivery", "execution_authority": "none", "automatic_execution": False}
 
     def prepare_command(self, command: Any) -> dict[str, Any]:
         parsed = parse_command(command)
