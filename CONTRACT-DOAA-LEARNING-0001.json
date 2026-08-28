@@ -1,0 +1,25 @@
+{
+  "contract": "doaa.learning.v1",
+  "purpose": "Collect explicit experiences and produce auditable learning candidates that improve compact protocol reuse without autonomous authority.",
+  "states": ["experience", "candidate", "active", "rejected", "revoked"],
+  "allowed_transitions": {
+    "experience": ["candidate", "rejected"],
+    "candidate": ["active", "rejected"],
+    "active": ["revoked"],
+    "rejected": [],
+    "revoked": []
+  },
+  "required_provenance": ["record_id", "source", "created_at", "content_digest", "consent_status", "protocol", "authority"],
+  "consent_statuses": ["user_allowed", "public_source_reviewed", "not_allowed"],
+  "active_promotion": {
+    "automatic": false,
+    "requires": ["deterministic_validation", "benchmark_receipt", "safety_receipt", "human_approval"]
+  },
+  "rollback": "revoke_active_record_and_restore_previous_version",
+  "protected_assets": ["Dody_constitution", "core_source", "safety_gates", "secrets", "user_private_data"],
+  "prohibited": ["self_modify_core", "self_change_governance", "train_on_unconsented_data", "automatic_active_promotion", "automatic_external_write", "model_execution_authority"],
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "network_access": false,
+  "model_call": false
+}
