@@ -1,0 +1,409 @@
+{
+  "status": "live_verified_recurrent_complete",
+  "model": "gpt-5-mini",
+  "sample_count": 20,
+  "baseline": {
+    "calls": 20,
+    "prompt_tokens": 20243,
+    "total_tokens": 27489,
+    "mean_reference_overlap": 0.313252
+  },
+  "doaa": {
+    "calls": 2,
+    "prompt_tokens": 3379,
+    "total_tokens": 14130,
+    "first_pass_supported": 12,
+    "final_supported": 12,
+    "retry_count": 8,
+    "mean_reference_overlap_first": 0.711799
+  },
+  "prompt_token_saving_ratio": 0.833078,
+  "total_token_saving_ratio": 0.485976,
+  "safety_evaluated": false,
+  "human_review_completed": false,
+  "checkpoint_source_sent_once_per_request": true,
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "rows": [
+    {
+      "case_id": "arabicaqa-1061975",
+      "reference_answer": "38.6%",
+      "answer": "38.6%",
+      "reference_overlap": 1.0,
+      "verification": {
+        "status": "supported",
+        "contract": "doaa.answer_shape.v1",
+        "question_id": "arabicaqa-1061975",
+        "answer": "38.6%",
+        "evidence_quote": "وكانت نسبة 38.6% من غير العائلات.",
+        "uncertainty": "none",
+        "answer_units": "%",
+        "execution_authority": "none",
+        "automatic_execution": false
+      }
+    },
+    {
+      "case_id": "arabicaqa-1061974",
+      "reference_answer": "4.5%",
+      "answer": "4.5%",
+      "reference_overlap": 1.0,
+      "verification": {
+        "status": "fallback_or_review",
+        "contract": "doaa.answer_shape.v1",
+        "reason": "evidence_quote_not_in_source",
+        "execution_authority": "none",
+        "automatic_execution": false
+      },
+      "retry_answer": "4.5%",
+      "retry_verification": {
+        "status": "fallback_or_review",
+        "contract": "doaa.answer_shape.v1",
+        "reason": "evidence_quote_not_in_source",
+        "execution_authority": "none",
+        "automatic_execution": false
+      },
+      "retry_reference_overlap": 1.0
+    },
+    {
+      "case_id": "arabicaqa-1061976",
+      "reference_answer": "35.1%",
+      "answer": "35.1%",
+      "reference_overlap": 1.0,
+      "verification": {
+        "status": "supported",
+        "contract": "doaa.answer_shape.v1",
+        "question_id": "arabicaqa-1061976",
+        "answer": "35.1%",
+        "evidence_quote": "تألفت نسبة 35.1% من أصل جميع الأسر من عدة أفراد يعيشون في نفس المنزل ونسبة 18.9% كانت تتألف من شخص يعيش بمفرده يبلغ من العمر 65 عاماً أو أكثر.",
+        "uncertainty": "none",
+        "answer_units": "%",
+        "execution_authority": "none",
+        "automatic_execution": false
+      }
+    },
+    {
+      "case_id": "arabicaqa-1061977",
+      "reference_answer": "18.9%",
+      "answer": "18.9%",
+      "reference_overlap": 1.0,
+      "verification": {
+        "status": "supported",
+        "contract": "doaa.answer_shape.v1",
+        "question_id": "arabicaqa-1061977",
+        "answer": "18.9%",
+        "evidence_quote": "تألفت نسبة 35.1% من أصل جميع الأسر من عدة أفراد يعيشون في نفس المنزل ونسبة 18.9% كانت تتألف من شخص يعيش بمفرده يبلغ من العمر 65 عاماً أو أكثر.",
+        "uncertainty": "none",
+        "answer_units": "%",
+        "execution_authority": "none",
+        "automatic_execution": false
+      }
+    },
+    {
+      "case_id": "arabicaqa-1061978",
+      "reference_answer": "2.27",
+      "answer": "2.27",
+      "reference_overlap": 1.0,
+      "verification": {
+        "status": "supported",
+        "contract": "doaa.answer_shape.v1",
+        "question_id": "arabicaqa-1061978",
+        "answer": "2.27",
+        "evidence_quote": "وبلغ متوسط حجم الأسرة المعيشية 2.27، أما متوسط حجم العائلات فبلغ 2.95.",
+        "uncertainty": "none",
+        "answer_units": "أفراد",
+        "execution_authority": "none",
+        "automatic_execution": false
+      }
+    },
+    {
+      "case_id": "arabicaqa-1061979",
+      "reference_answer": "2.95",
+      "answer": "2.95",
+      "reference_overlap": 1.0,
+      "verification": {
+        "status": "supported",
+        "contract": "doaa.answer_shape.v1",
+        "question_id": "arabicaqa-1061979",
+        "answer": "2.95",
+        "evidence_quote": "وبلغ متوسط حجم الأسرة المعيشية 2.27، أما متوسط حجم العائلات فبلغ 2.95.",
+        "uncertainty": "none",
+        "answer_units": "أفراد",
+        "execution_authority": "none",
+        "automatic_execution": false
+      }
+    },
+    {
+      "case_id": "arabicaqa-1061980",
+      "reference_answer": "41.7 عاماً",
+      "answer": "41.7",
+      "reference_overlap": 0.5,
+      "verification": {
+        "status": "supported",
+        "contract": "doaa.answer_shape.v1",
+        "question_id": "arabicaqa-1061980",
+        "answer": "41.7",
+        "evidence_quote": "بلغ العمر الوسطي للسكان 41.7 عاماً.",
+        "uncertainty": "none",
+        "answer_units": "عام",
+        "execution_authority": "none",
+        "automatic_execution": false
+      }
+    },
+    {
+      "case_id": "arabicaqa-1061981",
+      "reference_answer": "كانت نسبة 20.7% من القاطنين تحت سن الثامنة عشر، وكانت نسبة 8.7% بين الثامنة عشر والرابعة والعشرين عاماً، ونسبة 25.1% كانت واقعةً في الفئة العمرية ما بين الخامسة والعشرين والرابعة والأربعين عاماً، ونسبة 23.4% كانت ما بين الخامسة والأربعين والرابعة والستين، ونسبة 20.6% كانت ضمن فئة الخامسة والستين عاماً فما فوق",
+      "answer": "20.7% تحت 18، 8.7% بين 18 و24، 25.1% بين 25 و44، 23.4% بين 45 و64، 20.6% 65 فما فوق",
+      "reference_overlap": 0.264706,
+      "verification": {
+        "status": "fallback_or_review",
+        "contract": "doaa.answer_shape.v1",
+        "reason": "answer_terms_not_supported",
+        "execution_authority": "none",
+        "automatic_execution": false
+      },
+      "retry_answer": "تحت 18: 20.7%؛ 18-24: 8.7%؛ 25-44: 25.1%؛ 45-64: 23.4%؛ 65+: 20.6%",
+      "retry_verification": {
+        "status": "fallback_or_review",
+        "contract": "doaa.answer_shape.v1",
+        "reason": "answer_terms_not_supported",
+        "execution_authority": "none",
+        "automatic_execution": false
+      },
+      "retry_reference_overlap": 0.058824
+    },
+    {
+      "case_id": "arabicaqa-1061962",
+      "reference_answer": "ولاية بنسيلفانيا",
+      "answer": "بنسيلفانيا",
+      "reference_overlap": 0.5,
+      "verification": {
+        "status": "supported",
+        "contract": "doaa.answer_shape.v1",
+        "question_id": "arabicaqa-1061962",
+        "answer": "بنسيلفانيا",
+        "evidence_quote": "بورتاج هي منطقة سكنية تقع بولاية بنسيلفانيا في الولايات المتحدة.",
+        "uncertainty": "none",
+        "answer_units": "",
+        "execution_authority": "none",
+        "automatic_execution": false
+      }
+    },
+    {
+      "case_id": "arabicaqa-1061963",
+      "reference_answer": "1.70",
+      "answer": "1.70",
+      "reference_overlap": 1.0,
+      "verification": {
+        "status": "supported",
+        "contract": "doaa.answer_shape.v1",
+        "question_id": "arabicaqa-1061963",
+        "answer": "1.70",
+        "evidence_quote": "تبلغ مساحتها 1.70 ،",
+        "uncertainty": "source_incomplete",
+        "answer_units": "",
+        "execution_authority": "none",
+        "automatic_execution": false
+      }
+    },
+    {
+      "case_id": "arabicaqa-1061964",
+      "reference_answer": "513.8928000000001",
+      "answer": "513.8928000000001",
+      "reference_overlap": 1.0,
+      "verification": {
+        "status": "supported",
+        "contract": "doaa.answer_shape.v1",
+        "question_id": "arabicaqa-1061964",
+        "answer": "513.8928000000001",
+        "evidence_quote": "وترتفع عن سطح البحر 513.8928000000001 ،",
+        "uncertainty": "source_incomplete",
+        "answer_units": "",
+        "execution_authority": "none",
+        "automatic_execution": false
+      }
+    },
+    {
+      "case_id": "arabicaqa-1061966",
+      "reference_answer": ".",
+      "answer": "",
+      "reference_overlap": 0.0,
+      "verification": {
+        "status": "fallback_or_review",
+        "contract": "doaa.answer_shape.v1",
+        "reason": "answer_empty",
+        "execution_authority": "none",
+        "automatic_execution": false
+      },
+      "retry_answer": "غير مذكورة في النص",
+      "retry_verification": {
+        "status": "fallback_or_review",
+        "contract": "doaa.answer_shape.v1",
+        "reason": "evidence_quote_not_in_source",
+        "execution_authority": "none",
+        "automatic_execution": false
+      },
+      "retry_reference_overlap": 0.0
+    },
+    {
+      "case_id": "arabicaqa-1061965",
+      "reference_answer": "2,638 نسمة",
+      "answer": "2,638",
+      "reference_overlap": 0.5,
+      "verification": {
+        "status": "supported",
+        "contract": "doaa.answer_shape.v1",
+        "question_id": "arabicaqa-1061965",
+        "answer": "2,638",
+        "evidence_quote": "بلغ عدد سكانها 2,638 نسمة في عام 2010 حسب إحصاء مكتب تعداد الولايات المتحدة",
+        "uncertainty": "none",
+        "answer_units": "نسمة",
+        "execution_authority": "none",
+        "automatic_execution": false
+      }
+    },
+    {
+      "case_id": "arabicaqa-1061967",
+      "reference_answer": ". ",
+      "answer": "تعداد عام 2000",
+      "reference_overlap": 0.0,
+      "verification": {
+        "status": "supported",
+        "contract": "doaa.answer_shape.v1",
+        "question_id": "arabicaqa-1061967",
+        "answer": "تعداد عام 2000",
+        "evidence_quote": "في ما يلي، التركيبة السكانية حسب تعدادي 2000 و2010. تعداد عام 2000.",
+        "uncertainty": "none",
+        "answer_units": "",
+        "execution_authority": "none",
+        "automatic_execution": false
+      }
+    },
+    {
+      "case_id": "arabicaqa-1061968",
+      "reference_answer": "بلغ عدد الأسر 1,232 أسرة وعدد العائلات 757 عائلة",
+      "answer": "1,232 أسرة و757 عائلة",
+      "reference_overlap": 0.333333,
+      "verification": {
+        "status": "fallback_or_review",
+        "contract": "doaa.answer_shape.v1",
+        "reason": "evidence_quote_not_in_source",
+        "execution_authority": "none",
+        "automatic_execution": false
+      },
+      "retry_answer": "1,232 أسرة و757 عائلة",
+      "retry_verification": {
+        "status": "fallback_or_review",
+        "contract": "doaa.answer_shape.v1",
+        "reason": "answer_terms_not_supported",
+        "execution_authority": "none",
+        "automatic_execution": false
+      },
+      "retry_reference_overlap": 0.333333
+    },
+    {
+      "case_id": "arabicaqa-1061969",
+      "reference_answer": "1,367 وحدة",
+      "answer": "1,367 وحدة (تعداد 2000) و1,315 وحدة (تعداد 2010)",
+      "reference_overlap": 1.0,
+      "verification": {
+        "status": "fallback_or_review",
+        "contract": "doaa.answer_shape.v1",
+        "reason": "evidence_quote_not_in_source",
+        "execution_authority": "none",
+        "automatic_execution": false
+      },
+      "retry_answer": "تعداد 2000: 1,367 وحدة؛ تعداد 2010: 1,315 وحدة",
+      "retry_verification": {
+        "status": "fallback_or_review",
+        "contract": "doaa.answer_shape.v1",
+        "reason": "evidence_quote_not_in_source",
+        "execution_authority": "none",
+        "automatic_execution": false
+      },
+      "retry_reference_overlap": 1.0
+    },
+    {
+      "case_id": "arabicaqa-1061970",
+      "reference_answer": "توزع التركيب العرقي للمنطقة السكنية بنسبة 99.47% من البيض و0.07% من الأمريكيين الأفارقة و0.04% من الأمريكيين الأصليين و0.07% من الأمريكيين ذوي الأصول الآسيوية و0.04% من الأعراق الأخرى و0.32% من عرقين مختلطين أو أكثر و0.49% من الهسبانيون أو اللاتينيون من أي عرق",
+      "answer": "(2000) 99.47% بيض، 0.07% أمريكيون أفارقة، 0.04% أمريكيون أصليون، 0.07% آسيويون، 0.04% أعراق أخرى، 0.32% عرقين مختلطين أو أكثر، 0.49% هسبانيون/لاتينيون؛ (2010) 98.56% بيض، 0.27% أمريكيون أفارقة، 0.08% أمريكيون أصليون، 0.04% آسيويون، 0.04% أعراق أخرى، 1.02% عرقين مختلطين أو أكثر، 0.53% هسبانيون/لاتينيون",
+      "reference_overlap": 0.137931,
+      "verification": {
+        "status": "fallback_or_review",
+        "contract": "doaa.answer_shape.v1",
+        "reason": "evidence_quote_not_in_source",
+        "execution_authority": "none",
+        "automatic_execution": false
+      },
+      "retry_answer": "تعداد 2000: 99.47% بيض، 0.07% أمريكيون أفارقة، 0.04% أمريكيون أصليين، 0.07% آسيويون، 0.04% أعراق أخرى، 0.32% من عرقين مختلطين أو أكثر، 0.49% هسبانيون/لاتينيون.؛ تعداد 2010: 98.56% بيض، 0.27% أمريكيون أفارقة، 0.08% أمريكيون أصليون، 0.04% آسيويون، 0.04% أعراق أخرى، 1.02% من عرقين مختلطين أو أكثر، 0.53% هسبانيون/لاتينيون.",
+      "retry_verification": {
+        "status": "fallback_or_review",
+        "contract": "doaa.answer_shape.v1",
+        "reason": "evidence_quote_not_in_source",
+        "execution_authority": "none",
+        "automatic_execution": false
+      },
+      "retry_reference_overlap": 0.172414
+    },
+    {
+      "case_id": "arabicaqa-1061971",
+      "reference_answer": "26.8%",
+      "answer": "26.8% (2000) و27.4% (2010)",
+      "reference_overlap": 1.0,
+      "verification": {
+        "status": "fallback_or_review",
+        "contract": "doaa.answer_shape.v1",
+        "reason": "evidence_quote_not_in_source",
+        "execution_authority": "none",
+        "automatic_execution": false
+      },
+      "retry_answer": "تعداد 2000: 26.8%؛ تعداد 2010: 27.4%",
+      "retry_verification": {
+        "status": "fallback_or_review",
+        "contract": "doaa.answer_shape.v1",
+        "reason": "evidence_quote_not_in_source",
+        "execution_authority": "none",
+        "automatic_execution": false
+      },
+      "retry_reference_overlap": 0.0
+    },
+    {
+      "case_id": "arabicaqa-1061972",
+      "reference_answer": "45.5%",
+      "answer": "45.5% (2000) و41% (2010)",
+      "reference_overlap": 1.0,
+      "verification": {
+        "status": "fallback_or_review",
+        "contract": "doaa.answer_shape.v1",
+        "reason": "evidence_quote_not_in_source",
+        "execution_authority": "none",
+        "automatic_execution": false
+      },
+      "retry_answer": "تعداد 2000: 45.5%؛ تعداد 2010: 41%",
+      "retry_verification": {
+        "status": "fallback_or_review",
+        "contract": "doaa.answer_shape.v1",
+        "reason": "evidence_quote_not_in_source",
+        "execution_authority": "none",
+        "automatic_execution": false
+      },
+      "retry_reference_overlap": 0.0
+    },
+    {
+      "case_id": "arabicaqa-1061973",
+      "reference_answer": "11.4%",
+      "answer": "11.4%",
+      "reference_overlap": 1.0,
+      "verification": {
+        "status": "supported",
+        "contract": "doaa.answer_shape.v1",
+        "question_id": "arabicaqa-1061973",
+        "answer": "11.4%",
+        "evidence_quote": "ونسبة 11.4% من الأسر كان لديها معيلات من الإناث دون وجود شريك،",
+        "uncertainty": "none",
+        "answer_units": "%",
+        "execution_authority": "none",
+        "automatic_execution": false
+      }
+    }
+  ]
+}

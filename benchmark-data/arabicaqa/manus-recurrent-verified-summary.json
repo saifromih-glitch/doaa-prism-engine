@@ -1,0 +1,12 @@
+{
+  "sample_count": 20,
+  "first_pass_supported": 12,
+  "final_supported": 12,
+  "retry_count": 8,
+  "final_mean_reference_overlap": 0.603229,
+  "baseline_mean_reference_overlap": 0.313252,
+  "prompt_token_saving_ratio": 0.833078,
+  "total_token_saving_ratio": 0.485976,
+  "safety_evaluated": false,
+  "human_review_completed": false
+}

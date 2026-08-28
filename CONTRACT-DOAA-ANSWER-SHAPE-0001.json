@@ -1,0 +1,36 @@
+{
+  "contract_id": "doaa.answer_shape.v1",
+  "purpose": "إخراج إجابات قصيرة منظمة من جلسة Doaa مع الحفاظ على المعنى ودعم التحقق المحلي",
+  "input": {
+    "question_id": "string",
+    "question_type": ["numeric", "entity", "location", "date", "short_fact", "multi_fact"],
+    "source_context": "string",
+    "instruction": "أجب من السياق فقط، ولا تضف معلومة غير موجودة. أعد JSON مطابقاً للعقد."
+  },
+  "output_schema": {
+    "question_id": "string",
+    "answer": "string",
+    "evidence_quote": "string",
+    "uncertainty": "none|source_incomplete|not_found",
+    "answer_units": "string|null"
+  },
+  "rules": [
+    "لا إجابة خارج source_context",
+    "لا أرقام أو أسماء أو تواريخ غير موجودة في source_context",
+    "multi_fact يجب أن يحافظ على جميع الحقائق المطلوبة أو يعلن source_incomplete",
+    "evidence_quote يجب أن يكون مقتبساً حرفياً من source_context",
+    "الإجابة الفارغة أو JSON غير الصالح مرفوضان",
+    "لا يُعد هذا العقد تحققاً من الحقيقة الخارجية"
+  ],
+  "retry_policy": {
+    "unsupported": "إعادة محاولة واحدة بصيغة أقصر ثم fallback_or_review",
+    "source_incomplete": "fallback_or_review",
+    "invalid_json": "إعادة محاولة واحدة ثم fallback_or_review"
+  },
+  "governance": {
+    "execution_authority": "none",
+    "automatic_execution": false,
+    "automatic_promotion": false,
+    "human_review_for_promotion": true
+  }
+}
