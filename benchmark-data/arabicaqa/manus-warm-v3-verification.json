@@ -1,0 +1,63 @@
+{
+  "status": "warm_run_verification_complete",
+  "source_run": "manus-warm-session-run-v3.json",
+  "sample_count": 5,
+  "verdict_counts": {
+    "supported": 1,
+    "unsupported": 4
+  },
+  "accepted_for_review": 1,
+  "fallback_or_review": 4,
+  "semantic_truth_claim": false,
+  "automatic_retry": false,
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "rows": [
+    {
+      "case_id": "arabicaqa-1166998",
+      "verdict": "supported",
+      "reason": "exact_context_span",
+      "coverage": 1.0,
+      "unsupported_terms": []
+    },
+    {
+      "case_id": "arabicaqa-1166999",
+      "verdict": "unsupported",
+      "reason": "unsupported_answer_terms",
+      "coverage": 0.888889,
+      "unsupported_terms": [
+        "حصوله"
+      ]
+    },
+    {
+      "case_id": "arabicaqa-1166993",
+      "verdict": "unsupported",
+      "reason": "unsupported_answer_terms",
+      "coverage": 0.909091,
+      "unsupported_terms": [
+        "الحضریة"
+      ]
+    },
+    {
+      "case_id": "arabicaqa-1166994",
+      "verdict": "unsupported",
+      "reason": "unsupported_answer_terms",
+      "coverage": 0.7,
+      "unsupported_terms": [
+        "الاتجاهات",
+        "الحالي،",
+        "لاتخاذ"
+      ]
+    },
+    {
+      "case_id": "arabicaqa-1166995",
+      "verdict": "unsupported",
+      "reason": "unsupported_answer_terms",
+      "coverage": 0.846154,
+      "unsupported_terms": [
+        "مؤشرات",
+        "وانتاج"
+      ]
+    }
+  ]
+}

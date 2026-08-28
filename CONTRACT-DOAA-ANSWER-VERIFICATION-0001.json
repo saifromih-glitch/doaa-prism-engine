@@ -1,0 +1,17 @@
+{
+  "contract": "doaa.answer_verification.v1",
+  "purpose": "Verify compressed answers against supplied context before acceptance.",
+  "required_input": ["question", "context", "answer"],
+  "verdicts": ["supported", "unsupported", "empty", "blocked"],
+  "rules": {
+    "answer_must_not_be_empty": true,
+    "answer_terms_must_be_supported_by_context": true,
+    "unseen_numeric_or_named_terms_block": true,
+    "semantic_truth_not_claimed": true,
+    "verification_failure_requires_fallback_or_human_review": true
+  },
+  "automatic_retry": false,
+  "automatic_library_update": false,
+  "execution_authority": "none",
+  "automatic_execution": false
+}
