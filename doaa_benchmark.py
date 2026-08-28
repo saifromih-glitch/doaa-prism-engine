@@ -16,10 +16,11 @@ class ArabicBenchmark:
         if not isinstance(cases, list) or not cases:
             raise ValueError("benchmark_cases_required")
         required = {"case_id", "language", "domain", "request", "reference_answer"}
+        optional = {"source_question_id"}
         seen: set[str] = set()
         normalized = []
         for case in cases:
-            if not isinstance(case, dict) or set(case) - required or not required.issubset(case):
+            if not isinstance(case, dict) or set(case) - (required | optional) or not required.issubset(case):
                 raise ValueError("benchmark_case_schema_invalid")
             if not all(isinstance(case[key], str) and case[key].strip() for key in required):
                 raise ValueError("benchmark_case_field_invalid")
