@@ -1,0 +1,1620 @@
+{
+  "status": "real_local_runtime_run",
+  "dataset": "abdoelsayed/ArabicaQA",
+  "split": "MRC/test",
+  "source_sha256": "df5c258325afa6d87fca1b9022cec1eff81fa099e0b00241837f92fc55c38fd4",
+  "case_count": 200,
+  "route_counts": {
+    "route_model_or_review": 200
+  },
+  "local_reuse_rate": 0.0,
+  "model_calls": 0,
+  "estimated_input_units": 160044,
+  "estimator": "unicode_word_punctuation_proxy",
+  "performance_claim": false,
+  "quality_evaluated": false,
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "rows": [
+    {
+      "case_id": "arabicaqa-1166998",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 327,
+      "model_called": false,
+      "source_question_id": 1166998
+    },
+    {
+      "case_id": "arabicaqa-1166999",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 330,
+      "model_called": false,
+      "source_question_id": 1166999
+    },
+    {
+      "case_id": "arabicaqa-1166993",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 326,
+      "model_called": false,
+      "source_question_id": 1166993
+    },
+    {
+      "case_id": "arabicaqa-1166994",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 328,
+      "model_called": false,
+      "source_question_id": 1166994
+    },
+    {
+      "case_id": "arabicaqa-1166995",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 327,
+      "model_called": false,
+      "source_question_id": 1166995
+    },
+    {
+      "case_id": "arabicaqa-1166996",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 327,
+      "model_called": false,
+      "source_question_id": 1166996
+    },
+    {
+      "case_id": "arabicaqa-1166997",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 328,
+      "model_called": false,
+      "source_question_id": 1166997
+    },
+    {
+      "case_id": "arabicaqa-1100139",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 646,
+      "model_called": false,
+      "source_question_id": 1100139
+    },
+    {
+      "case_id": "arabicaqa-1100141",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 650,
+      "model_called": false,
+      "source_question_id": 1100141
+    },
+    {
+      "case_id": "arabicaqa-1100144",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 645,
+      "model_called": false,
+      "source_question_id": 1100144
+    },
+    {
+      "case_id": "arabicaqa-1125671",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 303,
+      "model_called": false,
+      "source_question_id": 1125671
+    },
+    {
+      "case_id": "arabicaqa-1125672",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 305,
+      "model_called": false,
+      "source_question_id": 1125672
+    },
+    {
+      "case_id": "arabicaqa-1125673",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 304,
+      "model_called": false,
+      "source_question_id": 1125673
+    },
+    {
+      "case_id": "arabicaqa-1125674",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 304,
+      "model_called": false,
+      "source_question_id": 1125674
+    },
+    {
+      "case_id": "arabicaqa-1125675",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 305,
+      "model_called": false,
+      "source_question_id": 1125675
+    },
+    {
+      "case_id": "arabicaqa-960593",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 255,
+      "model_called": false,
+      "source_question_id": 960593
+    },
+    {
+      "case_id": "arabicaqa-960594",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 258,
+      "model_called": false,
+      "source_question_id": 960594
+    },
+    {
+      "case_id": "arabicaqa-960595",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 259,
+      "model_called": false,
+      "source_question_id": 960595
+    },
+    {
+      "case_id": "arabicaqa-960596",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 260,
+      "model_called": false,
+      "source_question_id": 960596
+    },
+    {
+      "case_id": "arabicaqa-960597",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 256,
+      "model_called": false,
+      "source_question_id": 960597
+    },
+    {
+      "case_id": "arabicaqa-960598",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 260,
+      "model_called": false,
+      "source_question_id": 960598
+    },
+    {
+      "case_id": "arabicaqa-960599",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 266,
+      "model_called": false,
+      "source_question_id": 960599
+    },
+    {
+      "case_id": "arabicaqa-960600",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 266,
+      "model_called": false,
+      "source_question_id": 960600
+    },
+    {
+      "case_id": "arabicaqa-960601",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 261,
+      "model_called": false,
+      "source_question_id": 960601
+    },
+    {
+      "case_id": "arabicaqa-1062901",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 49,
+      "model_called": false,
+      "source_question_id": 1062901
+    },
+    {
+      "case_id": "arabicaqa-1062902",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 54,
+      "model_called": false,
+      "source_question_id": 1062902
+    },
+    {
+      "case_id": "arabicaqa-1062903",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 49,
+      "model_called": false,
+      "source_question_id": 1062903
+    },
+    {
+      "case_id": "arabicaqa-1062904",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 51,
+      "model_called": false,
+      "source_question_id": 1062904
+    },
+    {
+      "case_id": "arabicaqa-1062905",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 51,
+      "model_called": false,
+      "source_question_id": 1062905
+    },
+    {
+      "case_id": "arabicaqa-1094659",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 108,
+      "model_called": false,
+      "source_question_id": 1094659
+    },
+    {
+      "case_id": "arabicaqa-1094660",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 109,
+      "model_called": false,
+      "source_question_id": 1094660
+    },
+    {
+      "case_id": "arabicaqa-1094661",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 110,
+      "model_called": false,
+      "source_question_id": 1094661
+    },
+    {
+      "case_id": "arabicaqa-674805",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 101,
+      "model_called": false,
+      "source_question_id": 674805
+    },
+    {
+      "case_id": "arabicaqa-674814",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 104,
+      "model_called": false,
+      "source_question_id": 674814
+    },
+    {
+      "case_id": "arabicaqa-674811",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 102,
+      "model_called": false,
+      "source_question_id": 674811
+    },
+    {
+      "case_id": "arabicaqa-938727",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 199,
+      "model_called": false,
+      "source_question_id": 938727
+    },
+    {
+      "case_id": "arabicaqa-938728",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 199,
+      "model_called": false,
+      "source_question_id": 938728
+    },
+    {
+      "case_id": "arabicaqa-938729",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 203,
+      "model_called": false,
+      "source_question_id": 938729
+    },
+    {
+      "case_id": "arabicaqa-938730",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 201,
+      "model_called": false,
+      "source_question_id": 938730
+    },
+    {
+      "case_id": "arabicaqa-938731",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 199,
+      "model_called": false,
+      "source_question_id": 938731
+    },
+    {
+      "case_id": "arabicaqa-938733",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 200,
+      "model_called": false,
+      "source_question_id": 938733
+    },
+    {
+      "case_id": "arabicaqa-938736",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 209,
+      "model_called": false,
+      "source_question_id": 938736
+    },
+    {
+      "case_id": "arabicaqa-977950",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 715,
+      "model_called": false,
+      "source_question_id": 977950
+    },
+    {
+      "case_id": "arabicaqa-977951",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 714,
+      "model_called": false,
+      "source_question_id": 977951
+    },
+    {
+      "case_id": "arabicaqa-977952",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 728,
+      "model_called": false,
+      "source_question_id": 977952
+    },
+    {
+      "case_id": "arabicaqa-977953",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 726,
+      "model_called": false,
+      "source_question_id": 977953
+    },
+    {
+      "case_id": "arabicaqa-977954",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 738,
+      "model_called": false,
+      "source_question_id": 977954
+    },
+    {
+      "case_id": "arabicaqa-977955",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 720,
+      "model_called": false,
+      "source_question_id": 977955
+    },
+    {
+      "case_id": "arabicaqa-977956",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 725,
+      "model_called": false,
+      "source_question_id": 977956
+    },
+    {
+      "case_id": "arabicaqa-977957",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 724,
+      "model_called": false,
+      "source_question_id": 977957
+    },
+    {
+      "case_id": "arabicaqa-1061975",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 713,
+      "model_called": false,
+      "source_question_id": 1061975
+    },
+    {
+      "case_id": "arabicaqa-1061974",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 718,
+      "model_called": false,
+      "source_question_id": 1061974
+    },
+    {
+      "case_id": "arabicaqa-1061976",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 719,
+      "model_called": false,
+      "source_question_id": 1061976
+    },
+    {
+      "case_id": "arabicaqa-1061977",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 722,
+      "model_called": false,
+      "source_question_id": 1061977
+    },
+    {
+      "case_id": "arabicaqa-1061978",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 713,
+      "model_called": false,
+      "source_question_id": 1061978
+    },
+    {
+      "case_id": "arabicaqa-1061979",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 712,
+      "model_called": false,
+      "source_question_id": 1061979
+    },
+    {
+      "case_id": "arabicaqa-1061980",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 712,
+      "model_called": false,
+      "source_question_id": 1061980
+    },
+    {
+      "case_id": "arabicaqa-1061981",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 720,
+      "model_called": false,
+      "source_question_id": 1061981
+    },
+    {
+      "case_id": "arabicaqa-1061962",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 712,
+      "model_called": false,
+      "source_question_id": 1061962
+    },
+    {
+      "case_id": "arabicaqa-1061963",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 709,
+      "model_called": false,
+      "source_question_id": 1061963
+    },
+    {
+      "case_id": "arabicaqa-1061964",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 712,
+      "model_called": false,
+      "source_question_id": 1061964
+    },
+    {
+      "case_id": "arabicaqa-1061966",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 711,
+      "model_called": false,
+      "source_question_id": 1061966
+    },
+    {
+      "case_id": "arabicaqa-1061965",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 713,
+      "model_called": false,
+      "source_question_id": 1061965
+    },
+    {
+      "case_id": "arabicaqa-1061967",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 714,
+      "model_called": false,
+      "source_question_id": 1061967
+    },
+    {
+      "case_id": "arabicaqa-1061968",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 717,
+      "model_called": false,
+      "source_question_id": 1061968
+    },
+    {
+      "case_id": "arabicaqa-1061969",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 712,
+      "model_called": false,
+      "source_question_id": 1061969
+    },
+    {
+      "case_id": "arabicaqa-1061970",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 713,
+      "model_called": false,
+      "source_question_id": 1061970
+    },
+    {
+      "case_id": "arabicaqa-1061971",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 718,
+      "model_called": false,
+      "source_question_id": 1061971
+    },
+    {
+      "case_id": "arabicaqa-1061972",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 714,
+      "model_called": false,
+      "source_question_id": 1061972
+    },
+    {
+      "case_id": "arabicaqa-1061973",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 718,
+      "model_called": false,
+      "source_question_id": 1061973
+    },
+    {
+      "case_id": "arabicaqa-1122034",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 189,
+      "model_called": false,
+      "source_question_id": 1122034
+    },
+    {
+      "case_id": "arabicaqa-1122035",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 189,
+      "model_called": false,
+      "source_question_id": 1122035
+    },
+    {
+      "case_id": "arabicaqa-1122036",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 189,
+      "model_called": false,
+      "source_question_id": 1122036
+    },
+    {
+      "case_id": "arabicaqa-1122037",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 189,
+      "model_called": false,
+      "source_question_id": 1122037
+    },
+    {
+      "case_id": "arabicaqa-1122038",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 199,
+      "model_called": false,
+      "source_question_id": 1122038
+    },
+    {
+      "case_id": "arabicaqa-1172151",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 150,
+      "model_called": false,
+      "source_question_id": 1172151
+    },
+    {
+      "case_id": "arabicaqa-1172152",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 158,
+      "model_called": false,
+      "source_question_id": 1172152
+    },
+    {
+      "case_id": "arabicaqa-1172154",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 153,
+      "model_called": false,
+      "source_question_id": 1172154
+    },
+    {
+      "case_id": "arabicaqa-1172155",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 155,
+      "model_called": false,
+      "source_question_id": 1172155
+    },
+    {
+      "case_id": "arabicaqa-1172156",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 152,
+      "model_called": false,
+      "source_question_id": 1172156
+    },
+    {
+      "case_id": "arabicaqa-1172157",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 154,
+      "model_called": false,
+      "source_question_id": 1172157
+    },
+    {
+      "case_id": "arabicaqa-1006430",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 726,
+      "model_called": false,
+      "source_question_id": 1006430
+    },
+    {
+      "case_id": "arabicaqa-1006431",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 727,
+      "model_called": false,
+      "source_question_id": 1006431
+    },
+    {
+      "case_id": "arabicaqa-1006433",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 728,
+      "model_called": false,
+      "source_question_id": 1006433
+    },
+    {
+      "case_id": "arabicaqa-1006436",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 729,
+      "model_called": false,
+      "source_question_id": 1006436
+    },
+    {
+      "case_id": "arabicaqa-1006437",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 728,
+      "model_called": false,
+      "source_question_id": 1006437
+    },
+    {
+      "case_id": "arabicaqa-1006438",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 725,
+      "model_called": false,
+      "source_question_id": 1006438
+    },
+    {
+      "case_id": "arabicaqa-1006439",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 727,
+      "model_called": false,
+      "source_question_id": 1006439
+    },
+    {
+      "case_id": "arabicaqa-1006443",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 727,
+      "model_called": false,
+      "source_question_id": 1006443
+    },
+    {
+      "case_id": "arabicaqa-1093485",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 137,
+      "model_called": false,
+      "source_question_id": 1093485
+    },
+    {
+      "case_id": "arabicaqa-1093486",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 134,
+      "model_called": false,
+      "source_question_id": 1093486
+    },
+    {
+      "case_id": "arabicaqa-1093487",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 138,
+      "model_called": false,
+      "source_question_id": 1093487
+    },
+    {
+      "case_id": "arabicaqa-1136340",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 147,
+      "model_called": false,
+      "source_question_id": 1136340
+    },
+    {
+      "case_id": "arabicaqa-1136342",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 149,
+      "model_called": false,
+      "source_question_id": 1136342
+    },
+    {
+      "case_id": "arabicaqa-1136341",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 147,
+      "model_called": false,
+      "source_question_id": 1136341
+    },
+    {
+      "case_id": "arabicaqa-1136343",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 148,
+      "model_called": false,
+      "source_question_id": 1136343
+    },
+    {
+      "case_id": "arabicaqa-1136344",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 150,
+      "model_called": false,
+      "source_question_id": 1136344
+    },
+    {
+      "case_id": "arabicaqa-1136345",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 152,
+      "model_called": false,
+      "source_question_id": 1136345
+    },
+    {
+      "case_id": "arabicaqa-1136347",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 151,
+      "model_called": false,
+      "source_question_id": 1136347
+    },
+    {
+      "case_id": "arabicaqa-1136346",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 150,
+      "model_called": false,
+      "source_question_id": 1136346
+    },
+    {
+      "case_id": "arabicaqa-1136348",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 151,
+      "model_called": false,
+      "source_question_id": 1136348
+    },
+    {
+      "case_id": "arabicaqa-1136349",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 150,
+      "model_called": false,
+      "source_question_id": 1136349
+    },
+    {
+      "case_id": "arabicaqa-1136034",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 130,
+      "model_called": false,
+      "source_question_id": 1136034
+    },
+    {
+      "case_id": "arabicaqa-1136035",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 132,
+      "model_called": false,
+      "source_question_id": 1136035
+    },
+    {
+      "case_id": "arabicaqa-1136036",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 136,
+      "model_called": false,
+      "source_question_id": 1136036
+    },
+    {
+      "case_id": "arabicaqa-1136038",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 133,
+      "model_called": false,
+      "source_question_id": 1136038
+    },
+    {
+      "case_id": "arabicaqa-1136037",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 133,
+      "model_called": false,
+      "source_question_id": 1136037
+    },
+    {
+      "case_id": "arabicaqa-1136039",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 141,
+      "model_called": false,
+      "source_question_id": 1136039
+    },
+    {
+      "case_id": "arabicaqa-1126161",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 217,
+      "model_called": false,
+      "source_question_id": 1126161
+    },
+    {
+      "case_id": "arabicaqa-1126164",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 218,
+      "model_called": false,
+      "source_question_id": 1126164
+    },
+    {
+      "case_id": "arabicaqa-1126165",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 217,
+      "model_called": false,
+      "source_question_id": 1126165
+    },
+    {
+      "case_id": "arabicaqa-1126166",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 218,
+      "model_called": false,
+      "source_question_id": 1126166
+    },
+    {
+      "case_id": "arabicaqa-1126168",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 217,
+      "model_called": false,
+      "source_question_id": 1126168
+    },
+    {
+      "case_id": "arabicaqa-1126170",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 221,
+      "model_called": false,
+      "source_question_id": 1126170
+    },
+    {
+      "case_id": "arabicaqa-1174667",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 68,
+      "model_called": false,
+      "source_question_id": 1174667
+    },
+    {
+      "case_id": "arabicaqa-1174668",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 70,
+      "model_called": false,
+      "source_question_id": 1174668
+    },
+    {
+      "case_id": "arabicaqa-1174669",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 68,
+      "model_called": false,
+      "source_question_id": 1174669
+    },
+    {
+      "case_id": "arabicaqa-1174670",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 68,
+      "model_called": false,
+      "source_question_id": 1174670
+    },
+    {
+      "case_id": "arabicaqa-1174671",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 72,
+      "model_called": false,
+      "source_question_id": 1174671
+    },
+    {
+      "case_id": "arabicaqa-1174672",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 72,
+      "model_called": false,
+      "source_question_id": 1174672
+    },
+    {
+      "case_id": "arabicaqa-1168390",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 319,
+      "model_called": false,
+      "source_question_id": 1168390
+    },
+    {
+      "case_id": "arabicaqa-1168391",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 319,
+      "model_called": false,
+      "source_question_id": 1168391
+    },
+    {
+      "case_id": "arabicaqa-1168392",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 321,
+      "model_called": false,
+      "source_question_id": 1168392
+    },
+    {
+      "case_id": "arabicaqa-1168393",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 316,
+      "model_called": false,
+      "source_question_id": 1168393
+    },
+    {
+      "case_id": "arabicaqa-1168394",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 319,
+      "model_called": false,
+      "source_question_id": 1168394
+    },
+    {
+      "case_id": "arabicaqa-1168395",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 319,
+      "model_called": false,
+      "source_question_id": 1168395
+    },
+    {
+      "case_id": "arabicaqa-1168396",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 323,
+      "model_called": false,
+      "source_question_id": 1168396
+    },
+    {
+      "case_id": "arabicaqa-1165161",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 63,
+      "model_called": false,
+      "source_question_id": 1165161
+    },
+    {
+      "case_id": "arabicaqa-1165162",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 68,
+      "model_called": false,
+      "source_question_id": 1165162
+    },
+    {
+      "case_id": "arabicaqa-1165163",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 79,
+      "model_called": false,
+      "source_question_id": 1165163
+    },
+    {
+      "case_id": "arabicaqa-993042",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 161,
+      "model_called": false,
+      "source_question_id": 993042
+    },
+    {
+      "case_id": "arabicaqa-992951",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 161,
+      "model_called": false,
+      "source_question_id": 992951
+    },
+    {
+      "case_id": "arabicaqa-993468",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 159,
+      "model_called": false,
+      "source_question_id": 993468
+    },
+    {
+      "case_id": "arabicaqa-995459",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 155,
+      "model_called": false,
+      "source_question_id": 995459
+    },
+    {
+      "case_id": "arabicaqa-995401",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 161,
+      "model_called": false,
+      "source_question_id": 995401
+    },
+    {
+      "case_id": "arabicaqa-995615",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 157,
+      "model_called": false,
+      "source_question_id": 995615
+    },
+    {
+      "case_id": "arabicaqa-995616",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 157,
+      "model_called": false,
+      "source_question_id": 995616
+    },
+    {
+      "case_id": "arabicaqa-995617",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 163,
+      "model_called": false,
+      "source_question_id": 995617
+    },
+    {
+      "case_id": "arabicaqa-995780",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 162,
+      "model_called": false,
+      "source_question_id": 995780
+    },
+    {
+      "case_id": "arabicaqa-995781",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 171,
+      "model_called": false,
+      "source_question_id": 995781
+    },
+    {
+      "case_id": "arabicaqa-1172526",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 388,
+      "model_called": false,
+      "source_question_id": 1172526
+    },
+    {
+      "case_id": "arabicaqa-1172527",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 390,
+      "model_called": false,
+      "source_question_id": 1172527
+    },
+    {
+      "case_id": "arabicaqa-1172518",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 391,
+      "model_called": false,
+      "source_question_id": 1172518
+    },
+    {
+      "case_id": "arabicaqa-1172520",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 388,
+      "model_called": false,
+      "source_question_id": 1172520
+    },
+    {
+      "case_id": "arabicaqa-1172522",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 388,
+      "model_called": false,
+      "source_question_id": 1172522
+    },
+    {
+      "case_id": "arabicaqa-1162546",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 62,
+      "model_called": false,
+      "source_question_id": 1162546
+    },
+    {
+      "case_id": "arabicaqa-1162547",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 64,
+      "model_called": false,
+      "source_question_id": 1162547
+    },
+    {
+      "case_id": "arabicaqa-1162548",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 62,
+      "model_called": false,
+      "source_question_id": 1162548
+    },
+    {
+      "case_id": "arabicaqa-1162549",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 62,
+      "model_called": false,
+      "source_question_id": 1162549
+    },
+    {
+      "case_id": "arabicaqa-1162550",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 64,
+      "model_called": false,
+      "source_question_id": 1162550
+    },
+    {
+      "case_id": "arabicaqa-1162551",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 64,
+      "model_called": false,
+      "source_question_id": 1162551
+    },
+    {
+      "case_id": "arabicaqa-1180309",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 468,
+      "model_called": false,
+      "source_question_id": 1180309
+    },
+    {
+      "case_id": "arabicaqa-1180310",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 468,
+      "model_called": false,
+      "source_question_id": 1180310
+    },
+    {
+      "case_id": "arabicaqa-1180311",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 468,
+      "model_called": false,
+      "source_question_id": 1180311
+    },
+    {
+      "case_id": "arabicaqa-1180312",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 469,
+      "model_called": false,
+      "source_question_id": 1180312
+    },
+    {
+      "case_id": "arabicaqa-1180313",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 470,
+      "model_called": false,
+      "source_question_id": 1180313
+    },
+    {
+      "case_id": "arabicaqa-1180314",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 472,
+      "model_called": false,
+      "source_question_id": 1180314
+    },
+    {
+      "case_id": "arabicaqa-1180316",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 469,
+      "model_called": false,
+      "source_question_id": 1180316
+    },
+    {
+      "case_id": "arabicaqa-1180317",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 468,
+      "model_called": false,
+      "source_question_id": 1180317
+    },
+    {
+      "case_id": "arabicaqa-1180318",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 468,
+      "model_called": false,
+      "source_question_id": 1180318
+    },
+    {
+      "case_id": "arabicaqa-700298",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 545,
+      "model_called": false,
+      "source_question_id": 700298
+    },
+    {
+      "case_id": "arabicaqa-700299",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 546,
+      "model_called": false,
+      "source_question_id": 700299
+    },
+    {
+      "case_id": "arabicaqa-700301",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 546,
+      "model_called": false,
+      "source_question_id": 700301
+    },
+    {
+      "case_id": "arabicaqa-700303",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 545,
+      "model_called": false,
+      "source_question_id": 700303
+    },
+    {
+      "case_id": "arabicaqa-700305",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 546,
+      "model_called": false,
+      "source_question_id": 700305
+    },
+    {
+      "case_id": "arabicaqa-700307",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 549,
+      "model_called": false,
+      "source_question_id": 700307
+    },
+    {
+      "case_id": "arabicaqa-700300",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 548,
+      "model_called": false,
+      "source_question_id": 700300
+    },
+    {
+      "case_id": "arabicaqa-700302",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 548,
+      "model_called": false,
+      "source_question_id": 700302
+    },
+    {
+      "case_id": "arabicaqa-700304",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 549,
+      "model_called": false,
+      "source_question_id": 700304
+    },
+    {
+      "case_id": "arabicaqa-700306",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 554,
+      "model_called": false,
+      "source_question_id": 700306
+    },
+    {
+      "case_id": "arabicaqa-1168447",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 617,
+      "model_called": false,
+      "source_question_id": 1168447
+    },
+    {
+      "case_id": "arabicaqa-1168448",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 613,
+      "model_called": false,
+      "source_question_id": 1168448
+    },
+    {
+      "case_id": "arabicaqa-1168449",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 616,
+      "model_called": false,
+      "source_question_id": 1168449
+    },
+    {
+      "case_id": "arabicaqa-1168450",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 616,
+      "model_called": false,
+      "source_question_id": 1168450
+    },
+    {
+      "case_id": "arabicaqa-1168451",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 617,
+      "model_called": false,
+      "source_question_id": 1168451
+    },
+    {
+      "case_id": "arabicaqa-1168453",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 625,
+      "model_called": false,
+      "source_question_id": 1168453
+    },
+    {
+      "case_id": "arabicaqa-689689",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 580,
+      "model_called": false,
+      "source_question_id": 689689
+    },
+    {
+      "case_id": "arabicaqa-689690",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 581,
+      "model_called": false,
+      "source_question_id": 689690
+    },
+    {
+      "case_id": "arabicaqa-689692",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 587,
+      "model_called": false,
+      "source_question_id": 689692
+    },
+    {
+      "case_id": "arabicaqa-689728",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 586,
+      "model_called": false,
+      "source_question_id": 689728
+    },
+    {
+      "case_id": "arabicaqa-689734",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 584,
+      "model_called": false,
+      "source_question_id": 689734
+    },
+    {
+      "case_id": "arabicaqa-689691",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 583,
+      "model_called": false,
+      "source_question_id": 689691
+    },
+    {
+      "case_id": "arabicaqa-689740",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 587,
+      "model_called": false,
+      "source_question_id": 689740
+    },
+    {
+      "case_id": "arabicaqa-689741",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 584,
+      "model_called": false,
+      "source_question_id": 689741
+    },
+    {
+      "case_id": "arabicaqa-689744",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 585,
+      "model_called": false,
+      "source_question_id": 689744
+    },
+    {
+      "case_id": "arabicaqa-689745",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 588,
+      "model_called": false,
+      "source_question_id": 689745
+    },
+    {
+      "case_id": "arabicaqa-689746",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 593,
+      "model_called": false,
+      "source_question_id": 689746
+    },
+    {
+      "case_id": "arabicaqa-689749",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 583,
+      "model_called": false,
+      "source_question_id": 689749
+    },
+    {
+      "case_id": "arabicaqa-689753",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 583,
+      "model_called": false,
+      "source_question_id": 689753
+    },
+    {
+      "case_id": "arabicaqa-689756",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 586,
+      "model_called": false,
+      "source_question_id": 689756
+    },
+    {
+      "case_id": "arabicaqa-689759",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 585,
+      "model_called": false,
+      "source_question_id": 689759
+    },
+    {
+      "case_id": "arabicaqa-689760",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 586,
+      "model_called": false,
+      "source_question_id": 689760
+    },
+    {
+      "case_id": "arabicaqa-689763",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 583,
+      "model_called": false,
+      "source_question_id": 689763
+    },
+    {
+      "case_id": "arabicaqa-664091",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 12536,
+      "model_called": false,
+      "source_question_id": 664091
+    },
+    {
+      "case_id": "arabicaqa-653622",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 12527,
+      "model_called": false,
+      "source_question_id": 653622
+    },
+    {
+      "case_id": "arabicaqa-664716",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 12529,
+      "model_called": false,
+      "source_question_id": 664716
+    },
+    {
+      "case_id": "arabicaqa-664769",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 12532,
+      "model_called": false,
+      "source_question_id": 664769
+    },
+    {
+      "case_id": "arabicaqa-664768",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 12536,
+      "model_called": false,
+      "source_question_id": 664768
+    },
+    {
+      "case_id": "arabicaqa-664775",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 12529,
+      "model_called": false,
+      "source_question_id": 664775
+    },
+    {
+      "case_id": "arabicaqa-647472",
+      "route_status": "route_model_or_review",
+      "next_action": "explicit_adapter_or_human_review",
+      "estimated_input_units": 12530,
+      "model_called": false,
+      "source_question_id": 647472
+    }
+  ]
+}
