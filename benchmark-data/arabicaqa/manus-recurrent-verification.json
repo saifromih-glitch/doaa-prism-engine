@@ -1,0 +1,181 @@
+{
+  "status": "recurrent_answer_verification_complete",
+  "sample_count": 20,
+  "verdict_counts": {
+    "supported": 15,
+    "unsupported": 5
+  },
+  "accepted_for_review": 15,
+  "fallback_or_review": 5,
+  "semantic_truth_claim": false,
+  "automatic_retry": false,
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "rows": [
+    {
+      "case_id": "arabicaqa-1061975",
+      "verdict": "supported",
+      "reason": "exact_context_span",
+      "coverage": 1.0,
+      "unsupported_terms": []
+    },
+    {
+      "case_id": "arabicaqa-1061974",
+      "verdict": "supported",
+      "reason": "exact_context_span",
+      "coverage": 1.0,
+      "unsupported_terms": []
+    },
+    {
+      "case_id": "arabicaqa-1061976",
+      "verdict": "supported",
+      "reason": "exact_context_span",
+      "coverage": 1.0,
+      "unsupported_terms": []
+    },
+    {
+      "case_id": "arabicaqa-1061977",
+      "verdict": "supported",
+      "reason": "exact_context_span",
+      "coverage": 1.0,
+      "unsupported_terms": []
+    },
+    {
+      "case_id": "arabicaqa-1061978",
+      "verdict": "supported",
+      "reason": "exact_context_span",
+      "coverage": 1.0,
+      "unsupported_terms": []
+    },
+    {
+      "case_id": "arabicaqa-1061979",
+      "verdict": "supported",
+      "reason": "exact_context_span",
+      "coverage": 1.0,
+      "unsupported_terms": []
+    },
+    {
+      "case_id": "arabicaqa-1061980",
+      "verdict": "supported",
+      "reason": "exact_context_span",
+      "coverage": 1.0,
+      "unsupported_terms": []
+    },
+    {
+      "case_id": "arabicaqa-1061981",
+      "verdict": "unsupported",
+      "reason": "unseen_numeric_term",
+      "coverage": 0.888889,
+      "unsupported_terms": [
+        "44",
+        "64"
+      ]
+    },
+    {
+      "case_id": "arabicaqa-1061962",
+      "verdict": "supported",
+      "reason": "exact_context_span",
+      "coverage": 1.0,
+      "unsupported_terms": []
+    },
+    {
+      "case_id": "arabicaqa-1061963",
+      "verdict": "supported",
+      "reason": "exact_context_span",
+      "coverage": 1.0,
+      "unsupported_terms": []
+    },
+    {
+      "case_id": "arabicaqa-1061964",
+      "verdict": "supported",
+      "reason": "exact_context_span",
+      "coverage": 1.0,
+      "unsupported_terms": []
+    },
+    {
+      "case_id": "arabicaqa-1061966",
+      "verdict": "unsupported",
+      "reason": "unsupported_answer_terms",
+      "coverage": 0.5,
+      "unsupported_terms": [
+        "مذكورة"
+      ]
+    },
+    {
+      "case_id": "arabicaqa-1061965",
+      "verdict": "supported",
+      "reason": "exact_context_span",
+      "coverage": 1.0,
+      "unsupported_terms": []
+    },
+    {
+      "case_id": "arabicaqa-1061967",
+      "verdict": "unsupported",
+      "reason": "unseen_numeric_term",
+      "coverage": 0.619048,
+      "unsupported_terms": [
+        "0",
+        "اخري",
+        "اسيويون",
+        "اصليون",
+        "افارقة",
+        "بيض",
+        "مختلطون",
+        "هسبان"
+      ]
+    },
+    {
+      "case_id": "arabicaqa-1061968",
+      "verdict": "unsupported",
+      "reason": "unseen_numeric_term",
+      "coverage": 0.8,
+      "unsupported_terms": [
+        "و757"
+      ]
+    },
+    {
+      "case_id": "arabicaqa-1061969",
+      "verdict": "supported",
+      "reason": "exact_context_span",
+      "coverage": 1.0,
+      "unsupported_terms": []
+    },
+    {
+      "case_id": "arabicaqa-1061970",
+      "verdict": "unsupported",
+      "reason": "unseen_numeric_term",
+      "coverage": 0.619048,
+      "unsupported_terms": [
+        "0",
+        "اخري",
+        "اسيويون",
+        "اصليون",
+        "افارقة",
+        "بيض",
+        "مختلطون",
+        "هسبان"
+      ]
+    },
+    {
+      "case_id": "arabicaqa-1061971",
+      "verdict": "supported",
+      "reason": "exact_context_span",
+      "coverage": 1.0,
+      "unsupported_terms": []
+    },
+    {
+      "case_id": "arabicaqa-1061972",
+      "verdict": "supported",
+      "reason": "exact_context_span",
+      "coverage": 1.0,
+      "unsupported_terms": []
+    },
+    {
+      "case_id": "arabicaqa-1061973",
+      "verdict": "supported",
+      "reason": "exact_context_span",
+      "coverage": 1.0,
+      "unsupported_terms": []
+    }
+  ]
+}
