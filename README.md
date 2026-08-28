@@ -34,6 +34,16 @@ The local file-processing path is separate and documented in `DOAA-LOCAL-README.
 
 `doaa_runtime.py` is the local-first coordinator for the current system. It checks the selected library, attempts exact local reuse, checks active knowledge and approved evidence, and returns either a local payload or an explicit adapter/review requirement. It never calls a model, fetches the web, executes a tool, or promotes knowledge by itself. See `CONTRACT-DOAA-RUNTIME-0001.json` and `test_doaa_runtime.py`.
 
+## Structured Command Language v1
+
+`doaa_command_language.py` parses only explicit commands in the form `@library.template key=value`. For example:
+
+```text
+@marketing.campaign goal="إطلاق منتج جديد" audience="مطورو برمجيات" channel=web language=ar
+```
+
+Registered templates are exact and slot-based: `marketing.campaign`, `sales.pipeline`, `software.task`, and `science.explain`. The parser rejects missing or duplicate slots, unknown slots, malformed quoting, oversized values, and common control symbols. An unknown template produces `governed_capability_request` for contract, threat-model, test, and human review; it is never converted into executable behavior. `DoaaRuntime.prepare_command()` passes accepted commands into the local-first runtime and preserves `execution_authority: none`. See `CONTRACT-DOAA-COMMAND-0001.json`, `ADR-DOAA-COMMAND-LANGUAGE-0001.md`, and `test_doaa_command_language.py`.
+
 ## Governed algorithm library
 
 Doaa can store explicitly validated `doaa.alg.v1` messages in a local algorithm library and retrieve them by an exact request fingerprint and algorithm identifier. A miss is safe; semantic similarity is not used to guess a reusable algorithm. Registration is explicit, validation is required, persistence is local, and the library never calls a model or executes a stored message. Entries can be browsed under controlled domains: `science`, `industry`, `software`, `business`, `education`, `language`, and `general`, each with fixed subdomains. Classification is for organization and filtering only; it never authorizes reuse. See `CONTRACT-DOAA-ALGORITHM-LIBRARY-0001.json` and `doaa_algorithm_library.py`. The separate [governed web evidence design](WEB-EVIDENCE.md) records sources and review boundaries; it never updates libraries automatically. The [multi-source architecture](DOAA-MULTI-SOURCE-ARCHITECTURE-0001.md) and `doaa_knowledge_registry.py` define how reusable capabilities can be proposed, versioned, reviewed, activated, expired, or revoked without self-modifying the core.
@@ -56,7 +66,7 @@ Many historical tests execute assertions at import time, so their output reports
 
 ## Project map
 
-The central mediation files are `doaa_algorithmic_protocol.py`, `doaa_algorithmic_mediator.py`, `doaa_request_builder.py`, `doaa_handshake.py`, `doaa_session_protocol.py`, and `doaa_literal_gate.py`. Knowledge files include `doaa_algorithm_library.py`, `doaa_knowledge_registry.py`, `doaa_web_evidence.py`, and `doaa_web_source_connector.py`. Contracts and ADRs define the governance boundary. Experimental benchmark reports are retained as evidence and clearly marked as non-general guarantees.
+The central mediation files are `doaa_algorithmic_protocol.py`, `doaa_algorithmic_mediator.py`, `doaa_request_builder.py`, `doaa_handshake.py`, `doaa_session_protocol.py`, and `doaa_literal_gate.py`. Runtime and command files include `doaa_runtime.py` and `doaa_command_language.py`. Knowledge files include `doaa_algorithm_library.py`, `doaa_knowledge_registry.py`, `doaa_web_evidence.py`, and `doaa_web_source_connector.py`. Contracts and ADRs define the governance boundary. Experimental benchmark reports are retained as evidence and clearly marked as non-general guarantees.
 
 ## Community tasks
 

@@ -1,0 +1,31 @@
+{
+  "contract": "doaa.command.v1",
+  "purpose": "Parse explicit governed commands into a deterministic runtime envelope.",
+  "syntax": "@<library>.<template> [key=value ...]",
+  "libraries": ["science", "industry", "software", "business", "marketing", "sales", "education", "language", "general"],
+  "templates": {
+    "marketing.campaign": ["goal", "audience", "channel", "language"],
+    "sales.pipeline": ["goal", "stage", "language"],
+    "software.task": ["goal", "language"],
+    "science.explain": ["topic", "level", "language"]
+  },
+  "value_rules": {
+    "key": "^[a-z][a-z0-9_]{0,31}$",
+    "value_max_length": 512,
+    "command_max_length": 2048,
+    "duplicate_keys": "reject",
+    "unknown_keys": "reject",
+    "control_symbols": "reject",
+    "missing_required_slots": "reject"
+  },
+  "allowed_outputs": ["command_parsed", "command_blocked", "governed_capability_request"],
+  "natural_language_inference": false,
+  "automatic_execution": false,
+  "execution_authority": "none",
+  "network_access": false,
+  "model_call": false,
+  "file_write": false,
+  "source_modification": false,
+  "library_update": false,
+  "human_review_required_for": ["unknown_template", "new_template", "capability_change"]
+}

@@ -8,6 +8,7 @@ from __future__ import annotations
 
 from typing import Any
 
+from doaa_command_language import parse_command
 from doaa_multi_source_coordinator import MultiSourceCoordinator
 
 CONTRACT = "doaa.runtime.v1"
@@ -35,6 +36,16 @@ class DoaaRuntime:
             evidence_ids=envelope.get("evidence_ids", []),
         )
         return {"status": "runtime_ready" if route["status"] in {"route_local_algorithm", "route_active_knowledge", "route_model_or_review"} else "runtime_blocked", "contract": CONTRACT, "route": route, "next_action": "use_local_payload" if route["status"] == "route_local_algorithm" else "explicit_adapter_or_human_review", "execution_authority": "none", "automatic_execution": False}
+
+    def prepare_command(self, command: Any) -> dict[str, Any]:
+        parsed = parse_command(command)
+        if parsed["status"] != "command_parsed":
+            return {"status": "runtime_blocked" if parsed["status"] == "command_blocked" else "runtime_governed_review", "contract": CONTRACT, "command": parsed, "execution_authority": "none", "automatic_execution": False}
+        request = {"command": parsed["command"], "capability": parsed["capability"], "slots": parsed["slots"]}
+        envelope = {"request": request, "library": parsed["library"], "algorithm_id": f"{parsed['capability']}.v1", "source_request": request}
+        result = self.prepare(envelope)
+        result["command"] = parsed
+        return result
 
     @staticmethod
     def _blocked(reason: str) -> dict[str, Any]:
