@@ -8,6 +8,7 @@ from __future__ import annotations
 from typing import Any
 
 from doaa_learning_evaluator import evaluate_candidate
+from doaa_feedback_gate import assess_feedback_for_candidate
 from doaa_learning_registry import LearningRegistry
 
 CONTRACT = "doaa.learning_loop.v1"
@@ -16,6 +17,12 @@ CONTRACT = "doaa.learning_loop.v1"
 class GovernedLearningLoop:
     def __init__(self, registry: LearningRegistry | None = None) -> None:
         self.registry = registry or LearningRegistry()
+
+    def assess_feedback(self, feedback_store: Any, feedback_id: Any, candidate_id: Any, independent_truth: str = "unverified") -> dict[str, Any]:
+        if not hasattr(feedback_store, "assess_learning_signal"):
+            return {"status": "learning_blocked", "reason": "feedback_store_invalid", "execution_authority": "none", "automatic_execution": False}
+        signal = feedback_store.assess_learning_signal(feedback_id)
+        return assess_feedback_for_candidate(signal, candidate_id, independent_truth)
 
     def observe_and_propose(self, record_id: Any, source: Any, created_at: Any, request: Any, result: Any, consent_status: Any, candidate_id: Any, capability: Any, algorithm_message: Any, metrics: Any) -> dict[str, Any]:
         experience = self.registry.record_experience(record_id, source, created_at, request, result, consent_status)
