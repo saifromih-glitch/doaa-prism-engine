@@ -1,0 +1,16 @@
+{
+  "contract": "doaa.warm_checkpoint.v1",
+  "purpose": "Send immutable context once and use compact reversible references in a warm explicit session.",
+  "states": ["cold", "source_registered", "warm", "fallback_required", "closed"],
+  "rules": {
+    "source_sent_once": true,
+    "reference_requires_registered_checkpoint": true,
+    "cold_session_reference_only_blocked": true,
+    "lost_session_requires_source_fallback": true,
+    "answer_requires_local_verification": true,
+    "model_cannot_modify_checkpoint": true
+  },
+  "automatic_retry": false,
+  "automatic_execution": false,
+  "execution_authority": "none"
+}
