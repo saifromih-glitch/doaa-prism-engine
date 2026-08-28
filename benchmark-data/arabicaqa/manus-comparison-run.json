@@ -1,0 +1,156 @@
+{
+  "status": "live_comparison_complete",
+  "model": "gpt-5-mini",
+  "dataset": "abdoelsayed/ArabicaQA",
+  "split": "MRC/test",
+  "source_sha256": "df5c258325afa6d87fca1b9022cec1eff81fa099e0b00241837f92fc55c38fd4",
+  "sample_count": 5,
+  "baseline": {
+    "prompt_tokens": 2650,
+    "completion_tokens": 1573,
+    "total_tokens": 4223,
+    "mean_latency_ms": 4600.219,
+    "mean_reference_overlap": 0.54
+  },
+  "doaa": {
+    "prompt_tokens": 2830,
+    "completion_tokens": 2290,
+    "total_tokens": 5120,
+    "mean_latency_ms": 6975.77,
+    "mean_reference_overlap": 0.420952
+  },
+  "prompt_token_saving_ratio": -0.067925,
+  "total_token_saving_ratio": -0.212408,
+  "quality_metric_note": "reference_overlap_is_heuristic_and_not_human_truth_evaluation",
+  "model_calls": 10,
+  "raw_output_sha256": "bf19ceba8b5150789ac7bd5eb29dc4cc1d007873e74e813d0d40b19659ce3a49",
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "rows": [
+    {
+      "case_id": "arabicaqa-1166998",
+      "source_question_id": 1166998,
+      "baseline_input_chars": 1748,
+      "doaa_input_chars": 1751,
+      "reference_answer": "يترأس مجلس المرصد أمير المنطقة بالإضافة إلى أربعة عشر عضوا،",
+      "baseline": {
+        "answer": "أمير المنطقة.",
+        "prompt_tokens": 530,
+        "completion_tokens": 205,
+        "total_tokens": 735,
+        "latency_ms": 4473.692,
+        "finish_reason": "stop",
+        "reference_overlap": 0.1
+      },
+      "doaa": {
+        "answer": "أمير المنطقة",
+        "prompt_tokens": 566,
+        "completion_tokens": 204,
+        "total_tokens": 770,
+        "latency_ms": 3391.054,
+        "finish_reason": "stop",
+        "reference_overlap": 0.2
+      }
+    },
+    {
+      "case_id": "arabicaqa-1166999",
+      "source_question_id": 1166999,
+      "baseline_input_chars": 1769,
+      "doaa_input_chars": 1772,
+      "reference_answer": " في مارس 2017 حصل المرصد الحضري بمدينة الرياض على الشهادة الذهبية WCCD ISO 37120 من المجلس العالمي لبيانات المدن في كندا (WCCD)",
+      "baseline": {
+        "answer": "من أبرز إنجازاته: إطلاق الدورة الأولى للمؤشرات الحضرية عام 1434هـ التي ضمت 80 مؤشراً، وإقرار نتائجها في اجتماع الهيئة عام 1435هـ، وحصول المرصد في مارس 2017 على الشهادة الذهبية WCCD ISO 37120 من المجلس العالمي لبيانات المدن.",
+        "prompt_tokens": 535,
+        "completion_tokens": 463,
+        "total_tokens": 998,
+        "latency_ms": 5861.749,
+        "finish_reason": "stop",
+        "reference_overlap": 0.666667
+      },
+      "doaa": {
+        "answer": "من أبرز إنجازاته إطلاق الدورة الأولى للمؤشرات الحضرية (80 مؤشراً) عام 1434هـ، وحصوله في مارس 2017 على الشهادة الذهبية ISO 37120 من المجلس العالمي لبيانات المدن (WCCD).",
+        "prompt_tokens": 571,
+        "completion_tokens": 511,
+        "total_tokens": 1082,
+        "latency_ms": 5988.351,
+        "finish_reason": "stop",
+        "reference_overlap": 0.619048
+      }
+    },
+    {
+      "case_id": "arabicaqa-1166993",
+      "source_question_id": 1166993,
+      "baseline_input_chars": 1740,
+      "doaa_input_chars": 1743,
+      "reference_answer": "هو مركز متخصص في وضع نظم مراقبة حضرية لرصد سير عمليات التنمية الحضرية للمدينة،",
+      "baseline": {
+        "answer": "مرصد الحضري لمدينة الرياض هو مركز متخصص في وضع نظم مراقبة حضرية لرصد سير عمليات التنمية الحضرية للمدينة، بهدف فهم الوضع الحالي، وضع تصور للاتجاهات المستقبلية، ومراقبة الإنجاز لدعم اتخاذ القرارات.",
+        "prompt_tokens": 527,
+        "completion_tokens": 191,
+        "total_tokens": 718,
+        "latency_ms": 3531.806,
+        "finish_reason": "stop",
+        "reference_overlap": 1.0
+      },
+      "doaa": {
+        "answer": "المرصد الحضري لمدينة الرياض (مرصد الرياض) هو مركز متخصص بوضع نظم مراقبة حضرية لرصد سير عمليات التنمية في المدينة، يهدف إلى فهم الوضع الحالي، تصور الاتجاهات المستقبلية، ومراقبة الإنجاز لاتخاذ القرارات. بدأت خطوات إنشائه عام 2009 وهو له هيكل تنظيمي بمجلس (برئاسة أمير المنطقة) ولجنة تنفيذية ومركز، ويُنتج مؤشرات حضرية لقياس الأداء وقد حصل على شهادة WCCD ISO 37120 الذهبية في مارس 2017.",
+        "prompt_tokens": 563,
+        "completion_tokens": 573,
+        "total_tokens": 1136,
+        "latency_ms": 10001.057,
+        "finish_reason": "stop",
+        "reference_overlap": 0.785714
+      }
+    },
+    {
+      "case_id": "arabicaqa-1166994",
+      "source_question_id": 1166994,
+      "baseline_input_chars": 1749,
+      "doaa_input_chars": 1752,
+      "reference_answer": "يهدف إلى فهم الوضع الحالي للمدينة ووضع تصور للاتجاهات المستقبلية،",
+      "baseline": {
+        "answer": "الهدف هو فهم الوضع الحالي للمدينة ووضع تصوّر للاتجاهات المستقبلية ومراقبة الإنجاز لتحقيق الأهداف ودعم اتخاذ القرار.",
+        "prompt_tokens": 529,
+        "completion_tokens": 233,
+        "total_tokens": 762,
+        "latency_ms": 3321.085,
+        "finish_reason": "stop",
+        "reference_overlap": 0.6
+      },
+      "doaa": {
+        "answer": "يهدف إلى وضع نظم لمراقبة سير التنمية الحضرية لفهم الوضع الحالي للمدينة، استشراف الاتجاهات المستقبلية، ومراقبة الإنجاز لدعم اتخاذ القرار وتحقيق الأهداف.",
+        "prompt_tokens": 565,
+        "completion_tokens": 243,
+        "total_tokens": 808,
+        "latency_ms": 3484.266,
+        "finish_reason": "stop",
+        "reference_overlap": 0.5
+      }
+    },
+    {
+      "case_id": "arabicaqa-1166995",
+      "source_question_id": 1166995,
+      "baseline_input_chars": 1745,
+      "doaa_input_chars": 1748,
+      "reference_answer": "ومراقبة الإنجاز لتحقيق الأهداف واتخاذ القرارات.",
+      "baseline": {
+        "answer": "- وضع نظم مراقبة حضرية لرصد سير عمليات التنمية الحضرية.  \n- فهم الوضع الحالي للمدينة ووضع تصور للاتجاهات المستقبلية.  \n- رصد وتقييم اتجاهات التنمية من خلال إنتاج مؤشرات حضرية.  \n- قياس مستوى استجابة السياسات والبرامج التنفيذية لأهداف خطط التنمية المستدامة.  \n- توفير إطار رصد وتقييم شامل وتحديد المؤشرات الأساسية ومجموعات معيارية للمقارنة مع مدن أخرى.  \n- تطوير مؤشرات محلية تعكس خصوصية مدينة الرياض وتحديد الأولويات والقضايا الهامة حسب المخطط الاستراتيجي ورؤية 2030.  \n- مساندة اتخاذ القرار ومتابعة الإنجاز لتحقيق الأهداف.",
+        "prompt_tokens": 529,
+        "completion_tokens": 481,
+        "total_tokens": 1010,
+        "latency_ms": 5812.764,
+        "finish_reason": "stop",
+        "reference_overlap": 0.333333
+      },
+      "doaa": {
+        "answer": "- وضع نظم مراقبة حضرية لرصد سير عمليات التنمية. \n- فهم الوضع الحالي للمدينة ووضع تصور للاتجاهات المستقبلية. \n- رصد وتقييم اتجاهات التنمية من خلال إنتاج مؤشرات حضرية. \n- قياس مستوى استجابة السياسات والبرامج التنفيذية لأهداف خطط التنمية المستدامة. \n- توفير إطار وخطة شاملة للرصد والتقييم وتحديد مؤشرات معيارية ومحلية لتمكين المقارنة وتحديد الأولويات والقضايا الهامة ودعم اتخاذ القرار.",
+        "prompt_tokens": 565,
+        "completion_tokens": 759,
+        "total_tokens": 1324,
+        "latency_ms": 12014.122,
+        "finish_reason": "stop",
+        "reference_overlap": 0.0
+      }
+    }
+  ]
+}
