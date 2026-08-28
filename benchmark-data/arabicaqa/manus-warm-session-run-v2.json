@@ -1,0 +1,122 @@
+{
+  "status": "live_warm_session_complete",
+  "model": "gpt-5-mini",
+  "dataset": "abdoelsayed/ArabicaQA",
+  "split": "MRC/test",
+  "source_sha256": "df5c258325afa6d87fca1b9022cec1eff81fa099e0b00241837f92fc55c38fd4",
+  "sample_count": 5,
+  "baseline": {
+    "calls": 5,
+    "prompt_tokens": 2545,
+    "total_tokens": 4311,
+    "mean_reference_overlap": 0.469524
+  },
+  "doaa_warm": {
+    "calls": 1,
+    "prompt_tokens": 675,
+    "completion_tokens": 1417,
+    "total_tokens": 2092,
+    "latency_ms": 16684.244,
+    "mean_reference_overlap": 0.438095
+  },
+  "prompt_token_saving_ratio": 0.734774,
+  "total_token_saving_ratio": 0.51473,
+  "quality_metric_note": "reference_overlap_is_heuristic_and_not_human_truth_evaluation",
+  "safety_evaluated": false,
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "baseline_rows": [
+    {
+      "case_id": "arabicaqa-1166998",
+      "reference_answer": "يترأس مجلس المرصد أمير المنطقة بالإضافة إلى أربعة عشر عضوا،",
+      "result": {
+        "content": "أمير منطقة الرياض",
+        "prompt_tokens": 509,
+        "completion_tokens": 77,
+        "total_tokens": 586,
+        "latency_ms": 3388.18
+      },
+      "reference_overlap": 0.1
+    },
+    {
+      "case_id": "arabicaqa-1166999",
+      "reference_answer": " في مارس 2017 حصل المرصد الحضري بمدينة الرياض على الشهادة الذهبية WCCD ISO 37120 من المجلس العالمي لبيانات المدن في كندا (WCCD)",
+      "result": {
+        "content": "- تأسيس المرصد وهيكله التنظيمي منذ 2009 (مجلس ولجنة تنفيذية ومركز).  \n- إطلاق الدورة الأولى للمؤشرات الحضرية (80 مؤشراً) عام 1434هـ واعتماد نتائجها في 1435هـ.  \n- الحصول على الشهادة الذهبية WCCD ISO 37120 من المجلس العالمي لبيانات المدن (كندا) في مارس 2017.",
+        "prompt_tokens": 514,
+        "completion_tokens": 480,
+        "total_tokens": 994,
+        "latency_ms": 6419.143
+      },
+      "reference_overlap": 0.666667
+    },
+    {
+      "case_id": "arabicaqa-1166993",
+      "reference_answer": "هو مركز متخصص في وضع نظم مراقبة حضرية لرصد سير عمليات التنمية الحضرية للمدينة،",
+      "result": {
+        "content": "مرصد حضري متخصص لمدينة الرياض يضع نظم مراقبة حضرية لرصد سير عمليات التنمية وفهم الوضع الراهن والتنبؤ بالاتجاهات المستقبلية ومراقبة الإنجاز لاتخاذ القرار؛ بدأ تأسيسه عام 2009 بواسطة الهيئة العليا لتطوير مدينة الرياض، ويضم مجلسًا برئاسة أمير المنطقة ولجنة تنفيذية ومركزًا، وأطلق أول دورة من المؤشرات الحضرية (80 مؤشرًا) عام 1434هـ، وحصل على شهادة WCCD ISO 37120 الذهبية في مارس 2017.",
+        "prompt_tokens": 506,
+        "completion_tokens": 508,
+        "total_tokens": 1014,
+        "latency_ms": 6156.827
+      },
+      "reference_overlap": 0.714286
+    },
+    {
+      "case_id": "arabicaqa-1166994",
+      "reference_answer": "يهدف إلى فهم الوضع الحالي للمدينة ووضع تصور للاتجاهات المستقبلية،",
+      "result": {
+        "content": "الهدف فهم الوضع الحالي للمدينة ووضع تصور للاتجاهات المستقبلية ومراقبة الإنجاز لدعم اتخاذ القرارات وتحقيق أهداف التنمية الحضرية.",
+        "prompt_tokens": 508,
+        "completion_tokens": 171,
+        "total_tokens": 679,
+        "latency_ms": 2324.196
+      },
+      "reference_overlap": 0.7
+    },
+    {
+      "case_id": "arabicaqa-1166995",
+      "reference_answer": "ومراقبة الإنجاز لتحقيق الأهداف واتخاذ القرارات.",
+      "result": {
+        "content": "- وضع نظم رصد ومراقبة حضرية لسير عمليات التنمية.  \n- فهم الوضع الراهن للمدينة وتوقع الاتجاهات المستقبلية.  \n- إنتاج مؤشرات حضرية محلية وعالمية وقياس الأداء (80 مؤشراً في الدورة الأولى).  \n- رصد وتقييم تقدم التنمية وقياس استجابة السياسات والبرامج للأهداف التنموية.  \n- تمكين المقارنة المعيارية مع مدن أخرى عبر إطار رصد عالمي.  \n- تحديد أولويات وقضايا مدينة الرياض وفق المخطط الاستراتيجي ورؤية المملكة 2030.  \n- دعم اتخاذ القرار وتحقيق أهداف خطط التنمية المستدامة.",
+        "prompt_tokens": 508,
+        "completion_tokens": 530,
+        "total_tokens": 1038,
+        "latency_ms": 7215.745
+      },
+      "reference_overlap": 0.166667
+    }
+  ],
+  "doaa_rows": [
+    {
+      "case_id": "arabicaqa-1166998",
+      "reference_answer": "يترأس مجلس المرصد أمير المنطقة بالإضافة إلى أربعة عشر عضوا،",
+      "answer": "أمير المنطقة",
+      "reference_overlap": 0.2
+    },
+    {
+      "case_id": "arabicaqa-1166999",
+      "reference_answer": " في مارس 2017 حصل المرصد الحضري بمدينة الرياض على الشهادة الذهبية WCCD ISO 37120 من المجلس العالمي لبيانات المدن في كندا (WCCD)",
+      "answer": "حصل على الشهادة الذهبية WCCD ISO 37120",
+      "reference_overlap": 0.333333
+    },
+    {
+      "case_id": "arabicaqa-1166993",
+      "reference_answer": "هو مركز متخصص في وضع نظم مراقبة حضرية لرصد سير عمليات التنمية الحضرية للمدينة،",
+      "answer": "مركز متخصص في وضع نظم مراقبة حضرية لرصد سير عمليات التنمية الحضرية للمدينة",
+      "reference_overlap": 0.857143
+    },
+    {
+      "case_id": "arabicaqa-1166994",
+      "reference_answer": "يهدف إلى فهم الوضع الحالي للمدينة ووضع تصور للاتجاهات المستقبلية،",
+      "answer": "فهم الوضع الحالي للمدينة ووضع تصور للاتجاهات المستقبلية، ومراقبة الإنجاز لتحقيق الأهداف واتخاذ القرارات",
+      "reference_overlap": 0.8
+    },
+    {
+      "case_id": "arabicaqa-1166995",
+      "reference_answer": "ومراقبة الإنجاز لتحقيق الأهداف واتخاذ القرارات.",
+      "answer": "رصد وتقييم اتجاهات التنمية في مدينة الرياض من خلال إنتاج المؤشرات الحضرية",
+      "reference_overlap": 0.0
+    }
+  ]
+}
