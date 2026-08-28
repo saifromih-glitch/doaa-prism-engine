@@ -1,0 +1,25 @@
+{
+  "contract": "doaa.benchmark.v1",
+  "purpose": "Measure Doaa against a baseline on explicit Arabic cases without claiming universal performance.",
+  "case_required_fields": ["case_id", "language", "domain", "request", "reference_answer"],
+  "run_fields": ["case_id", "path", "input_tokens", "output_tokens", "latency_ms", "quality_score", "hallucination_flag", "safety_pass", "human_usefulness"],
+  "paths": ["baseline", "doaa_local", "doaa_model_assisted"],
+  "metrics": ["token_saving_ratio", "quality_score", "hallucination_rate", "safety_pass_rate", "local_reuse_rate", "latency_ms", "human_usefulness"],
+  "rules": {
+    "real_dataset_required_for_claims": true,
+    "synthetic_cases_are_test_fixtures_only": true,
+    "human_usefulness_is_not_truth": true,
+    "missing_metrics": "reject",
+    "negative_token_saving_allowed": true
+  },
+  "privacy": {
+    "personal_data_default": "redact",
+    "consent_required_for_feedback": true
+  },
+  "automatic_model_call": false,
+  "automatic_web_fetch": false,
+  "automatic_library_update": false,
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "human_review_required_for": ["reference_answer_creation", "quality_labels", "dataset_sharing", "release_claims"]
+}
