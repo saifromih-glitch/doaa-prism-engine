@@ -1,0 +1,33 @@
+{
+  "contract": "doaa.live_sources.v1",
+  "purpose": "Fetch explicitly requested public source data for evidence review without interpretation or automatic promotion.",
+  "allowed_sources": {
+    "wikimedia": {
+      "hosts": ["en.wikipedia.org", "ar.wikipedia.org"],
+      "path_prefix": "/api/rest_v1/page/summary/",
+      "method": "GET",
+      "content_type": "application/json"
+    },
+    "github": {
+      "hosts": ["api.github.com"],
+      "path_prefix": "/search/repositories",
+      "method": "GET",
+      "content_type": "application/json"
+    }
+  },
+  "limits": {
+    "max_bytes": 512000,
+    "timeout_seconds": 10,
+    "max_query_length": 256,
+    "max_title_length": 256
+  },
+  "redirects": "final_host_and_path_must_remain_allowlisted",
+  "outputs": ["source_document_ready", "source_fetch_blocked"],
+  "source_data_is_untrusted": true,
+  "automatic_evidence_approval": false,
+  "automatic_library_update": false,
+  "model_call": false,
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "human_review_required_for": ["evidence_approval", "library_update", "new_source", "path_expansion"]
+}
