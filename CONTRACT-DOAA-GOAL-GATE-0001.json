@@ -1,0 +1,20 @@
+{
+  "contract": "doaa.goal_gate.v1",
+  "purpose": "Accept a Doaa optimization only when it reduces model-token usage without unacceptable quality or safety regression.",
+  "required_metrics": ["baseline_tokens", "doaa_tokens", "baseline_quality", "doaa_quality", "baseline_safety", "doaa_safety", "sample_count"],
+  "acceptance_rules": {
+    "token_reduction_required": true,
+    "quality_regression_tolerance": 0.0,
+    "safety_regression_tolerance": 0.0,
+    "minimum_sample_count": 1,
+    "model_assisted_fallback_allowed": true,
+    "local_exact_reuse_preferred": true
+  },
+  "outcomes": ["goal_gate_passed", "goal_gate_failed", "goal_gate_blocked"],
+  "automatic_active_promotion": false,
+  "human_review_required": true,
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "model_call": false,
+  "network_access": false
+}
