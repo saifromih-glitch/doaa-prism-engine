@@ -10,15 +10,17 @@ from typing import Any
 
 from doaa_command_language import parse_command
 from doaa_multi_source_coordinator import MultiSourceCoordinator
+from doaa_reuse_ledger import ReuseLedger
 from doaa_template_reconstruction import TemplateRegistry
 
 CONTRACT = "doaa.runtime.v1"
 
 
 class DoaaRuntime:
-    def __init__(self, coordinator: MultiSourceCoordinator, templates: TemplateRegistry | None = None) -> None:
+    def __init__(self, coordinator: MultiSourceCoordinator, templates: TemplateRegistry | None = None, reuse_ledger: ReuseLedger | None = None) -> None:
         self.coordinator = coordinator
         self.templates = templates or TemplateRegistry()
+        self.reuse_ledger = reuse_ledger or ReuseLedger()
 
     def prepare(self, envelope: Any) -> dict[str, Any]:
         if not isinstance(envelope, dict):
@@ -37,7 +39,8 @@ class DoaaRuntime:
             require_fresh_evidence=envelope.get("require_fresh_evidence", False),
             evidence_ids=envelope.get("evidence_ids", []),
         )
-        return {"status": "runtime_ready" if route["status"] in {"route_local_algorithm", "route_active_knowledge", "route_model_or_review"} else "runtime_blocked", "contract": CONTRACT, "route": route, "next_action": "use_local_payload" if route["status"] == "route_local_algorithm" else "explicit_adapter_or_human_review", "execution_authority": "none", "automatic_execution": False}
+        self.reuse_ledger.observe(route["status"])
+        return {"status": "runtime_ready" if route["status"] in {"route_local_algorithm", "route_active_knowledge", "route_model_or_review"} else "runtime_blocked", "contract": CONTRACT, "route": route, "reuse": self.reuse_ledger.stats(), "next_action": "use_local_payload" if route["status"] == "route_local_algorithm" else "explicit_adapter_or_human_review", "execution_authority": "none", "automatic_execution": False}
 
     def prepare_reconstruction(self, template_id: Any, slots: Any) -> dict[str, Any]:
         rebuilt = self.templates.reconstruct(template_id, slots)
