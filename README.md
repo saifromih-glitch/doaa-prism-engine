@@ -80,6 +80,10 @@ py -3 -m unittest discover -v
 
 Many historical tests execute assertions at import time, so their output reports passed assertions even when unittest says `Ran 0 tests`. The release gate is the combined exit status, printed test receipts, manifest verification, and manual review of the security boundary.
 
+## 72-hour failure-test trial
+
+`DOAA-72H-TRIAL.md` defines the cheapest experiments for market need, repeated-case quality/token savings, and local reuse. `doaa_trial_intake.py` accepts only consented records describing real tasks; hypothetical or synthetic participant records are blocked. The package deliberately cannot manufacture market evidence. See `test_doaa_trial_intake.py`.
+
 ## Project map
 
 The central mediation files are `doaa_algorithmic_protocol.py`, `doaa_algorithmic_mediator.py`, `doaa_request_builder.py`, `doaa_handshake.py`, `doaa_session_protocol.py`, and `doaa_literal_gate.py`. Runtime, command, reconstruction, source, and learning files include `doaa_runtime.py`, `doaa_command_language.py`, `doaa_template_reconstruction.py`, `doaa_live_source_adapters.py`, `doaa_learning_registry.py`, `doaa_learning_loop.py`, `doaa_learning_evaluator.py`, `doaa_feedback.py`, `doaa_feedback_gate.py`, `doaa_confidence.py`, `doaa_reuse_ledger.py`, `doaa_benchmark.py`, `doaa_goal_gate.py`, `doaa_answer_verifier.py`, and `evaluate_warm_run.py`. Knowledge files include `doaa_algorithm_library.py`, `doaa_knowledge_registry.py`, `doaa_web_evidence.py`, and `doaa_web_source_connector.py`. Contracts and ADRs define the governance boundary. Experimental benchmark reports are retained as evidence and clearly marked as non-general guarantees.
