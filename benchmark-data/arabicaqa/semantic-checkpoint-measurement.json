@@ -1,0 +1,1612 @@
+{
+  "status": "semantic_checkpoint_real_measurement",
+  "dataset": "abdoelsayed/ArabicaQA",
+  "case_count": 200,
+  "mean_compression_ratio": 0.740363,
+  "lossless_count": 200,
+  "all_lossless": true,
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "rows": [
+    {
+      "case_id": "arabicaqa-1166998",
+      "source_chars": 1688,
+      "reference_chars": 204,
+      "compression_ratio": 0.879147,
+      "lossless": true,
+      "segment_count": 10
+    },
+    {
+      "case_id": "arabicaqa-1166999",
+      "source_chars": 1688,
+      "reference_chars": 225,
+      "compression_ratio": 0.866706,
+      "lossless": true,
+      "segment_count": 10
+    },
+    {
+      "case_id": "arabicaqa-1166993",
+      "source_chars": 1688,
+      "reference_chars": 196,
+      "compression_ratio": 0.883886,
+      "lossless": true,
+      "segment_count": 10
+    },
+    {
+      "case_id": "arabicaqa-1166994",
+      "source_chars": 1688,
+      "reference_chars": 205,
+      "compression_ratio": 0.878555,
+      "lossless": true,
+      "segment_count": 10
+    },
+    {
+      "case_id": "arabicaqa-1166995",
+      "source_chars": 1688,
+      "reference_chars": 201,
+      "compression_ratio": 0.880924,
+      "lossless": true,
+      "segment_count": 10
+    },
+    {
+      "case_id": "arabicaqa-1166996",
+      "source_chars": 1688,
+      "reference_chars": 203,
+      "compression_ratio": 0.879739,
+      "lossless": true,
+      "segment_count": 10
+    },
+    {
+      "case_id": "arabicaqa-1166997",
+      "source_chars": 1688,
+      "reference_chars": 209,
+      "compression_ratio": 0.876185,
+      "lossless": true,
+      "segment_count": 10
+    },
+    {
+      "case_id": "arabicaqa-1100139",
+      "source_chars": 2904,
+      "reference_chars": 334,
+      "compression_ratio": 0.884986,
+      "lossless": true,
+      "segment_count": 31
+    },
+    {
+      "case_id": "arabicaqa-1100141",
+      "source_chars": 2904,
+      "reference_chars": 359,
+      "compression_ratio": 0.876377,
+      "lossless": true,
+      "segment_count": 31
+    },
+    {
+      "case_id": "arabicaqa-1100144",
+      "source_chars": 2904,
+      "reference_chars": 327,
+      "compression_ratio": 0.887397,
+      "lossless": true,
+      "segment_count": 31
+    },
+    {
+      "case_id": "arabicaqa-1125671",
+      "source_chars": 1401,
+      "reference_chars": 239,
+      "compression_ratio": 0.829408,
+      "lossless": true,
+      "segment_count": 14
+    },
+    {
+      "case_id": "arabicaqa-1125672",
+      "source_chars": 1401,
+      "reference_chars": 250,
+      "compression_ratio": 0.821556,
+      "lossless": true,
+      "segment_count": 14
+    },
+    {
+      "case_id": "arabicaqa-1125673",
+      "source_chars": 1401,
+      "reference_chars": 245,
+      "compression_ratio": 0.825125,
+      "lossless": true,
+      "segment_count": 14
+    },
+    {
+      "case_id": "arabicaqa-1125674",
+      "source_chars": 1401,
+      "reference_chars": 252,
+      "compression_ratio": 0.820128,
+      "lossless": true,
+      "segment_count": 14
+    },
+    {
+      "case_id": "arabicaqa-1125675",
+      "source_chars": 1401,
+      "reference_chars": 249,
+      "compression_ratio": 0.82227,
+      "lossless": true,
+      "segment_count": 14
+    },
+    {
+      "case_id": "arabicaqa-960593",
+      "source_chars": 930,
+      "reference_chars": 217,
+      "compression_ratio": 0.766667,
+      "lossless": true,
+      "segment_count": 16
+    },
+    {
+      "case_id": "arabicaqa-960594",
+      "source_chars": 930,
+      "reference_chars": 236,
+      "compression_ratio": 0.746237,
+      "lossless": true,
+      "segment_count": 16
+    },
+    {
+      "case_id": "arabicaqa-960595",
+      "source_chars": 930,
+      "reference_chars": 239,
+      "compression_ratio": 0.743011,
+      "lossless": true,
+      "segment_count": 16
+    },
+    {
+      "case_id": "arabicaqa-960596",
+      "source_chars": 930,
+      "reference_chars": 232,
+      "compression_ratio": 0.750538,
+      "lossless": true,
+      "segment_count": 16
+    },
+    {
+      "case_id": "arabicaqa-960597",
+      "source_chars": 930,
+      "reference_chars": 224,
+      "compression_ratio": 0.75914,
+      "lossless": true,
+      "segment_count": 16
+    },
+    {
+      "case_id": "arabicaqa-960598",
+      "source_chars": 930,
+      "reference_chars": 242,
+      "compression_ratio": 0.739785,
+      "lossless": true,
+      "segment_count": 16
+    },
+    {
+      "case_id": "arabicaqa-960599",
+      "source_chars": 930,
+      "reference_chars": 271,
+      "compression_ratio": 0.708602,
+      "lossless": true,
+      "segment_count": 16
+    },
+    {
+      "case_id": "arabicaqa-960600",
+      "source_chars": 930,
+      "reference_chars": 255,
+      "compression_ratio": 0.725806,
+      "lossless": true,
+      "segment_count": 16
+    },
+    {
+      "case_id": "arabicaqa-960601",
+      "source_chars": 930,
+      "reference_chars": 245,
+      "compression_ratio": 0.736559,
+      "lossless": true,
+      "segment_count": 16
+    },
+    {
+      "case_id": "arabicaqa-1062901",
+      "source_chars": 126,
+      "reference_chars": 124,
+      "compression_ratio": 0.015873,
+      "lossless": true,
+      "segment_count": 2
+    },
+    {
+      "case_id": "arabicaqa-1062902",
+      "source_chars": 126,
+      "reference_chars": 147,
+      "compression_ratio": -0.166667,
+      "lossless": true,
+      "segment_count": 2
+    },
+    {
+      "case_id": "arabicaqa-1062903",
+      "source_chars": 126,
+      "reference_chars": 126,
+      "compression_ratio": 0.0,
+      "lossless": true,
+      "segment_count": 2
+    },
+    {
+      "case_id": "arabicaqa-1062904",
+      "source_chars": 126,
+      "reference_chars": 134,
+      "compression_ratio": -0.063492,
+      "lossless": true,
+      "segment_count": 2
+    },
+    {
+      "case_id": "arabicaqa-1062905",
+      "source_chars": 126,
+      "reference_chars": 133,
+      "compression_ratio": -0.055556,
+      "lossless": true,
+      "segment_count": 2
+    },
+    {
+      "case_id": "arabicaqa-1094659",
+      "source_chars": 472,
+      "reference_chars": 142,
+      "compression_ratio": 0.699153,
+      "lossless": true,
+      "segment_count": 4
+    },
+    {
+      "case_id": "arabicaqa-1094660",
+      "source_chars": 472,
+      "reference_chars": 155,
+      "compression_ratio": 0.67161,
+      "lossless": true,
+      "segment_count": 4
+    },
+    {
+      "case_id": "arabicaqa-1094661",
+      "source_chars": 472,
+      "reference_chars": 157,
+      "compression_ratio": 0.667373,
+      "lossless": true,
+      "segment_count": 4
+    },
+    {
+      "case_id": "arabicaqa-674805",
+      "source_chars": 279,
+      "reference_chars": 165,
+      "compression_ratio": 0.408602,
+      "lossless": true,
+      "segment_count": 2
+    },
+    {
+      "case_id": "arabicaqa-674814",
+      "source_chars": 279,
+      "reference_chars": 186,
+      "compression_ratio": 0.333333,
+      "lossless": true,
+      "segment_count": 2
+    },
+    {
+      "case_id": "arabicaqa-674811",
+      "source_chars": 279,
+      "reference_chars": 187,
+      "compression_ratio": 0.329749,
+      "lossless": true,
+      "segment_count": 2
+    },
+    {
+      "case_id": "arabicaqa-938727",
+      "source_chars": 626,
+      "reference_chars": 197,
+      "compression_ratio": 0.685304,
+      "lossless": true,
+      "segment_count": 11
+    },
+    {
+      "case_id": "arabicaqa-938728",
+      "source_chars": 626,
+      "reference_chars": 195,
+      "compression_ratio": 0.688498,
+      "lossless": true,
+      "segment_count": 11
+    },
+    {
+      "case_id": "arabicaqa-938729",
+      "source_chars": 626,
+      "reference_chars": 217,
+      "compression_ratio": 0.653355,
+      "lossless": true,
+      "segment_count": 11
+    },
+    {
+      "case_id": "arabicaqa-938730",
+      "source_chars": 626,
+      "reference_chars": 211,
+      "compression_ratio": 0.662939,
+      "lossless": true,
+      "segment_count": 11
+    },
+    {
+      "case_id": "arabicaqa-938731",
+      "source_chars": 626,
+      "reference_chars": 204,
+      "compression_ratio": 0.674121,
+      "lossless": true,
+      "segment_count": 11
+    },
+    {
+      "case_id": "arabicaqa-938733",
+      "source_chars": 626,
+      "reference_chars": 200,
+      "compression_ratio": 0.680511,
+      "lossless": true,
+      "segment_count": 11
+    },
+    {
+      "case_id": "arabicaqa-938736",
+      "source_chars": 626,
+      "reference_chars": 244,
+      "compression_ratio": 0.610224,
+      "lossless": true,
+      "segment_count": 11
+    },
+    {
+      "case_id": "arabicaqa-977950",
+      "source_chars": 3322,
+      "reference_chars": 287,
+      "compression_ratio": 0.913606,
+      "lossless": true,
+      "segment_count": 24
+    },
+    {
+      "case_id": "arabicaqa-977951",
+      "source_chars": 3322,
+      "reference_chars": 280,
+      "compression_ratio": 0.915713,
+      "lossless": true,
+      "segment_count": 24
+    },
+    {
+      "case_id": "arabicaqa-977952",
+      "source_chars": 3322,
+      "reference_chars": 351,
+      "compression_ratio": 0.894341,
+      "lossless": true,
+      "segment_count": 24
+    },
+    {
+      "case_id": "arabicaqa-977953",
+      "source_chars": 3322,
+      "reference_chars": 340,
+      "compression_ratio": 0.897652,
+      "lossless": true,
+      "segment_count": 24
+    },
+    {
+      "case_id": "arabicaqa-977954",
+      "source_chars": 3322,
+      "reference_chars": 382,
+      "compression_ratio": 0.885009,
+      "lossless": true,
+      "segment_count": 24
+    },
+    {
+      "case_id": "arabicaqa-977955",
+      "source_chars": 3322,
+      "reference_chars": 303,
+      "compression_ratio": 0.90879,
+      "lossless": true,
+      "segment_count": 24
+    },
+    {
+      "case_id": "arabicaqa-977956",
+      "source_chars": 3322,
+      "reference_chars": 331,
+      "compression_ratio": 0.900361,
+      "lossless": true,
+      "segment_count": 24
+    },
+    {
+      "case_id": "arabicaqa-977957",
+      "source_chars": 3322,
+      "reference_chars": 333,
+      "compression_ratio": 0.899759,
+      "lossless": true,
+      "segment_count": 24
+    },
+    {
+      "case_id": "arabicaqa-1061975",
+      "source_chars": 2893,
+      "reference_chars": 316,
+      "compression_ratio": 0.890771,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1061974",
+      "source_chars": 2893,
+      "reference_chars": 343,
+      "compression_ratio": 0.881438,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1061976",
+      "source_chars": 2893,
+      "reference_chars": 345,
+      "compression_ratio": 0.880747,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1061977",
+      "source_chars": 2893,
+      "reference_chars": 357,
+      "compression_ratio": 0.876599,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1061978",
+      "source_chars": 2893,
+      "reference_chars": 318,
+      "compression_ratio": 0.89008,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1061979",
+      "source_chars": 2893,
+      "reference_chars": 311,
+      "compression_ratio": 0.892499,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1061980",
+      "source_chars": 2893,
+      "reference_chars": 312,
+      "compression_ratio": 0.892153,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1061981",
+      "source_chars": 2893,
+      "reference_chars": 327,
+      "compression_ratio": 0.886969,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1061962",
+      "source_chars": 2893,
+      "reference_chars": 313,
+      "compression_ratio": 0.891808,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1061963",
+      "source_chars": 2893,
+      "reference_chars": 295,
+      "compression_ratio": 0.89803,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1061964",
+      "source_chars": 2893,
+      "reference_chars": 309,
+      "compression_ratio": 0.89319,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1061966",
+      "source_chars": 2893,
+      "reference_chars": 309,
+      "compression_ratio": 0.89319,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1061965",
+      "source_chars": 2893,
+      "reference_chars": 310,
+      "compression_ratio": 0.892845,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1061967",
+      "source_chars": 2893,
+      "reference_chars": 327,
+      "compression_ratio": 0.886969,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1061968",
+      "source_chars": 2893,
+      "reference_chars": 334,
+      "compression_ratio": 0.884549,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1061969",
+      "source_chars": 2893,
+      "reference_chars": 312,
+      "compression_ratio": 0.892153,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1061970",
+      "source_chars": 2893,
+      "reference_chars": 322,
+      "compression_ratio": 0.888697,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1061971",
+      "source_chars": 2893,
+      "reference_chars": 340,
+      "compression_ratio": 0.882475,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1061972",
+      "source_chars": 2893,
+      "reference_chars": 326,
+      "compression_ratio": 0.887314,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1061973",
+      "source_chars": 2893,
+      "reference_chars": 342,
+      "compression_ratio": 0.881784,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1122034",
+      "source_chars": 784,
+      "reference_chars": 208,
+      "compression_ratio": 0.734694,
+      "lossless": true,
+      "segment_count": 12
+    },
+    {
+      "case_id": "arabicaqa-1122035",
+      "source_chars": 784,
+      "reference_chars": 210,
+      "compression_ratio": 0.732143,
+      "lossless": true,
+      "segment_count": 12
+    },
+    {
+      "case_id": "arabicaqa-1122036",
+      "source_chars": 784,
+      "reference_chars": 208,
+      "compression_ratio": 0.734694,
+      "lossless": true,
+      "segment_count": 12
+    },
+    {
+      "case_id": "arabicaqa-1122037",
+      "source_chars": 784,
+      "reference_chars": 208,
+      "compression_ratio": 0.734694,
+      "lossless": true,
+      "segment_count": 12
+    },
+    {
+      "case_id": "arabicaqa-1122038",
+      "source_chars": 784,
+      "reference_chars": 225,
+      "compression_ratio": 0.71301,
+      "lossless": true,
+      "segment_count": 12
+    },
+    {
+      "case_id": "arabicaqa-1172151",
+      "source_chars": 634,
+      "reference_chars": 192,
+      "compression_ratio": 0.697161,
+      "lossless": true,
+      "segment_count": 9
+    },
+    {
+      "case_id": "arabicaqa-1172152",
+      "source_chars": 634,
+      "reference_chars": 225,
+      "compression_ratio": 0.64511,
+      "lossless": true,
+      "segment_count": 9
+    },
+    {
+      "case_id": "arabicaqa-1172154",
+      "source_chars": 634,
+      "reference_chars": 208,
+      "compression_ratio": 0.671924,
+      "lossless": true,
+      "segment_count": 9
+    },
+    {
+      "case_id": "arabicaqa-1172155",
+      "source_chars": 634,
+      "reference_chars": 222,
+      "compression_ratio": 0.649842,
+      "lossless": true,
+      "segment_count": 9
+    },
+    {
+      "case_id": "arabicaqa-1172156",
+      "source_chars": 634,
+      "reference_chars": 201,
+      "compression_ratio": 0.682965,
+      "lossless": true,
+      "segment_count": 9
+    },
+    {
+      "case_id": "arabicaqa-1172157",
+      "source_chars": 634,
+      "reference_chars": 214,
+      "compression_ratio": 0.662461,
+      "lossless": true,
+      "segment_count": 9
+    },
+    {
+      "case_id": "arabicaqa-1006430",
+      "source_chars": 3212,
+      "reference_chars": 324,
+      "compression_ratio": 0.899128,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1006431",
+      "source_chars": 3212,
+      "reference_chars": 331,
+      "compression_ratio": 0.896949,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1006433",
+      "source_chars": 3212,
+      "reference_chars": 338,
+      "compression_ratio": 0.89477,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1006436",
+      "source_chars": 3212,
+      "reference_chars": 344,
+      "compression_ratio": 0.892902,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1006437",
+      "source_chars": 3212,
+      "reference_chars": 337,
+      "compression_ratio": 0.895081,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1006438",
+      "source_chars": 3212,
+      "reference_chars": 316,
+      "compression_ratio": 0.901619,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1006439",
+      "source_chars": 3212,
+      "reference_chars": 329,
+      "compression_ratio": 0.897572,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1006443",
+      "source_chars": 3212,
+      "reference_chars": 338,
+      "compression_ratio": 0.89477,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1093485",
+      "source_chars": 604,
+      "reference_chars": 130,
+      "compression_ratio": 0.784768,
+      "lossless": true,
+      "segment_count": 2
+    },
+    {
+      "case_id": "arabicaqa-1093486",
+      "source_chars": 604,
+      "reference_chars": 132,
+      "compression_ratio": 0.781457,
+      "lossless": true,
+      "segment_count": 2
+    },
+    {
+      "case_id": "arabicaqa-1093487",
+      "source_chars": 604,
+      "reference_chars": 137,
+      "compression_ratio": 0.773179,
+      "lossless": true,
+      "segment_count": 2
+    },
+    {
+      "case_id": "arabicaqa-1136340",
+      "source_chars": 619,
+      "reference_chars": 195,
+      "compression_ratio": 0.684976,
+      "lossless": true,
+      "segment_count": 10
+    },
+    {
+      "case_id": "arabicaqa-1136342",
+      "source_chars": 619,
+      "reference_chars": 211,
+      "compression_ratio": 0.659128,
+      "lossless": true,
+      "segment_count": 10
+    },
+    {
+      "case_id": "arabicaqa-1136341",
+      "source_chars": 619,
+      "reference_chars": 194,
+      "compression_ratio": 0.686591,
+      "lossless": true,
+      "segment_count": 10
+    },
+    {
+      "case_id": "arabicaqa-1136343",
+      "source_chars": 619,
+      "reference_chars": 199,
+      "compression_ratio": 0.678514,
+      "lossless": true,
+      "segment_count": 10
+    },
+    {
+      "case_id": "arabicaqa-1136344",
+      "source_chars": 619,
+      "reference_chars": 208,
+      "compression_ratio": 0.663974,
+      "lossless": true,
+      "segment_count": 10
+    },
+    {
+      "case_id": "arabicaqa-1136345",
+      "source_chars": 619,
+      "reference_chars": 214,
+      "compression_ratio": 0.654281,
+      "lossless": true,
+      "segment_count": 10
+    },
+    {
+      "case_id": "arabicaqa-1136347",
+      "source_chars": 619,
+      "reference_chars": 222,
+      "compression_ratio": 0.641357,
+      "lossless": true,
+      "segment_count": 10
+    },
+    {
+      "case_id": "arabicaqa-1136346",
+      "source_chars": 619,
+      "reference_chars": 212,
+      "compression_ratio": 0.657512,
+      "lossless": true,
+      "segment_count": 10
+    },
+    {
+      "case_id": "arabicaqa-1136348",
+      "source_chars": 619,
+      "reference_chars": 214,
+      "compression_ratio": 0.654281,
+      "lossless": true,
+      "segment_count": 10
+    },
+    {
+      "case_id": "arabicaqa-1136349",
+      "source_chars": 619,
+      "reference_chars": 208,
+      "compression_ratio": 0.663974,
+      "lossless": true,
+      "segment_count": 10
+    },
+    {
+      "case_id": "arabicaqa-1136034",
+      "source_chars": 467,
+      "reference_chars": 141,
+      "compression_ratio": 0.698073,
+      "lossless": true,
+      "segment_count": 4
+    },
+    {
+      "case_id": "arabicaqa-1136035",
+      "source_chars": 467,
+      "reference_chars": 144,
+      "compression_ratio": 0.691649,
+      "lossless": true,
+      "segment_count": 4
+    },
+    {
+      "case_id": "arabicaqa-1136036",
+      "source_chars": 467,
+      "reference_chars": 170,
+      "compression_ratio": 0.635974,
+      "lossless": true,
+      "segment_count": 4
+    },
+    {
+      "case_id": "arabicaqa-1136038",
+      "source_chars": 467,
+      "reference_chars": 160,
+      "compression_ratio": 0.657388,
+      "lossless": true,
+      "segment_count": 4
+    },
+    {
+      "case_id": "arabicaqa-1136037",
+      "source_chars": 467,
+      "reference_chars": 167,
+      "compression_ratio": 0.642398,
+      "lossless": true,
+      "segment_count": 4
+    },
+    {
+      "case_id": "arabicaqa-1136039",
+      "source_chars": 467,
+      "reference_chars": 214,
+      "compression_ratio": 0.541756,
+      "lossless": true,
+      "segment_count": 4
+    },
+    {
+      "case_id": "arabicaqa-1126161",
+      "source_chars": 956,
+      "reference_chars": 192,
+      "compression_ratio": 0.799163,
+      "lossless": true,
+      "segment_count": 12
+    },
+    {
+      "case_id": "arabicaqa-1126164",
+      "source_chars": 956,
+      "reference_chars": 201,
+      "compression_ratio": 0.789749,
+      "lossless": true,
+      "segment_count": 12
+    },
+    {
+      "case_id": "arabicaqa-1126165",
+      "source_chars": 956,
+      "reference_chars": 194,
+      "compression_ratio": 0.797071,
+      "lossless": true,
+      "segment_count": 12
+    },
+    {
+      "case_id": "arabicaqa-1126166",
+      "source_chars": 956,
+      "reference_chars": 202,
+      "compression_ratio": 0.788703,
+      "lossless": true,
+      "segment_count": 12
+    },
+    {
+      "case_id": "arabicaqa-1126168",
+      "source_chars": 956,
+      "reference_chars": 194,
+      "compression_ratio": 0.797071,
+      "lossless": true,
+      "segment_count": 12
+    },
+    {
+      "case_id": "arabicaqa-1126170",
+      "source_chars": 956,
+      "reference_chars": 215,
+      "compression_ratio": 0.775105,
+      "lossless": true,
+      "segment_count": 12
+    },
+    {
+      "case_id": "arabicaqa-1174667",
+      "source_chars": 207,
+      "reference_chars": 134,
+      "compression_ratio": 0.352657,
+      "lossless": true,
+      "segment_count": 3
+    },
+    {
+      "case_id": "arabicaqa-1174668",
+      "source_chars": 207,
+      "reference_chars": 146,
+      "compression_ratio": 0.294686,
+      "lossless": true,
+      "segment_count": 3
+    },
+    {
+      "case_id": "arabicaqa-1174669",
+      "source_chars": 207,
+      "reference_chars": 136,
+      "compression_ratio": 0.342995,
+      "lossless": true,
+      "segment_count": 3
+    },
+    {
+      "case_id": "arabicaqa-1174670",
+      "source_chars": 207,
+      "reference_chars": 136,
+      "compression_ratio": 0.342995,
+      "lossless": true,
+      "segment_count": 3
+    },
+    {
+      "case_id": "arabicaqa-1174671",
+      "source_chars": 207,
+      "reference_chars": 158,
+      "compression_ratio": 0.236715,
+      "lossless": true,
+      "segment_count": 3
+    },
+    {
+      "case_id": "arabicaqa-1174672",
+      "source_chars": 207,
+      "reference_chars": 156,
+      "compression_ratio": 0.246377,
+      "lossless": true,
+      "segment_count": 3
+    },
+    {
+      "case_id": "arabicaqa-1168390",
+      "source_chars": 1659,
+      "reference_chars": 189,
+      "compression_ratio": 0.886076,
+      "lossless": true,
+      "segment_count": 7
+    },
+    {
+      "case_id": "arabicaqa-1168391",
+      "source_chars": 1659,
+      "reference_chars": 199,
+      "compression_ratio": 0.880048,
+      "lossless": true,
+      "segment_count": 7
+    },
+    {
+      "case_id": "arabicaqa-1168392",
+      "source_chars": 1659,
+      "reference_chars": 203,
+      "compression_ratio": 0.877637,
+      "lossless": true,
+      "segment_count": 7
+    },
+    {
+      "case_id": "arabicaqa-1168393",
+      "source_chars": 1659,
+      "reference_chars": 196,
+      "compression_ratio": 0.881857,
+      "lossless": true,
+      "segment_count": 7
+    },
+    {
+      "case_id": "arabicaqa-1168394",
+      "source_chars": 1659,
+      "reference_chars": 221,
+      "compression_ratio": 0.866787,
+      "lossless": true,
+      "segment_count": 7
+    },
+    {
+      "case_id": "arabicaqa-1168395",
+      "source_chars": 1659,
+      "reference_chars": 222,
+      "compression_ratio": 0.866184,
+      "lossless": true,
+      "segment_count": 7
+    },
+    {
+      "case_id": "arabicaqa-1168396",
+      "source_chars": 1659,
+      "reference_chars": 211,
+      "compression_ratio": 0.872815,
+      "lossless": true,
+      "segment_count": 7
+    },
+    {
+      "case_id": "arabicaqa-1165161",
+      "source_chars": 109,
+      "reference_chars": 128,
+      "compression_ratio": -0.174312,
+      "lossless": true,
+      "segment_count": 1
+    },
+    {
+      "case_id": "arabicaqa-1165162",
+      "source_chars": 109,
+      "reference_chars": 159,
+      "compression_ratio": -0.458716,
+      "lossless": true,
+      "segment_count": 1
+    },
+    {
+      "case_id": "arabicaqa-1165163",
+      "source_chars": 109,
+      "reference_chars": 211,
+      "compression_ratio": -0.93578,
+      "lossless": true,
+      "segment_count": 1
+    },
+    {
+      "case_id": "arabicaqa-993042",
+      "source_chars": 628,
+      "reference_chars": 178,
+      "compression_ratio": 0.716561,
+      "lossless": true,
+      "segment_count": 6
+    },
+    {
+      "case_id": "arabicaqa-992951",
+      "source_chars": 628,
+      "reference_chars": 173,
+      "compression_ratio": 0.724522,
+      "lossless": true,
+      "segment_count": 6
+    },
+    {
+      "case_id": "arabicaqa-993468",
+      "source_chars": 628,
+      "reference_chars": 160,
+      "compression_ratio": 0.745223,
+      "lossless": true,
+      "segment_count": 6
+    },
+    {
+      "case_id": "arabicaqa-995459",
+      "source_chars": 628,
+      "reference_chars": 152,
+      "compression_ratio": 0.757962,
+      "lossless": true,
+      "segment_count": 6
+    },
+    {
+      "case_id": "arabicaqa-995401",
+      "source_chars": 628,
+      "reference_chars": 178,
+      "compression_ratio": 0.716561,
+      "lossless": true,
+      "segment_count": 6
+    },
+    {
+      "case_id": "arabicaqa-995615",
+      "source_chars": 628,
+      "reference_chars": 152,
+      "compression_ratio": 0.757962,
+      "lossless": true,
+      "segment_count": 6
+    },
+    {
+      "case_id": "arabicaqa-995616",
+      "source_chars": 628,
+      "reference_chars": 151,
+      "compression_ratio": 0.759554,
+      "lossless": true,
+      "segment_count": 6
+    },
+    {
+      "case_id": "arabicaqa-995617",
+      "source_chars": 628,
+      "reference_chars": 184,
+      "compression_ratio": 0.707006,
+      "lossless": true,
+      "segment_count": 6
+    },
+    {
+      "case_id": "arabicaqa-995780",
+      "source_chars": 628,
+      "reference_chars": 182,
+      "compression_ratio": 0.710191,
+      "lossless": true,
+      "segment_count": 6
+    },
+    {
+      "case_id": "arabicaqa-995781",
+      "source_chars": 628,
+      "reference_chars": 199,
+      "compression_ratio": 0.683121,
+      "lossless": true,
+      "segment_count": 6
+    },
+    {
+      "case_id": "arabicaqa-1172526",
+      "source_chars": 1491,
+      "reference_chars": 265,
+      "compression_ratio": 0.822267,
+      "lossless": true,
+      "segment_count": 21
+    },
+    {
+      "case_id": "arabicaqa-1172527",
+      "source_chars": 1491,
+      "reference_chars": 272,
+      "compression_ratio": 0.817572,
+      "lossless": true,
+      "segment_count": 21
+    },
+    {
+      "case_id": "arabicaqa-1172518",
+      "source_chars": 1491,
+      "reference_chars": 279,
+      "compression_ratio": 0.812877,
+      "lossless": true,
+      "segment_count": 21
+    },
+    {
+      "case_id": "arabicaqa-1172520",
+      "source_chars": 1491,
+      "reference_chars": 262,
+      "compression_ratio": 0.824279,
+      "lossless": true,
+      "segment_count": 21
+    },
+    {
+      "case_id": "arabicaqa-1172522",
+      "source_chars": 1491,
+      "reference_chars": 265,
+      "compression_ratio": 0.822267,
+      "lossless": true,
+      "segment_count": 21
+    },
+    {
+      "case_id": "arabicaqa-1162546",
+      "source_chars": 195,
+      "reference_chars": 136,
+      "compression_ratio": 0.302564,
+      "lossless": true,
+      "segment_count": 3
+    },
+    {
+      "case_id": "arabicaqa-1162547",
+      "source_chars": 195,
+      "reference_chars": 145,
+      "compression_ratio": 0.25641,
+      "lossless": true,
+      "segment_count": 3
+    },
+    {
+      "case_id": "arabicaqa-1162548",
+      "source_chars": 195,
+      "reference_chars": 138,
+      "compression_ratio": 0.292308,
+      "lossless": true,
+      "segment_count": 3
+    },
+    {
+      "case_id": "arabicaqa-1162549",
+      "source_chars": 195,
+      "reference_chars": 138,
+      "compression_ratio": 0.292308,
+      "lossless": true,
+      "segment_count": 3
+    },
+    {
+      "case_id": "arabicaqa-1162550",
+      "source_chars": 195,
+      "reference_chars": 141,
+      "compression_ratio": 0.276923,
+      "lossless": true,
+      "segment_count": 3
+    },
+    {
+      "case_id": "arabicaqa-1162551",
+      "source_chars": 195,
+      "reference_chars": 142,
+      "compression_ratio": 0.271795,
+      "lossless": true,
+      "segment_count": 3
+    },
+    {
+      "case_id": "arabicaqa-1180309",
+      "source_chars": 2247,
+      "reference_chars": 159,
+      "compression_ratio": 0.929239,
+      "lossless": true,
+      "segment_count": 7
+    },
+    {
+      "case_id": "arabicaqa-1180310",
+      "source_chars": 2247,
+      "reference_chars": 162,
+      "compression_ratio": 0.927904,
+      "lossless": true,
+      "segment_count": 7
+    },
+    {
+      "case_id": "arabicaqa-1180311",
+      "source_chars": 2247,
+      "reference_chars": 162,
+      "compression_ratio": 0.927904,
+      "lossless": true,
+      "segment_count": 7
+    },
+    {
+      "case_id": "arabicaqa-1180312",
+      "source_chars": 2247,
+      "reference_chars": 164,
+      "compression_ratio": 0.927014,
+      "lossless": true,
+      "segment_count": 7
+    },
+    {
+      "case_id": "arabicaqa-1180313",
+      "source_chars": 2247,
+      "reference_chars": 176,
+      "compression_ratio": 0.921673,
+      "lossless": true,
+      "segment_count": 7
+    },
+    {
+      "case_id": "arabicaqa-1180314",
+      "source_chars": 2247,
+      "reference_chars": 182,
+      "compression_ratio": 0.919003,
+      "lossless": true,
+      "segment_count": 7
+    },
+    {
+      "case_id": "arabicaqa-1180316",
+      "source_chars": 2247,
+      "reference_chars": 164,
+      "compression_ratio": 0.927014,
+      "lossless": true,
+      "segment_count": 7
+    },
+    {
+      "case_id": "arabicaqa-1180317",
+      "source_chars": 2247,
+      "reference_chars": 161,
+      "compression_ratio": 0.928349,
+      "lossless": true,
+      "segment_count": 7
+    },
+    {
+      "case_id": "arabicaqa-1180318",
+      "source_chars": 2247,
+      "reference_chars": 162,
+      "compression_ratio": 0.927904,
+      "lossless": true,
+      "segment_count": 7
+    },
+    {
+      "case_id": "arabicaqa-700298",
+      "source_chars": 2676,
+      "reference_chars": 293,
+      "compression_ratio": 0.890508,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-700299",
+      "source_chars": 2676,
+      "reference_chars": 299,
+      "compression_ratio": 0.888266,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-700301",
+      "source_chars": 2676,
+      "reference_chars": 300,
+      "compression_ratio": 0.887892,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-700303",
+      "source_chars": 2676,
+      "reference_chars": 307,
+      "compression_ratio": 0.885277,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-700305",
+      "source_chars": 2676,
+      "reference_chars": 297,
+      "compression_ratio": 0.889013,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-700307",
+      "source_chars": 2676,
+      "reference_chars": 314,
+      "compression_ratio": 0.882661,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-700300",
+      "source_chars": 2676,
+      "reference_chars": 318,
+      "compression_ratio": 0.881166,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-700302",
+      "source_chars": 2676,
+      "reference_chars": 305,
+      "compression_ratio": 0.886024,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-700304",
+      "source_chars": 2676,
+      "reference_chars": 315,
+      "compression_ratio": 0.882287,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-700306",
+      "source_chars": 2676,
+      "reference_chars": 325,
+      "compression_ratio": 0.87855,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1168447",
+      "source_chars": 3078,
+      "reference_chars": 323,
+      "compression_ratio": 0.895062,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1168448",
+      "source_chars": 3078,
+      "reference_chars": 304,
+      "compression_ratio": 0.901235,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1168449",
+      "source_chars": 3078,
+      "reference_chars": 324,
+      "compression_ratio": 0.894737,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1168450",
+      "source_chars": 3078,
+      "reference_chars": 324,
+      "compression_ratio": 0.894737,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1168451",
+      "source_chars": 3078,
+      "reference_chars": 331,
+      "compression_ratio": 0.892463,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-1168453",
+      "source_chars": 3078,
+      "reference_chars": 339,
+      "compression_ratio": 0.889864,
+      "lossless": true,
+      "segment_count": 26
+    },
+    {
+      "case_id": "arabicaqa-689689",
+      "source_chars": 2659,
+      "reference_chars": 305,
+      "compression_ratio": 0.885295,
+      "lossless": true,
+      "segment_count": 27
+    },
+    {
+      "case_id": "arabicaqa-689690",
+      "source_chars": 2659,
+      "reference_chars": 309,
+      "compression_ratio": 0.883791,
+      "lossless": true,
+      "segment_count": 27
+    },
+    {
+      "case_id": "arabicaqa-689692",
+      "source_chars": 2659,
+      "reference_chars": 346,
+      "compression_ratio": 0.869876,
+      "lossless": true,
+      "segment_count": 27
+    },
+    {
+      "case_id": "arabicaqa-689728",
+      "source_chars": 2659,
+      "reference_chars": 340,
+      "compression_ratio": 0.872132,
+      "lossless": true,
+      "segment_count": 27
+    },
+    {
+      "case_id": "arabicaqa-689734",
+      "source_chars": 2659,
+      "reference_chars": 324,
+      "compression_ratio": 0.87815,
+      "lossless": true,
+      "segment_count": 27
+    },
+    {
+      "case_id": "arabicaqa-689691",
+      "source_chars": 2659,
+      "reference_chars": 323,
+      "compression_ratio": 0.878526,
+      "lossless": true,
+      "segment_count": 27
+    },
+    {
+      "case_id": "arabicaqa-689740",
+      "source_chars": 2659,
+      "reference_chars": 335,
+      "compression_ratio": 0.874013,
+      "lossless": true,
+      "segment_count": 27
+    },
+    {
+      "case_id": "arabicaqa-689741",
+      "source_chars": 2659,
+      "reference_chars": 335,
+      "compression_ratio": 0.874013,
+      "lossless": true,
+      "segment_count": 27
+    },
+    {
+      "case_id": "arabicaqa-689744",
+      "source_chars": 2659,
+      "reference_chars": 345,
+      "compression_ratio": 0.870252,
+      "lossless": true,
+      "segment_count": 27
+    },
+    {
+      "case_id": "arabicaqa-689745",
+      "source_chars": 2659,
+      "reference_chars": 334,
+      "compression_ratio": 0.874389,
+      "lossless": true,
+      "segment_count": 27
+    },
+    {
+      "case_id": "arabicaqa-689746",
+      "source_chars": 2659,
+      "reference_chars": 358,
+      "compression_ratio": 0.865363,
+      "lossless": true,
+      "segment_count": 27
+    },
+    {
+      "case_id": "arabicaqa-689749",
+      "source_chars": 2659,
+      "reference_chars": 310,
+      "compression_ratio": 0.883415,
+      "lossless": true,
+      "segment_count": 27
+    },
+    {
+      "case_id": "arabicaqa-689753",
+      "source_chars": 2659,
+      "reference_chars": 326,
+      "compression_ratio": 0.877398,
+      "lossless": true,
+      "segment_count": 27
+    },
+    {
+      "case_id": "arabicaqa-689756",
+      "source_chars": 2659,
+      "reference_chars": 341,
+      "compression_ratio": 0.871756,
+      "lossless": true,
+      "segment_count": 27
+    },
+    {
+      "case_id": "arabicaqa-689759",
+      "source_chars": 2659,
+      "reference_chars": 332,
+      "compression_ratio": 0.875141,
+      "lossless": true,
+      "segment_count": 27
+    },
+    {
+      "case_id": "arabicaqa-689760",
+      "source_chars": 2659,
+      "reference_chars": 337,
+      "compression_ratio": 0.873261,
+      "lossless": true,
+      "segment_count": 27
+    },
+    {
+      "case_id": "arabicaqa-689763",
+      "source_chars": 2659,
+      "reference_chars": 306,
+      "compression_ratio": 0.884919,
+      "lossless": true,
+      "segment_count": 27
+    },
+    {
+      "case_id": "arabicaqa-664091",
+      "source_chars": 61449,
+      "reference_chars": 2803,
+      "compression_ratio": 0.954385,
+      "lossless": true,
+      "segment_count": 376
+    },
+    {
+      "case_id": "arabicaqa-653622",
+      "source_chars": 61449,
+      "reference_chars": 2758,
+      "compression_ratio": 0.955117,
+      "lossless": true,
+      "segment_count": 376
+    },
+    {
+      "case_id": "arabicaqa-664716",
+      "source_chars": 61449,
+      "reference_chars": 2771,
+      "compression_ratio": 0.954906,
+      "lossless": true,
+      "segment_count": 376
+    },
+    {
+      "case_id": "arabicaqa-664769",
+      "source_chars": 61449,
+      "reference_chars": 2780,
+      "compression_ratio": 0.954759,
+      "lossless": true,
+      "segment_count": 376
+    },
+    {
+      "case_id": "arabicaqa-664768",
+      "source_chars": 61449,
+      "reference_chars": 2808,
+      "compression_ratio": 0.954304,
+      "lossless": true,
+      "segment_count": 376
+    },
+    {
+      "case_id": "arabicaqa-664775",
+      "source_chars": 61449,
+      "reference_chars": 2770,
+      "compression_ratio": 0.954922,
+      "lossless": true,
+      "segment_count": 376
+    },
+    {
+      "case_id": "arabicaqa-647472",
+      "source_chars": 61449,
+      "reference_chars": 2775,
+      "compression_ratio": 0.954841,
+      "lossless": true,
+      "segment_count": 376
+    }
+  ]
+}
