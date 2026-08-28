@@ -1,0 +1,29 @@
+{
+  "contract": "doaa.reconstruction.v1",
+  "purpose": "Reconstruct a canonical governed request from a registered template and explicit data slots.",
+  "template_id": "<library>.<template>.v1",
+  "input": {
+    "template_id": "string",
+    "slots": "object with string values",
+    "source": "local_template_registry"
+  },
+  "rules": {
+    "exact_template_only": true,
+    "required_slots": "must be present",
+    "unknown_slots": "reject",
+    "duplicate_slots": "reject",
+    "slot_order": "registry_defined",
+    "value_max_length": 512,
+    "output_max_length": 4096,
+    "empty_values": "reject"
+  },
+  "allowed_outputs": ["reconstruction_ready", "reconstruction_blocked", "governed_capability_request"],
+  "semantic_inference": false,
+  "automatic_execution": false,
+  "execution_authority": "none",
+  "model_call": false,
+  "network_access": false,
+  "file_write": false,
+  "library_update": false,
+  "human_review_required_for": ["new_template", "template_change", "capability_change"]
+}

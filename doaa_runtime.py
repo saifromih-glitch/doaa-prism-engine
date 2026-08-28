@@ -10,13 +10,15 @@ from typing import Any
 
 from doaa_command_language import parse_command
 from doaa_multi_source_coordinator import MultiSourceCoordinator
+from doaa_template_reconstruction import TemplateRegistry
 
 CONTRACT = "doaa.runtime.v1"
 
 
 class DoaaRuntime:
-    def __init__(self, coordinator: MultiSourceCoordinator) -> None:
+    def __init__(self, coordinator: MultiSourceCoordinator, templates: TemplateRegistry | None = None) -> None:
         self.coordinator = coordinator
+        self.templates = templates or TemplateRegistry()
 
     def prepare(self, envelope: Any) -> dict[str, Any]:
         if not isinstance(envelope, dict):
@@ -36,6 +38,15 @@ class DoaaRuntime:
             evidence_ids=envelope.get("evidence_ids", []),
         )
         return {"status": "runtime_ready" if route["status"] in {"route_local_algorithm", "route_active_knowledge", "route_model_or_review"} else "runtime_blocked", "contract": CONTRACT, "route": route, "next_action": "use_local_payload" if route["status"] == "route_local_algorithm" else "explicit_adapter_or_human_review", "execution_authority": "none", "automatic_execution": False}
+
+    def prepare_reconstruction(self, template_id: Any, slots: Any) -> dict[str, Any]:
+        rebuilt = self.templates.reconstruct(template_id, slots)
+        if rebuilt["status"] != "reconstruction_ready":
+            return {"status": "runtime_blocked" if rebuilt["status"] == "reconstruction_blocked" else "runtime_governed_review", "reconstruction": rebuilt, "execution_authority": "none", "automatic_execution": False}
+        envelope = {"request": rebuilt["request"], "library": rebuilt["library"], "algorithm_id": rebuilt["algorithm_id"], "source_request": rebuilt["request"]}
+        result = self.prepare(envelope)
+        result["reconstruction"] = rebuilt
+        return result
 
     def prepare_command(self, command: Any) -> dict[str, Any]:
         parsed = parse_command(command)
