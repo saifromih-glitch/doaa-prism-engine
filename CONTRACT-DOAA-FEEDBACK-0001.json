@@ -1,0 +1,36 @@
+{
+  "contract": "doaa.feedback.v1",
+  "purpose": "Capture explicit human feedback as a bounded learning signal without treating satisfaction as proof of truth.",
+  "feedback_fields": {
+    "feedback_id": "string",
+    "interaction_id": "string",
+    "usefulness": "integer 1..5",
+    "correctness_signal": "one of unknown, believed_true, believed_false, needs_verification",
+    "correction": "optional string <= 2000",
+    "reason": "optional string <= 2000",
+    "consent_to_learning": "boolean",
+    "created_at": "string"
+  },
+  "signal_semantics": {
+    "usefulness": "subjective user experience",
+    "correctness_signal": "human claim requiring evidence",
+    "correction": "candidate evidence, never ground truth by itself"
+  },
+  "privacy": {
+    "default_shared_learning": false,
+    "identity_required": false,
+    "retention_policy_required": true,
+    "deletion_supported": true
+  },
+  "promotion_rules": {
+    "satisfaction_alone_is_insufficient": true,
+    "correctness_requires_independent_evidence": true,
+    "negative_feedback_can_block_candidate": true,
+    "automatic_active_promotion": false,
+    "human_review_required": true
+  },
+  "execution_authority": "none",
+  "automatic_execution": false,
+  "model_call": false,
+  "network_access": false
+}
