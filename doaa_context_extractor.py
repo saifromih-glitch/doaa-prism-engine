@@ -28,8 +28,10 @@ def extract_supported_answer(question: str, context: str) -> dict[str, Any]:
         scored.append((score + cue_bonus, len(overlap), -index, sentence, overlap))
     scored.sort(reverse=True)
     score, overlap_count, _, sentence, overlap = scored[0]
-    if overlap_count == 0 or score < 0.20:
-        return {"status": "fallback_or_review", "reason": "no_sufficient_question_evidence_match", "execution_authority": "none"}
+    coverage = round(overlap_count / max(1, len(q_tokens)), 6)
+    required_overlap = 2 if len(q_tokens) >= 3 else 1
+    if overlap_count < required_overlap or coverage < 0.50:
+        return {"status": "fallback_or_review", "reason": "question_evidence_coverage_below_threshold", "coverage": coverage, "matched_terms": sorted(overlap), "execution_authority": "none"}
     numbers = re.findall(r"\d[\d,.]*%?", sentence)
     question_is_numeric = bool(q_tokens & NUMERIC_CUES)
     answer = sentence
@@ -38,4 +40,4 @@ def extract_supported_answer(question: str, context: str) -> dict[str, Any]:
         unit_match = re.search(r"(?:%|نسمة|وحدة|أسرة|عائلة|عاماً|دولارًا)", sentence)
         if unit_match and not answer.endswith(unit_match.group(0)):
             answer += unit_match.group(0)
-    return {"status": "candidate", "answer": answer, "evidence_quote": sentence, "matched_terms": sorted(overlap), "score": round(score, 6), "execution_authority": "none", "automatic_execution": False}
+    return {"status": "candidate", "answer": answer, "evidence_quote": sentence, "matched_terms": sorted(overlap), "score": round(score, 6), "coverage": coverage, "execution_authority": "none", "automatic_execution": False}

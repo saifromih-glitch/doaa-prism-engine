@@ -1,0 +1,20 @@
+{
+  "contract_id": "doaa.evidence_match.v1",
+  "purpose": "مطابقة السؤال العربي بالدليل النصي قبل قبول إجابة محلية أو مضغوطة",
+  "required_fields": ["question", "context", "answer", "evidence_quote"],
+  "match_rules": {
+    "minimum_question_term_coverage": 0.5,
+    "minimum_evidence_overlap": 2,
+    "numeric_questions_require_numeric_evidence": true,
+    "numeric_answer_must_appear_in_evidence": true,
+    "multi_fact_questions_require_explicit_completeness": true,
+    "unknown_or_ambiguous_match": "fallback_or_review"
+  },
+  "forbidden": ["semantic_guessing", "reference_answer_access_during_runtime", "unseen_numbers", "unseen_entities", "automatic_promotion"],
+  "governance": {
+    "execution_authority": "none",
+    "automatic_execution": false,
+    "automatic_promotion": false,
+    "human_review_for_truth": true
+  }
+}

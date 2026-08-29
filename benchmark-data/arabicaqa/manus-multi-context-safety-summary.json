@@ -1,0 +1,87 @@
+{
+  "case_count": 15,
+  "supported_count": 15,
+  "safety_passed_count": 15,
+  "review_count": 0,
+  "prompt_token_saving_ratio": -0.573956,
+  "total_token_saving_ratio": -1.775478,
+  "human_review_completed": false,
+  "truth_verified": false,
+  "rows": [
+    {
+      "case_id": "arabicaqa-689689",
+      "verification": "supported",
+      "safety": "passed"
+    },
+    {
+      "case_id": "arabicaqa-689690",
+      "verification": "supported",
+      "safety": "passed"
+    },
+    {
+      "case_id": "arabicaqa-689692",
+      "verification": "supported",
+      "safety": "passed"
+    },
+    {
+      "case_id": "arabicaqa-1136340",
+      "verification": "supported",
+      "safety": "passed"
+    },
+    {
+      "case_id": "arabicaqa-1136342",
+      "verification": "supported",
+      "safety": "passed"
+    },
+    {
+      "case_id": "arabicaqa-1136341",
+      "verification": "supported",
+      "safety": "passed"
+    },
+    {
+      "case_id": "arabicaqa-993042",
+      "verification": "supported",
+      "safety": "passed"
+    },
+    {
+      "case_id": "arabicaqa-992951",
+      "verification": "supported",
+      "safety": "passed"
+    },
+    {
+      "case_id": "arabicaqa-993468",
+      "verification": "supported",
+      "safety": "passed"
+    },
+    {
+      "case_id": "arabicaqa-700298",
+      "verification": "supported",
+      "safety": "passed"
+    },
+    {
+      "case_id": "arabicaqa-700299",
+      "verification": "supported",
+      "safety": "passed"
+    },
+    {
+      "case_id": "arabicaqa-700301",
+      "verification": "supported",
+      "safety": "passed"
+    },
+    {
+      "case_id": "arabicaqa-1180309",
+      "verification": "supported",
+      "safety": "passed"
+    },
+    {
+      "case_id": "arabicaqa-1180310",
+      "verification": "supported",
+      "safety": "passed"
+    },
+    {
+      "case_id": "arabicaqa-1180311",
+      "verification": "supported",
+      "safety": "passed"
+    }
+  ]
+}
