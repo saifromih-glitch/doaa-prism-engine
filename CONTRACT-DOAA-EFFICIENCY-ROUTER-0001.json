@@ -1,0 +1,25 @@
+{
+  "contract_id": "doaa.efficiency_router.v1",
+  "purpose": "اختيار أقل مسار توكنز يحافظ على الدعم والجودة والسلامة في السياقات المتعددة",
+  "routes": ["local_exact", "local_extractive", "evidence_snippet", "warm_checkpoint", "baseline_or_review"],
+  "selection_rules": [
+    "local_exact precedes every model route",
+    "local_extractive requires question-evidence coverage",
+    "evidence_snippet requires a bounded source quote",
+    "warm_checkpoint is allowed only when shared-context savings exceed protocol overhead",
+    "baseline_or_review is used when the estimate is ambiguous or safety is uncertain"
+  ],
+  "cache_key": "sha256(normalized_context) + sha256(normalized_question) + algorithm_version",
+  "acceptance_thresholds": {
+    "minimum_total_token_saving_ratio": 0.30,
+    "quality_regression_allowed": false,
+    "safety_regression_allowed": false
+  },
+  "forbidden": ["semantic_guessing", "cross_context_memory_without_hash_match", "automatic_promotion", "secret_encoding_to_evade_metering"],
+  "governance": {
+    "execution_authority": "none",
+    "automatic_execution": false,
+    "automatic_promotion": false,
+    "human_review_for_truth": true
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "summary": {
+    "cases": 15,
+    "routes": {
+      "evidence_snippet": 4,
+      "warm_checkpoint": 10,
+      "baseline_or_review": 1
+    },
+    "estimated_baseline_tokens": 98456,
+    "estimated_router_tokens": 7492,
+    "estimated_saving_ratio": 0.923905,
+    "measurement_type": "local_estimate_only",
+    "model_usage_tokens": null,
+    "human_quality_review": false,
+    "execution_authority": "none"
+  },
+  "rows": [
+    {
+      "context_name": "cases",
+      "case_id": null,
+      "question": "من هو دافيد بن غوريون؟\n",
+      "decision": {
+        "route": "evidence_snippet",
+        "reason": "bounded_evidence_batch_is_cheaper_than_full_checkpoint",
+        "estimated_baseline_tokens": 10035,
+        "estimated_doaa_tokens": 315,
+        "estimated_saving_ratio": 0.96861,
+        "safe": true
+      }
+    },
+    {
+      "context_name": "cases",
+      "case_id": null,
+      "question": "في أي مدينة ولد بن غوريون؟\n",
+      "decision": {
+        "route": "evidence_snippet",
+        "reason": "bounded_evidence_batch_is_cheaper_than_full_checkpoint",
+        "estimated_baseline_tokens": 10050,
+        "estimated_doaa_tokens": 645,
+        "estimated_saving_ratio": 0.935821,
+        "safe": true
+      }
+    },
+    {
+      "context_name": "cases",
+      "case_id": null,
+      "question": "ما هي الحركة التي انضم إليها بن غوريون في بداية حياته السياسية؟\n",
+      "decision": {
+        "route": "warm_checkpoint",
+        "reason": "shared_context_amortizes_protocol_overhead",
+        "estimated_baseline_tokens": 10185,
+        "estimated_doaa_tokens": 913,
+        "estimated_saving_ratio": 0.910358,
+        "safe": true
+      }
+    },
+    {
+      "context_name": "cases",
+      "case_id": null,
+      "question": "متى تأسست صحيفة المغرب اليوم؟\n\n",
+      "decision": {
+        "route": "warm_checkpoint",
+        "reason": "shared_context_amortizes_protocol_overhead",
+        "estimated_baseline_tokens": 2415,
+        "estimated_doaa_tokens": 283,
+        "estimated_saving_ratio": 0.882816,
+        "safe": true
+      }
+    },
+    {
+      "context_name": "cases",
+      "case_id": null,
+      "question": "ما هي المواضيع التي تتناولها الصحيفة اليومية؟\n\n",
+      "decision": {
+        "route": "warm_checkpoint",
+        "reason": "shared_context_amortizes_protocol_overhead",
+        "estimated_baseline_tokens": 2475,
+        "estimated_doaa_tokens": 343,
+        "estimated_saving_ratio": 0.861414,
+        "safe": true
+      }
+    },
+    {
+      "context_name": "cases",
+      "case_id": null,
+      "question": "من هو المدير الحالي للصحيفة؟\n\n",
+      "decision": {
+        "route": "baseline_or_review",
+        "reason": "insufficient_local_evidence",
+        "estimated_baseline_tokens": 161,
+        "estimated_doaa_tokens": 161,
+        "estimated_saving_ratio": 0.0,
+        "safe": false
+      }
+    },
+    {
+      "context_name": "cases",
+      "case_id": null,
+      "question": "كيف يتم تعيين الوالي في الولايات التونسية؟\n",
+      "decision": {
+        "route": "warm_checkpoint",
+        "reason": "shared_context_amortizes_protocol_overhead",
+        "estimated_baseline_tokens": 2490,
+        "estimated_doaa_tokens": 330,
+        "estimated_saving_ratio": 0.86747,
+        "safe": true
+      }
+    },
+    {
+      "context_name": "cases",
+      "case_id": null,
+      "question": "ما هو التقسيم الإداري الأعلى في تونس؟\n",
+      "decision": {
+        "route": "warm_checkpoint",
+        "reason": "shared_context_amortizes_protocol_overhead",
+        "estimated_baseline_tokens": 2475,
+        "estimated_doaa_tokens": 315,
+        "estimated_saving_ratio": 0.872727,
+        "safe": true
+      }
+    },
+    {
+      "context_name": "cases",
+      "case_id": null,
+      "question": "كم عدد الولايات في تونس؟\n",
+      "decision": {
+        "route": "warm_checkpoint",
+        "reason": "shared_context_amortizes_protocol_overhead",
+        "estimated_baseline_tokens": 2430,
+        "estimated_doaa_tokens": 270,
+        "estimated_saving_ratio": 0.888889,
+        "safe": true
+      }
+    },
+    {
+      "context_name": "cases",
+      "case_id": null,
+      "question": "ما هي يوغوسلافيا؟\n",
+      "decision": {
+        "route": "evidence_snippet",
+        "reason": "bounded_evidence_batch_is_cheaper_than_full_checkpoint",
+        "estimated_baseline_tokens": 10080,
+        "estimated_doaa_tokens": 615,
+        "estimated_saving_ratio": 0.938988,
+        "safe": true
+      }
+    },
+    {
+      "context_name": "cases",
+      "case_id": null,
+      "question": "ما هي تاريخ يوغوسلافيا؟\n",
+      "decision": {
+        "route": "warm_checkpoint",
+        "reason": "shared_context_amortizes_protocol_overhead",
+        "estimated_baseline_tokens": 10095,
+        "estimated_doaa_tokens": 767,
+        "estimated_saving_ratio": 0.924022,
+        "safe": true
+      }
+    },
+    {
+      "context_name": "cases",
+      "case_id": null,
+      "question": "كيف نال الصرب استقلالهم؟\n",
+      "decision": {
+        "route": "evidence_snippet",
+        "reason": "bounded_evidence_batch_is_cheaper_than_full_checkpoint",
+        "estimated_baseline_tokens": 10110,
+        "estimated_doaa_tokens": 570,
+        "estimated_saving_ratio": 0.94362,
+        "safe": true
+      }
+    },
+    {
+      "context_name": "cases",
+      "case_id": null,
+      "question": "من هي أمينة محمد ؟",
+      "decision": {
+        "route": "warm_checkpoint",
+        "reason": "shared_context_amortizes_protocol_overhead",
+        "estimated_baseline_tokens": 8475,
+        "estimated_doaa_tokens": 645,
+        "estimated_saving_ratio": 0.923894,
+        "safe": true
+      }
+    },
+    {
+      "context_name": "cases",
+      "case_id": null,
+      "question": "أين ولدت أمينة محمد ؟",
+      "decision": {
+        "route": "warm_checkpoint",
+        "reason": "shared_context_amortizes_protocol_overhead",
+        "estimated_baseline_tokens": 8490,
+        "estimated_doaa_tokens": 660,
+        "estimated_saving_ratio": 0.922261,
+        "safe": true
+      }
+    },
+    {
+      "context_name": "cases",
+      "case_id": null,
+      "question": "متي ولدت أمينة محمد ؟",
+      "decision": {
+        "route": "warm_checkpoint",
+        "reason": "shared_context_amortizes_protocol_overhead",
+        "estimated_baseline_tokens": 8490,
+        "estimated_doaa_tokens": 660,
+        "estimated_saving_ratio": 0.922261,
+        "safe": true
+      }
+    }
+  ]
+}

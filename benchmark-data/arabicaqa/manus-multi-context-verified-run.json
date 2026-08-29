@@ -6,19 +6,19 @@
   "baseline": {
     "calls": 15,
     "prompt_tokens": 9384,
-    "total_tokens": 12707,
-    "mean_reference_overlap": 0.545299
+    "total_tokens": 13800,
+    "mean_reference_overlap": 0.592186
   },
   "doaa": {
     "context_calls": 5,
     "retry_count": 2,
-    "final_supported": 15,
-    "mean_reference_overlap_final": 0.642857,
-    "prompt_tokens": 14770,
-    "total_tokens": 35268
+    "final_supported": 14,
+    "mean_reference_overlap_final": 0.516667,
+    "prompt_tokens": 8233,
+    "total_tokens": 26301
   },
-  "prompt_token_saving_ratio": -0.573956,
-  "total_token_saving_ratio": -1.775478,
+  "prompt_token_saving_ratio": 0.122656,
+  "total_token_saving_ratio": -0.90587,
   "safety_evaluated": false,
   "human_review_completed": false,
   "execution_authority": "none",
@@ -27,74 +27,77 @@
     {
       "case_id": "arabicaqa-689689",
       "reference_answer": " أوّل رئيس وزراء لإسرائيل",
-      "answer": "أوّل رئيس وزراء لإسرائيل.",
-      "reference_overlap": 0.75,
+      "answer": "دافيد بن غوريون",
+      "reference_overlap": 0.0,
       "verification": {
         "status": "supported",
         "contract": "doaa.answer_shape.v1",
         "question_id": "arabicaqa-689689",
-        "answer": "أوّل رئيس وزراء لإسرائيل.",
-        "evidence_quote": "دافيد بن غوريون ؛ (16 أكتوبر 1886 - ديسمبر 1973)، أوّل رئيس وزراء لإسرائيل.",
-        "uncertainty": "none",
+        "answer": "دافيد بن غوريون",
+        "evidence_quote": "دافيد بن غوريون ؛",
+        "uncertainty": "source_incomplete",
         "answer_units": "",
         "execution_authority": "none",
         "automatic_execution": false
       },
       "first_usage": {
-        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-689689\",\"answer\":\"أوّل رئيس وزراء لإسرائيل.\",\"evidence_quote\":\"دافيد بن غوريون ؛ (16 أكتوبر 1886 - ديسمبر 1973)، أوّل رئيس وزراء لإسرائيل.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-689690\",\"answer\":\"مدينة بلونسك البولندية\",\"evidence_quote\":\"وُلد بن غوريون في مدينة بلونسك البولندية باسم دافيد غرين،\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-689692\",\"answer\":\"الحركة الماركسية الصهيونية عمال صهيون («بُوعالِي صهيون»)\",\"evidence_quote\":\"حين كان طالباً في جامعة وارسو انضم للحركة الماركسية الصهيونية عمال صهيون «بُوعالِي صهيون» عام 1904.\",\"uncertainty\":\"none\",\"answer_units\":\"\"}]}",
-        "prompt_tokens": 1124,
-        "completion_tokens": 1384,
-        "total_tokens": 2508,
-        "latency_ms": 13379.912
-      }
+        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-689689\",\"answer\":\"دافيد بن غوريون\",\"evidence_quote\":\"دافيد بن غوريون ؛\",\"uncertainty\":\"source_incomplete\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-689690\",\"answer\":\"مدينة بلونسك البولندية\",\"evidence_quote\":\"وُلد بن غوريون في مدينة بلونسك البولندية باسم دافيد غرين، ولتحمّسه للصهيونية، هاجر إلى فلسطين عام 1906.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-689692\",\"answer\":\"الحركة الماركسية الصهيونية عمال صهيون «بُوعالِي صهيون»\",\"evidence_quote\":\"امتهن بن غوريون الصحافة في بداية حياته العملية وبدأ باستعمال الاسم اليهودي «بن غوريون» عندما مارس حياته السياسية. كان بن غوريون من طلائع الحركة العمّالية الصهيونية في مرحلة تأسيس إسرائيل. حين كان طالباً في جامعة وارسو انضم للحركة الماركسية الصهيونية عمال صهيون «بُوعالِي صهيون» عام 1904.\",\"uncertainty\":\"none\",\"answer_units\":\"\"}]}",
+        "prompt_tokens": 434,
+        "completion_tokens": 1563,
+        "total_tokens": 1997,
+        "latency_ms": 17629.493
+      },
+      "route": "evidence_snippet"
     },
     {
       "case_id": "arabicaqa-689690",
       "reference_answer": "مدينة بلونسك البولندية",
-      "answer": "مدينة بلونسك البولندية",
+      "answer": "وُلد بن غوريون في مدينة بلونسك البولندية باسم دافيد غرين، ولتحمّسة للصهيونية، هاجر إلى فلسطين عام 1906.",
       "reference_overlap": 1.0,
       "verification": {
         "status": "supported",
         "contract": "doaa.answer_shape.v1",
         "question_id": "arabicaqa-689690",
-        "answer": "مدينة بلونسك البولندية",
-        "evidence_quote": "وُلد بن غوريون في مدينة بلونسك البولندية باسم دافيد غرين،",
+        "answer": "وُلد بن غوريون في مدينة بلونسك البولندية باسم دافيد غرين، ولتحمّسة للصهيونية، هاجر إلى فلسطين عام 1906.",
+        "evidence_quote": "وُلد بن غوريون في مدينة بلونسك البولندية باسم دافيد غرين، ولتحمّسة للصهيونية، هاجر إلى فلسطين عام 1906.",
         "uncertainty": "none",
         "answer_units": "",
         "execution_authority": "none",
         "automatic_execution": false
       },
       "first_usage": {
-        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-689689\",\"answer\":\"أوّل رئيس وزراء لإسرائيل.\",\"evidence_quote\":\"دافيد بن غوريون ؛ (16 أكتوبر 1886 - ديسمبر 1973)، أوّل رئيس وزراء لإسرائيل.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-689690\",\"answer\":\"مدينة بلونسك البولندية\",\"evidence_quote\":\"وُلد بن غوريون في مدينة بلونسك البولندية باسم دافيد غرين،\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-689692\",\"answer\":\"الحركة الماركسية الصهيونية عمال صهيون («بُوعالِي صهيون»)\",\"evidence_quote\":\"حين كان طالباً في جامعة وارسو انضم للحركة الماركسية الصهيونية عمال صهيون «بُوعالِي صهيون» عام 1904.\",\"uncertainty\":\"none\",\"answer_units\":\"\"}]}",
-        "prompt_tokens": 1124,
-        "completion_tokens": 1384,
-        "total_tokens": 2508,
-        "latency_ms": 13379.912
-      }
+        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-689689\",\"answer\":\"دافيد بن غوريون\",\"evidence_quote\":\"دافيد بن غوريون ؛\",\"uncertainty\":\"source_incomplete\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-689690\",\"answer\":\"مدينة بلونسك البولندية\",\"evidence_quote\":\"وُلد بن غوريون في مدينة بلونسك البولندية باسم دافيد غرين، ولتحمّسه للصهيونية، هاجر إلى فلسطين عام 1906.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-689692\",\"answer\":\"الحركة الماركسية الصهيونية عمال صهيون «بُوعالِي صهيون»\",\"evidence_quote\":\"امتهن بن غوريون الصحافة في بداية حياته العملية وبدأ باستعمال الاسم اليهودي «بن غوريون» عندما مارس حياته السياسية. كان بن غوريون من طلائع الحركة العمّالية الصهيونية في مرحلة تأسيس إسرائيل. حين كان طالباً في جامعة وارسو انضم للحركة الماركسية الصهيونية عمال صهيون «بُوعالِي صهيون» عام 1904.\",\"uncertainty\":\"none\",\"answer_units\":\"\"}]}",
+        "prompt_tokens": 434,
+        "completion_tokens": 1563,
+        "total_tokens": 1997,
+        "latency_ms": 17629.493
+      },
+      "route": "local_extractive"
     },
     {
       "case_id": "arabicaqa-689692",
       "reference_answer": " الحركة العمّالية الصهيونية في مرحلة تأسيس إسرائيل",
-      "answer": "الحركة الماركسية الصهيونية عمال صهيون («بُوعالِي صهيون»)",
-      "reference_overlap": 0.285714,
+      "answer": "امتهن بن غوريون الصحافة في بداية حياته العملية وبدأ باستعمال الاسم اليهودي «بن غوريون» عندما مارس حياته السياسية.",
+      "reference_overlap": 0.142857,
       "verification": {
         "status": "supported",
         "contract": "doaa.answer_shape.v1",
         "question_id": "arabicaqa-689692",
-        "answer": "الحركة الماركسية الصهيونية عمال صهيون («بُوعالِي صهيون»)",
-        "evidence_quote": "حين كان طالباً في جامعة وارسو انضم للحركة الماركسية الصهيونية عمال صهيون «بُوعالِي صهيون» عام 1904.",
+        "answer": "امتهن بن غوريون الصحافة في بداية حياته العملية وبدأ باستعمال الاسم اليهودي «بن غوريون» عندما مارس حياته السياسية.",
+        "evidence_quote": "امتهن بن غوريون الصحافة في بداية حياته العملية وبدأ باستعمال الاسم اليهودي «بن غوريون» عندما مارس حياته السياسية.",
         "uncertainty": "none",
         "answer_units": "",
         "execution_authority": "none",
         "automatic_execution": false
       },
       "first_usage": {
-        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-689689\",\"answer\":\"أوّل رئيس وزراء لإسرائيل.\",\"evidence_quote\":\"دافيد بن غوريون ؛ (16 أكتوبر 1886 - ديسمبر 1973)، أوّل رئيس وزراء لإسرائيل.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-689690\",\"answer\":\"مدينة بلونسك البولندية\",\"evidence_quote\":\"وُلد بن غوريون في مدينة بلونسك البولندية باسم دافيد غرين،\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-689692\",\"answer\":\"الحركة الماركسية الصهيونية عمال صهيون («بُوعالِي صهيون»)\",\"evidence_quote\":\"حين كان طالباً في جامعة وارسو انضم للحركة الماركسية الصهيونية عمال صهيون «بُوعالِي صهيون» عام 1904.\",\"uncertainty\":\"none\",\"answer_units\":\"\"}]}",
-        "prompt_tokens": 1124,
-        "completion_tokens": 1384,
-        "total_tokens": 2508,
-        "latency_ms": 13379.912
-      }
+        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-689689\",\"answer\":\"دافيد بن غوريون\",\"evidence_quote\":\"دافيد بن غوريون ؛\",\"uncertainty\":\"source_incomplete\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-689690\",\"answer\":\"مدينة بلونسك البولندية\",\"evidence_quote\":\"وُلد بن غوريون في مدينة بلونسك البولندية باسم دافيد غرين، ولتحمّسه للصهيونية، هاجر إلى فلسطين عام 1906.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-689692\",\"answer\":\"الحركة الماركسية الصهيونية عمال صهيون «بُوعالِي صهيون»\",\"evidence_quote\":\"امتهن بن غوريون الصحافة في بداية حياته العملية وبدأ باستعمال الاسم اليهودي «بن غوريون» عندما مارس حياته السياسية. كان بن غوريون من طلائع الحركة العمّالية الصهيونية في مرحلة تأسيس إسرائيل. حين كان طالباً في جامعة وارسو انضم للحركة الماركسية الصهيونية عمال صهيون «بُوعالِي صهيون» عام 1904.\",\"uncertainty\":\"none\",\"answer_units\":\"\"}]}",
+        "prompt_tokens": 434,
+        "completion_tokens": 1563,
+        "total_tokens": 1997,
+        "latency_ms": 17629.493
+      },
+      "route": "local_extractive"
     },
     {
       "case_id": "arabicaqa-1136340",
@@ -106,19 +109,20 @@
         "contract": "doaa.answer_shape.v1",
         "question_id": "arabicaqa-1136340",
         "answer": "أكتوبر 2001",
-        "evidence_quote": "تأسست في أكتوبر 2001.",
+        "evidence_quote": "المغرب اليوم هي صحيفة مغربية إخبارية عامة، تأسست في أكتوبر 2001.",
         "uncertainty": "none",
-        "answer_units": "month-year",
+        "answer_units": "شهر-سنة",
         "execution_authority": "none",
         "automatic_execution": false
       },
       "first_usage": {
-        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-1136340\",\"answer\":\"أكتوبر 2001\",\"evidence_quote\":\"تأسست في أكتوبر 2001.\",\"uncertainty\":\"none\",\"answer_units\":\"month-year\"},{\"question_id\":\"arabicaqa-1136342\",\"answer\":\"سياسية، اقتصادية، اجتماعية، ثقافية، رياضية\",\"evidence_quote\":\"تتناول الصحيفة اليومية مواضيع سياسية واقتصادية واجتماعية وثقافية ورياضية.\",\"uncertainty\":\"none\",\"answer_units\":\"topics\"},{\"question_id\":\"arabicaqa-1136341\",\"answer\":\"سعد بن منصور\",\"evidence_quote\":\"يديرها سعد بن منصور.\",\"uncertainty\":\"none\",\"answer_units\":\"name\"}]}",
-        "prompt_tokens": 444,
-        "completion_tokens": 1002,
-        "total_tokens": 1446,
-        "latency_ms": 11113.599
-      }
+        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-1136340\",\"answer\":\"أكتوبر 2001\",\"evidence_quote\":\"المغرب اليوم هي صحيفة مغربية إخبارية عامة، تأسست في أكتوبر 2001.\",\"uncertainty\":\"none\",\"answer_units\":\"شهر-سنة\"},{\"question_id\":\"arabicaqa-1136342\",\"answer\":\"سياسية، اقتصادية، اجتماعية، ثقافية، رياضية\",\"evidence_quote\":\"تتناول الصحيفة اليومية مواضيع سياسية واقتصادية واجتماعية وثقافية ورياضية.\",\"uncertainty\":\"none\",\"answer_units\":\"مواضيع\"},{\"question_id\":\"arabicaqa-1136341\",\"answer\":\"سعد بن منصور\",\"evidence_quote\":\"المغرب اليوم هي صحيفة مغربية إخبارية عامة، تأسست في أكتوبر 2001. يديرها سعد بن منصور. تتناول الصحيفة اليومية مواضيع سياسية واقتصادية واجتماعية وثقافية ورياضية. والمساهم الرئيسي فيها هو مجموعة أكوا التي يملكها عزيز أخنوش. تقديم الصحيفة. تصدر جريدة Ajourdhui Le Maroc يوميا من الاثنين إلى الجمعية عن شركة (ALM Publishing S. A) وتوزع من طرف شركة (Sapress). في عام 2020 ، أعلنت إدارة الصحيفة عن توزيع يومي يتراوح بين 10000 إلى 12000 نسخة بثمن 4 دراهم للنسخة الواحدة. خط التحرير. تُعرف الصحيفة بخطها التحريري القريب والمدافع عن مصالح هولدينغ أكوا لمالكها عزيز اخنوش، إلى جانب جريدة لا في إيكو التابعة هي الأخرى لنفس المجموعة.\",\"uncertainty\":\"none\",\"answer_units\":\"اسم\"}]}",
+        "prompt_tokens": 531,
+        "completion_tokens": 883,
+        "total_tokens": 1414,
+        "latency_ms": 11060.701
+      },
+      "route": "evidence_snippet"
     },
     {
       "case_id": "arabicaqa-1136342",
@@ -132,17 +136,18 @@
         "answer": "سياسية، اقتصادية، اجتماعية، ثقافية، رياضية",
         "evidence_quote": "تتناول الصحيفة اليومية مواضيع سياسية واقتصادية واجتماعية وثقافية ورياضية.",
         "uncertainty": "none",
-        "answer_units": "topics",
+        "answer_units": "مواضيع",
         "execution_authority": "none",
         "automatic_execution": false
       },
       "first_usage": {
-        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-1136340\",\"answer\":\"أكتوبر 2001\",\"evidence_quote\":\"تأسست في أكتوبر 2001.\",\"uncertainty\":\"none\",\"answer_units\":\"month-year\"},{\"question_id\":\"arabicaqa-1136342\",\"answer\":\"سياسية، اقتصادية، اجتماعية، ثقافية، رياضية\",\"evidence_quote\":\"تتناول الصحيفة اليومية مواضيع سياسية واقتصادية واجتماعية وثقافية ورياضية.\",\"uncertainty\":\"none\",\"answer_units\":\"topics\"},{\"question_id\":\"arabicaqa-1136341\",\"answer\":\"سعد بن منصور\",\"evidence_quote\":\"يديرها سعد بن منصور.\",\"uncertainty\":\"none\",\"answer_units\":\"name\"}]}",
-        "prompt_tokens": 444,
-        "completion_tokens": 1002,
-        "total_tokens": 1446,
-        "latency_ms": 11113.599
-      }
+        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-1136340\",\"answer\":\"أكتوبر 2001\",\"evidence_quote\":\"المغرب اليوم هي صحيفة مغربية إخبارية عامة، تأسست في أكتوبر 2001.\",\"uncertainty\":\"none\",\"answer_units\":\"شهر-سنة\"},{\"question_id\":\"arabicaqa-1136342\",\"answer\":\"سياسية، اقتصادية، اجتماعية، ثقافية، رياضية\",\"evidence_quote\":\"تتناول الصحيفة اليومية مواضيع سياسية واقتصادية واجتماعية وثقافية ورياضية.\",\"uncertainty\":\"none\",\"answer_units\":\"مواضيع\"},{\"question_id\":\"arabicaqa-1136341\",\"answer\":\"سعد بن منصور\",\"evidence_quote\":\"المغرب اليوم هي صحيفة مغربية إخبارية عامة، تأسست في أكتوبر 2001. يديرها سعد بن منصور. تتناول الصحيفة اليومية مواضيع سياسية واقتصادية واجتماعية وثقافية ورياضية. والمساهم الرئيسي فيها هو مجموعة أكوا التي يملكها عزيز أخنوش. تقديم الصحيفة. تصدر جريدة Ajourdhui Le Maroc يوميا من الاثنين إلى الجمعية عن شركة (ALM Publishing S. A) وتوزع من طرف شركة (Sapress). في عام 2020 ، أعلنت إدارة الصحيفة عن توزيع يومي يتراوح بين 10000 إلى 12000 نسخة بثمن 4 دراهم للنسخة الواحدة. خط التحرير. تُعرف الصحيفة بخطها التحريري القريب والمدافع عن مصالح هولدينغ أكوا لمالكها عزيز اخنوش، إلى جانب جريدة لا في إيكو التابعة هي الأخرى لنفس المجموعة.\",\"uncertainty\":\"none\",\"answer_units\":\"اسم\"}]}",
+        "prompt_tokens": 531,
+        "completion_tokens": 883,
+        "total_tokens": 1414,
+        "latency_ms": 11060.701
+      },
+      "route": "evidence_snippet"
     },
     {
       "case_id": "arabicaqa-1136341",
@@ -150,34 +155,51 @@
       "answer": "سعد بن منصور",
       "reference_overlap": 1.0,
       "verification": {
+        "status": "fallback_or_review",
+        "contract": "doaa.answer_shape.v1",
+        "reason": "evidence_quote_not_in_source",
+        "execution_authority": "none",
+        "automatic_execution": false
+      },
+      "first_usage": {
+        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-1136340\",\"answer\":\"أكتوبر 2001\",\"evidence_quote\":\"المغرب اليوم هي صحيفة مغربية إخبارية عامة، تأسست في أكتوبر 2001.\",\"uncertainty\":\"none\",\"answer_units\":\"شهر-سنة\"},{\"question_id\":\"arabicaqa-1136342\",\"answer\":\"سياسية، اقتصادية، اجتماعية، ثقافية، رياضية\",\"evidence_quote\":\"تتناول الصحيفة اليومية مواضيع سياسية واقتصادية واجتماعية وثقافية ورياضية.\",\"uncertainty\":\"none\",\"answer_units\":\"مواضيع\"},{\"question_id\":\"arabicaqa-1136341\",\"answer\":\"سعد بن منصور\",\"evidence_quote\":\"المغرب اليوم هي صحيفة مغربية إخبارية عامة، تأسست في أكتوبر 2001. يديرها سعد بن منصور. تتناول الصحيفة اليومية مواضيع سياسية واقتصادية واجتماعية وثقافية ورياضية. والمساهم الرئيسي فيها هو مجموعة أكوا التي يملكها عزيز أخنوش. تقديم الصحيفة. تصدر جريدة Ajourdhui Le Maroc يوميا من الاثنين إلى الجمعية عن شركة (ALM Publishing S. A) وتوزع من طرف شركة (Sapress). في عام 2020 ، أعلنت إدارة الصحيفة عن توزيع يومي يتراوح بين 10000 إلى 12000 نسخة بثمن 4 دراهم للنسخة الواحدة. خط التحرير. تُعرف الصحيفة بخطها التحريري القريب والمدافع عن مصالح هولدينغ أكوا لمالكها عزيز اخنوش، إلى جانب جريدة لا في إيكو التابعة هي الأخرى لنفس المجموعة.\",\"uncertainty\":\"none\",\"answer_units\":\"اسم\"}]}",
+        "prompt_tokens": 531,
+        "completion_tokens": 883,
+        "total_tokens": 1414,
+        "latency_ms": 11060.701
+      },
+      "route": "evidence_snippet",
+      "retry_answer": "سعد بن منصور",
+      "retry_reference_overlap": 1.0,
+      "retry_verification": {
         "status": "supported",
         "contract": "doaa.answer_shape.v1",
         "question_id": "arabicaqa-1136341",
         "answer": "سعد بن منصور",
         "evidence_quote": "يديرها سعد بن منصور.",
         "uncertainty": "none",
-        "answer_units": "name",
+        "answer_units": "",
         "execution_authority": "none",
         "automatic_execution": false
       },
-      "first_usage": {
-        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-1136340\",\"answer\":\"أكتوبر 2001\",\"evidence_quote\":\"تأسست في أكتوبر 2001.\",\"uncertainty\":\"none\",\"answer_units\":\"month-year\"},{\"question_id\":\"arabicaqa-1136342\",\"answer\":\"سياسية، اقتصادية، اجتماعية، ثقافية، رياضية\",\"evidence_quote\":\"تتناول الصحيفة اليومية مواضيع سياسية واقتصادية واجتماعية وثقافية ورياضية.\",\"uncertainty\":\"none\",\"answer_units\":\"topics\"},{\"question_id\":\"arabicaqa-1136341\",\"answer\":\"سعد بن منصور\",\"evidence_quote\":\"يديرها سعد بن منصور.\",\"uncertainty\":\"none\",\"answer_units\":\"name\"}]}",
-        "prompt_tokens": 444,
-        "completion_tokens": 1002,
-        "total_tokens": 1446,
-        "latency_ms": 11113.599
+      "retry_usage": {
+        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-1136341\",\"answer\":\"سعد بن منصور\",\"evidence_quote\":\"يديرها سعد بن منصور.\",\"uncertainty\":\"none\",\"answer_units\":\"\"}]}",
+        "prompt_tokens": 395,
+        "completion_tokens": 254,
+        "total_tokens": 649,
+        "latency_ms": 3439.176
       }
     },
     {
       "case_id": "arabicaqa-993042",
       "reference_answer": " كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959.",
-      "answer": "يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959.",
+      "answer": "الولاية في تونس هي التقسيم الإداري الأعلى في البلاد، نجد على رأسها الوالي، الذي يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959.",
       "reference_overlap": 1.0,
       "verification": {
         "status": "supported",
         "contract": "doaa.answer_shape.v1",
         "question_id": "arabicaqa-993042",
-        "answer": "يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959.",
+        "answer": "الولاية في تونس هي التقسيم الإداري الأعلى في البلاد، نجد على رأسها الوالي، الذي يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959.",
         "evidence_quote": "الولاية في تونس هي التقسيم الإداري الأعلى في البلاد، نجد على رأسها الوالي، الذي يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959.",
         "uncertainty": "none",
         "answer_units": "",
@@ -185,12 +207,13 @@
         "automatic_execution": false
       },
       "first_usage": {
-        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-993042\",\"answer\":\"يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959.\",\"evidence_quote\":\"الولاية في تونس هي التقسيم الإداري الأعلى في البلاد، نجد على رأسها الوالي، الذي يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-992951\",\"answer\":\"الولاية\",\"evidence_quote\":\"الولاية في تونس هي التقسيم الإداري الأعلى في البلاد\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-993468\",\"answer\":\"24\",\"evidence_quote\":\"تقسم تونس إلى 24 ولاية، التي تقسم بدورها إلى 264 معتمدية (يترأسها معتمد) وكذلك 350 بلدية (يترأسها عمدة أو رئيس بلدية).\",\"uncertainty\":\"none\",\"answer_units\":\"ولايات\"}]}",
-        "prompt_tokens": 456,
-        "completion_tokens": 1296,
-        "total_tokens": 1752,
-        "latency_ms": 14389.037
-      }
+        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-993042\",\"answer\":\"يُعيّن الوالي من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959.\",\"evidence_quote\":\"الولاية في تونس هي التقسيم الإداري الأعلى في البلاد، نجد على رأسها الوالي، الذي يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959. قائمة الولايات.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-992951\",\"answer\":\"الولاية\",\"evidence_quote\":\"الولاية في تونس هي التقسيم الإداري الأعلى في البلاد، نجد على رأسها الوالي، الذي يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-993468\",\"answer\":\"\",\"evidence_quote\":\"الولاية في تونس هي التقسيم الإداري الأعلى في البلاد، نجد على رأسها الوالي، الذي يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959. قائمة الولايات.\",\"uncertainty\":\"source_incomplete\",\"answer_units\":\"\"}]}",
+        "prompt_tokens": 487,
+        "completion_tokens": 1052,
+        "total_tokens": 1539,
+        "latency_ms": 11837.521
+      },
+      "route": "local_extractive"
     },
     {
       "case_id": "arabicaqa-992951",
@@ -202,54 +225,68 @@
         "contract": "doaa.answer_shape.v1",
         "question_id": "arabicaqa-992951",
         "answer": "الولاية",
-        "evidence_quote": "الولاية في تونس هي التقسيم الإداري الأعلى في البلاد",
+        "evidence_quote": "الولاية في تونس هي التقسيم الإداري الأعلى في البلاد، نجد على رأسها الوالي، الذي يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959.",
         "uncertainty": "none",
         "answer_units": "",
         "execution_authority": "none",
         "automatic_execution": false
       },
       "first_usage": {
-        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-993042\",\"answer\":\"يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959.\",\"evidence_quote\":\"الولاية في تونس هي التقسيم الإداري الأعلى في البلاد، نجد على رأسها الوالي، الذي يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-992951\",\"answer\":\"الولاية\",\"evidence_quote\":\"الولاية في تونس هي التقسيم الإداري الأعلى في البلاد\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-993468\",\"answer\":\"24\",\"evidence_quote\":\"تقسم تونس إلى 24 ولاية، التي تقسم بدورها إلى 264 معتمدية (يترأسها معتمد) وكذلك 350 بلدية (يترأسها عمدة أو رئيس بلدية).\",\"uncertainty\":\"none\",\"answer_units\":\"ولايات\"}]}",
-        "prompt_tokens": 456,
-        "completion_tokens": 1296,
-        "total_tokens": 1752,
-        "latency_ms": 14389.037
-      }
+        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-993042\",\"answer\":\"يُعيّن الوالي من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959.\",\"evidence_quote\":\"الولاية في تونس هي التقسيم الإداري الأعلى في البلاد، نجد على رأسها الوالي، الذي يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959. قائمة الولايات.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-992951\",\"answer\":\"الولاية\",\"evidence_quote\":\"الولاية في تونس هي التقسيم الإداري الأعلى في البلاد، نجد على رأسها الوالي، الذي يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-993468\",\"answer\":\"\",\"evidence_quote\":\"الولاية في تونس هي التقسيم الإداري الأعلى في البلاد، نجد على رأسها الوالي، الذي يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959. قائمة الولايات.\",\"uncertainty\":\"source_incomplete\",\"answer_units\":\"\"}]}",
+        "prompt_tokens": 487,
+        "completion_tokens": 1052,
+        "total_tokens": 1539,
+        "latency_ms": 11837.521
+      },
+      "route": "evidence_snippet"
     },
     {
       "case_id": "arabicaqa-993468",
       "reference_answer": " 24 ولاية،",
-      "answer": "24",
-      "reference_overlap": 0.5,
+      "answer": "",
+      "reference_overlap": 0.0,
       "verification": {
-        "status": "supported",
+        "status": "fallback_or_review",
         "contract": "doaa.answer_shape.v1",
-        "question_id": "arabicaqa-993468",
-        "answer": "24",
-        "evidence_quote": "تقسم تونس إلى 24 ولاية، التي تقسم بدورها إلى 264 معتمدية (يترأسها معتمد) وكذلك 350 بلدية (يترأسها عمدة أو رئيس بلدية).",
-        "uncertainty": "none",
-        "answer_units": "ولايات",
+        "reason": "answer_empty",
         "execution_authority": "none",
         "automatic_execution": false
       },
       "first_usage": {
-        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-993042\",\"answer\":\"يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959.\",\"evidence_quote\":\"الولاية في تونس هي التقسيم الإداري الأعلى في البلاد، نجد على رأسها الوالي، الذي يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-992951\",\"answer\":\"الولاية\",\"evidence_quote\":\"الولاية في تونس هي التقسيم الإداري الأعلى في البلاد\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-993468\",\"answer\":\"24\",\"evidence_quote\":\"تقسم تونس إلى 24 ولاية، التي تقسم بدورها إلى 264 معتمدية (يترأسها معتمد) وكذلك 350 بلدية (يترأسها عمدة أو رئيس بلدية).\",\"uncertainty\":\"none\",\"answer_units\":\"ولايات\"}]}",
-        "prompt_tokens": 456,
-        "completion_tokens": 1296,
-        "total_tokens": 1752,
-        "latency_ms": 14389.037
+        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-993042\",\"answer\":\"يُعيّن الوالي من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959.\",\"evidence_quote\":\"الولاية في تونس هي التقسيم الإداري الأعلى في البلاد، نجد على رأسها الوالي، الذي يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959. قائمة الولايات.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-992951\",\"answer\":\"الولاية\",\"evidence_quote\":\"الولاية في تونس هي التقسيم الإداري الأعلى في البلاد، نجد على رأسها الوالي، الذي يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-993468\",\"answer\":\"\",\"evidence_quote\":\"الولاية في تونس هي التقسيم الإداري الأعلى في البلاد، نجد على رأسها الوالي، الذي يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959. قائمة الولايات.\",\"uncertainty\":\"source_incomplete\",\"answer_units\":\"\"}]}",
+        "prompt_tokens": 487,
+        "completion_tokens": 1052,
+        "total_tokens": 1539,
+        "latency_ms": 11837.521
+      },
+      "route": "evidence_snippet",
+      "retry_answer": "غير مذكور في الدليل المقدم",
+      "retry_reference_overlap": 0.0,
+      "retry_verification": {
+        "status": "fallback_or_review",
+        "contract": "doaa.answer_shape.v1",
+        "reason": "evidence_quote_not_in_source",
+        "execution_authority": "none",
+        "automatic_execution": false
+      },
+      "retry_usage": {
+        "content": "{\n  \"answers\": [\n    {\n      \"question_id\": \"arabicaqa-993468\",\n      \"answer\": \"غير مذكور في الدليل المقدم\",\n      \"evidence_quote\": \"الولاية في تونس هي التقسيم الإداري الأعلى في البلاد، نجد على رأسها الوالي، الذي يتم تعيينه من قبل رئيس الحكومة التونسية منذ دستور تونس 2014، وقبل ذلك كان يعينه رئيس الجمهورية التونسية باقتراح من وزير الداخلية حسب دستور تونس 1959. قائمة الولايات.\",\n      \"uncertainty\": \"source_incomplete\",\n      \"answer_units\": \"عدد\"\n    }\n  ]\n}",
+        "prompt_tokens": 263,
+        "completion_tokens": 597,
+        "total_tokens": 860,
+        "latency_ms": 7135.274
       }
     },
     {
       "case_id": "arabicaqa-700298",
       "reference_answer": "دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين",
-      "answer": "دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).",
+      "answer": "يوغوسلافيا كانت دولة قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).",
       "reference_overlap": 1.0,
       "verification": {
         "status": "supported",
         "contract": "doaa.answer_shape.v1",
         "question_id": "arabicaqa-700298",
-        "answer": "دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).",
+        "answer": "يوغوسلافيا كانت دولة قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).",
         "evidence_quote": "يوغوسلافيا (Jugoslavija) دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).",
         "uncertainty": "none",
         "answer_units": "",
@@ -257,75 +294,45 @@
         "automatic_execution": false
       },
       "first_usage": {
-        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-700298\",\"answer\":\"دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).\",\"evidence_quote\":\"يوغوسلافيا (Jugoslavija) دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-700299\",\"answer\":\"يرجع تاريخها إلى القبائل السلافية التي استوطنت البلقان منذ القرن السادس/السابع، كونوا أول اتحاد في 1171، وكانت دولة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).\",\"evidence_quote\":\"يرجع تاريخ يوغسلافيا إلى القبائل السلافية التي استوطنت منطقة البلقان منذ القرن السادس/القرن السابع الميلادي. كونوا أول اتحاد في 1171.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-700301\",\"answer\":\"نالوا استقلالهم عام 1877/1878 بعد هزيمة العثمانيين في الحروب الروسية العثمانية.\",\"evidence_quote\":\"نال الصرب استقلالهم عام 1877/1878 بعد هزيمة العثمانيين في الحروب الروسية العثمانية.\",\"uncertainty\":\"none\",\"answer_units\":\"\"}]}",
-        "prompt_tokens": 1141,
-        "completion_tokens": 1272,
-        "total_tokens": 2413,
-        "latency_ms": 13679.288
-      }
+        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-700298\",\"answer\":\"يوغوسلافيا كانت دولة قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).\",\"evidence_quote\":\"يوغوسلافيا (Jugoslavija) دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-700299\",\"answer\":\"يرجع تاريخ يوغسلافيا إلى القبائل السلافية التي استوطنت منطقة البلقان منذ القرن السادس/القرن السابع الميلادي.\",\"evidence_quote\":\"يوغوسلافيا (Jugoslavija) دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006). يرجع تاريخ يوغسلافيا إلى القبائل السلافية التي استوطنت منطقة البلقان منذ القرن السادس/القرن السابع الميلادي.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-700301\",\"answer\":\"نال الصرب استقلالهم عام 1877/1878 بعد هزيمة العثمانيين في الحروب الروسية العثمانية.\",\"evidence_quote\":\"نال الصرب استقلالهم عام 1877/1878 بعد هزيمة العثمانيين في الحروب الروسية العثمانية.\",\"uncertainty\":\"none\",\"answer_units\":\"\"}]}",
+        "prompt_tokens": 413,
+        "completion_tokens": 1279,
+        "total_tokens": 1692,
+        "latency_ms": 14611.651
+      },
+      "route": "evidence_snippet"
     },
     {
       "case_id": "arabicaqa-700299",
       "reference_answer": "1918–2006",
-      "answer": "يرجع تاريخها إلى القبائل السلافية التي استوطنت البلقان منذ القرن السادس/السابع، كونوا أول اتحاد في 1171، وكانت دولة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).",
+      "answer": "يوغوسلافيا (Jugoslavija) دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).",
       "reference_overlap": 0.0,
       "verification": {
-        "status": "fallback_or_review",
+        "status": "supported",
         "contract": "doaa.answer_shape.v1",
-        "reason": "answer_terms_not_supported",
+        "question_id": "arabicaqa-700299",
+        "answer": "يوغوسلافيا (Jugoslavija) دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).",
+        "evidence_quote": "يوغوسلافيا (Jugoslavija) دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).",
+        "uncertainty": "none",
+        "answer_units": "",
         "execution_authority": "none",
         "automatic_execution": false
       },
       "first_usage": {
-        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-700298\",\"answer\":\"دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).\",\"evidence_quote\":\"يوغوسلافيا (Jugoslavija) دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-700299\",\"answer\":\"يرجع تاريخها إلى القبائل السلافية التي استوطنت البلقان منذ القرن السادس/السابع، كونوا أول اتحاد في 1171، وكانت دولة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).\",\"evidence_quote\":\"يرجع تاريخ يوغسلافيا إلى القبائل السلافية التي استوطنت منطقة البلقان منذ القرن السادس/القرن السابع الميلادي. كونوا أول اتحاد في 1171.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-700301\",\"answer\":\"نالوا استقلالهم عام 1877/1878 بعد هزيمة العثمانيين في الحروب الروسية العثمانية.\",\"evidence_quote\":\"نال الصرب استقلالهم عام 1877/1878 بعد هزيمة العثمانيين في الحروب الروسية العثمانية.\",\"uncertainty\":\"none\",\"answer_units\":\"\"}]}",
-        "prompt_tokens": 1141,
-        "completion_tokens": 1272,
-        "total_tokens": 2413,
-        "latency_ms": 13679.288
+        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-700298\",\"answer\":\"يوغوسلافيا كانت دولة قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).\",\"evidence_quote\":\"يوغوسلافيا (Jugoslavija) دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-700299\",\"answer\":\"يرجع تاريخ يوغسلافيا إلى القبائل السلافية التي استوطنت منطقة البلقان منذ القرن السادس/القرن السابع الميلادي.\",\"evidence_quote\":\"يوغوسلافيا (Jugoslavija) دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006). يرجع تاريخ يوغسلافيا إلى القبائل السلافية التي استوطنت منطقة البلقان منذ القرن السادس/القرن السابع الميلادي.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-700301\",\"answer\":\"نال الصرب استقلالهم عام 1877/1878 بعد هزيمة العثمانيين في الحروب الروسية العثمانية.\",\"evidence_quote\":\"نال الصرب استقلالهم عام 1877/1878 بعد هزيمة العثمانيين في الحروب الروسية العثمانية.\",\"uncertainty\":\"none\",\"answer_units\":\"\"}]}",
+        "prompt_tokens": 413,
+        "completion_tokens": 1279,
+        "total_tokens": 1692,
+        "latency_ms": 14611.651
       },
-      "retry_answer": "كانت يوغوسلافيا دولة قائمة في القرن العشرين من 1918 إلى 2006.",
-      "retry_reference_overlap": 0.0,
-      "retry_verification": {
-        "status": "supported",
-        "contract": "doaa.answer_shape.v1",
-        "question_id": "arabicaqa-700299",
-        "answer": "كانت يوغوسلافيا دولة قائمة في القرن العشرين من 1918 إلى 2006.",
-        "evidence_quote": "يوغوسلافيا (Jugoslavija) دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).",
-        "uncertainty": "none",
-        "answer_units": "years",
-        "execution_authority": "none",
-        "automatic_execution": false
-      },
-      "retry_usage": {
-        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-700299\",\"answer\":\"كانت يوغوسلافيا دولة قائمة في القرن العشرين من 1918 إلى 2006.\",\"evidence_quote\":\"يوغوسلافيا (Jugoslavija) دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).\",\"uncertainty\":\"none\",\"answer_units\":\"years\"},{\"question_id\":\"arabicaqa-700301\",\"answer\":\"نال الصرب استقلالهم عام 1877/1878 بعد هزيمة العثمانيين في الحروب الروسية العثمانية.\",\"evidence_quote\":\"نال الصرب استقلالهم عام 1877/1878 بعد هزيمة العثمانيين في الحروب الروسية العثمانية.\",\"uncertainty\":\"none\",\"answer_units\":\"\"}]}",
-        "prompt_tokens": 1112,
-        "completion_tokens": 1591,
-        "total_tokens": 2703,
-        "latency_ms": 16863.985
-      }
+      "route": "local_extractive"
     },
     {
       "case_id": "arabicaqa-700301",
       "reference_answer": "بعد هزيمة العثمانيين في الحروب الروسية العثمانية",
-      "answer": "نالوا استقلالهم عام 1877/1878 بعد هزيمة العثمانيين في الحروب الروسية العثمانية.",
+      "answer": "نال الصرب استقلالهم عام 1877/1878 بعد هزيمة العثمانيين في الحروب الروسية العثمانية.",
       "reference_overlap": 0.857143,
       "verification": {
-        "status": "fallback_or_review",
-        "contract": "doaa.answer_shape.v1",
-        "reason": "answer_terms_not_supported",
-        "execution_authority": "none",
-        "automatic_execution": false
-      },
-      "first_usage": {
-        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-700298\",\"answer\":\"دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).\",\"evidence_quote\":\"يوغوسلافيا (Jugoslavija) دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-700299\",\"answer\":\"يرجع تاريخها إلى القبائل السلافية التي استوطنت البلقان منذ القرن السادس/السابع، كونوا أول اتحاد في 1171، وكانت دولة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).\",\"evidence_quote\":\"يرجع تاريخ يوغسلافيا إلى القبائل السلافية التي استوطنت منطقة البلقان منذ القرن السادس/القرن السابع الميلادي. كونوا أول اتحاد في 1171.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-700301\",\"answer\":\"نالوا استقلالهم عام 1877/1878 بعد هزيمة العثمانيين في الحروب الروسية العثمانية.\",\"evidence_quote\":\"نال الصرب استقلالهم عام 1877/1878 بعد هزيمة العثمانيين في الحروب الروسية العثمانية.\",\"uncertainty\":\"none\",\"answer_units\":\"\"}]}",
-        "prompt_tokens": 1141,
-        "completion_tokens": 1272,
-        "total_tokens": 2413,
-        "latency_ms": 13679.288
-      },
-      "retry_answer": "نال الصرب استقلالهم عام 1877/1878 بعد هزيمة العثمانيين في الحروب الروسية العثمانية.",
-      "retry_reference_overlap": 0.857143,
-      "retry_verification": {
         "status": "supported",
         "contract": "doaa.answer_shape.v1",
         "question_id": "arabicaqa-700301",
@@ -336,85 +343,89 @@
         "execution_authority": "none",
         "automatic_execution": false
       },
-      "retry_usage": {
-        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-700299\",\"answer\":\"كانت يوغوسلافيا دولة قائمة في القرن العشرين من 1918 إلى 2006.\",\"evidence_quote\":\"يوغوسلافيا (Jugoslavija) دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).\",\"uncertainty\":\"none\",\"answer_units\":\"years\"},{\"question_id\":\"arabicaqa-700301\",\"answer\":\"نال الصرب استقلالهم عام 1877/1878 بعد هزيمة العثمانيين في الحروب الروسية العثمانية.\",\"evidence_quote\":\"نال الصرب استقلالهم عام 1877/1878 بعد هزيمة العثمانيين في الحروب الروسية العثمانية.\",\"uncertainty\":\"none\",\"answer_units\":\"\"}]}",
-        "prompt_tokens": 1112,
-        "completion_tokens": 1591,
-        "total_tokens": 2703,
-        "latency_ms": 16863.985
-      }
+      "first_usage": {
+        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-700298\",\"answer\":\"يوغوسلافيا كانت دولة قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).\",\"evidence_quote\":\"يوغوسلافيا (Jugoslavija) دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006).\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-700299\",\"answer\":\"يرجع تاريخ يوغسلافيا إلى القبائل السلافية التي استوطنت منطقة البلقان منذ القرن السادس/القرن السابع الميلادي.\",\"evidence_quote\":\"يوغوسلافيا (Jugoslavija) دولة كانت قائمة في غرب البلقان جنوبَ شرق أوروبا في القرن العشرين (1918–2006). يرجع تاريخ يوغسلافيا إلى القبائل السلافية التي استوطنت منطقة البلقان منذ القرن السادس/القرن السابع الميلادي.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-700301\",\"answer\":\"نال الصرب استقلالهم عام 1877/1878 بعد هزيمة العثمانيين في الحروب الروسية العثمانية.\",\"evidence_quote\":\"نال الصرب استقلالهم عام 1877/1878 بعد هزيمة العثمانيين في الحروب الروسية العثمانية.\",\"uncertainty\":\"none\",\"answer_units\":\"\"}]}",
+        "prompt_tokens": 413,
+        "completion_tokens": 1279,
+        "total_tokens": 1692,
+        "latency_ms": 14611.651
+      },
+      "route": "evidence_snippet"
     },
     {
       "case_id": "arabicaqa-1180309",
       "reference_answer": "ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية",
-      "answer": "ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية",
-      "reference_overlap": 1.0,
+      "answer": "ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية.",
+      "reference_overlap": 0.833333,
       "verification": {
         "status": "supported",
         "contract": "doaa.answer_shape.v1",
         "question_id": "arabicaqa-1180309",
-        "answer": "ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية",
-        "evidence_quote": "أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908",
+        "answer": "ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية.",
+        "evidence_quote": "أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908 وانتقلت للعيش في مدينة القاهرة في عام 1918 عندما بلغت العاشرة من عمرها بعد وفاة والدها الشيخ محمد رزق الجفري الذي كان يعولها، والتحقت مع أمينة رزق (ابنة شقيقتها التي تصغرها بعامين) بمدرسة ضياء الشرق الابتدائية الواقعة بعابدين، وبدأت حياتها العملية كسكرتيرة في سفارة بولندا بالقاهرة.",
         "uncertainty": "none",
         "answer_units": "",
         "execution_authority": "none",
         "automatic_execution": false
       },
       "first_usage": {
-        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-1180309\",\"answer\":\"ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية\",\"evidence_quote\":\"أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-1180310\",\"answer\":\"مدينة طنطا\",\"evidence_quote\":\"أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-1180311\",\"answer\":\"25 مارس 1908\",\"evidence_quote\":\"أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908\",\"uncertainty\":\"none\",\"answer_units\":\"تاريخ\"}]}",
-        "prompt_tokens": 1017,
-        "completion_tokens": 818,
-        "total_tokens": 1835,
-        "latency_ms": 9555.8
-      }
+        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-1180309\",\"answer\":\"ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية.\",\"evidence_quote\":\"أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908 وانتقلت للعيش في مدينة القاهرة في عام 1918 عندما بلغت العاشرة من عمرها بعد وفاة والدها الشيخ محمد رزق الجفري الذي كان يعولها، والتحقت مع أمينة رزق (ابنة شقيقتها التي تصغرها بعامين) بمدرسة ضياء الشرق الابتدائية الواقعة بعابدين، وبدأت حياتها العملية كسكرتيرة في سفارة بولندا بالقاهرة.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-1180310\",\"answer\":\"ولدت في مدينة طنطا.\",\"evidence_quote\":\"أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908 وانتقلت للعيش في مدينة القاهرة في عام 1918 عندما بلغت العاشرة من عمرها بعد وفاة والدها الشيخ محمد رزق الجفري الذي كان يعولها، والتحقت مع أمينة رزق (ابنة شقيقتها التي تصغرها بعامين) بمدرسة ضياء الشرق الابتدائية الواقعة بعابدين، وبدأت حياتها العملية كسكرتيرة في سفارة بولندا بالقاهرة.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-1180311\",\"answer\":\"25 مارس 1908.\",\"evidence_quote\":\"أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908 وانتقلت للعيش في مدينة القاهرة في عام 1918 عندما بلغت العاشرة من عمرها بعد وفاة والدها الشيخ محمد رزق الجفري الذي كان يعولها، والتحقت مع أمينة رزق (ابنة شقيقتها التي تصغرها بعامين) بمدرسة ضياء الشرق الابتدائية الواقعة بعابدين، وبدأت حياتها العملية كسكرتيرة في سفارة بولندا بالقاهرة.\",\"uncertainty\":\"none\",\"answer_units\":\"\"}]}",
+        "prompt_tokens": 660,
+        "completion_tokens": 962,
+        "total_tokens": 1622,
+        "latency_ms": 20643.503
+      },
+      "route": "evidence_snippet"
     },
     {
       "case_id": "arabicaqa-1180310",
       "reference_answer": " مدينة طنطا",
-      "answer": "مدينة طنطا",
+      "answer": "أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908 وانتقلت للعيش في مدينة القاهرة في عام 1918 عندما بلغت العاشرة من عمرها بعد وفاة والدها الشيخ محمد رزق الجفري الذي كان يعولها، والتحقت مع أمينة رزق (ابنة شقيقتها التي تصغرها بعامين) بمدرسة ضياء الشرق الابتدائية الواقعة بعابدين، وبدأت حياتها العملية كسكرتيرة في سفارة بولندا بالقاهرة.",
       "reference_overlap": 1.0,
       "verification": {
         "status": "supported",
         "contract": "doaa.answer_shape.v1",
         "question_id": "arabicaqa-1180310",
-        "answer": "مدينة طنطا",
-        "evidence_quote": "أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908",
+        "answer": "أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908 وانتقلت للعيش في مدينة القاهرة في عام 1918 عندما بلغت العاشرة من عمرها بعد وفاة والدها الشيخ محمد رزق الجفري الذي كان يعولها، والتحقت مع أمينة رزق (ابنة شقيقتها التي تصغرها بعامين) بمدرسة ضياء الشرق الابتدائية الواقعة بعابدين، وبدأت حياتها العملية كسكرتيرة في سفارة بولندا بالقاهرة.",
+        "evidence_quote": "أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908 وانتقلت للعيش في مدينة القاهرة في عام 1918 عندما بلغت العاشرة من عمرها بعد وفاة والدها الشيخ محمد رزق الجفري الذي كان يعولها، والتحقت مع أمينة رزق (ابنة شقيقتها التي تصغرها بعامين) بمدرسة ضياء الشرق الابتدائية الواقعة بعابدين، وبدأت حياتها العملية كسكرتيرة في سفارة بولندا بالقاهرة.",
         "uncertainty": "none",
         "answer_units": "",
         "execution_authority": "none",
         "automatic_execution": false
       },
       "first_usage": {
-        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-1180309\",\"answer\":\"ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية\",\"evidence_quote\":\"أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-1180310\",\"answer\":\"مدينة طنطا\",\"evidence_quote\":\"أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-1180311\",\"answer\":\"25 مارس 1908\",\"evidence_quote\":\"أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908\",\"uncertainty\":\"none\",\"answer_units\":\"تاريخ\"}]}",
-        "prompt_tokens": 1017,
-        "completion_tokens": 818,
-        "total_tokens": 1835,
-        "latency_ms": 9555.8
-      }
+        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-1180309\",\"answer\":\"ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية.\",\"evidence_quote\":\"أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908 وانتقلت للعيش في مدينة القاهرة في عام 1918 عندما بلغت العاشرة من عمرها بعد وفاة والدها الشيخ محمد رزق الجفري الذي كان يعولها، والتحقت مع أمينة رزق (ابنة شقيقتها التي تصغرها بعامين) بمدرسة ضياء الشرق الابتدائية الواقعة بعابدين، وبدأت حياتها العملية كسكرتيرة في سفارة بولندا بالقاهرة.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-1180310\",\"answer\":\"ولدت في مدينة طنطا.\",\"evidence_quote\":\"أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908 وانتقلت للعيش في مدينة القاهرة في عام 1918 عندما بلغت العاشرة من عمرها بعد وفاة والدها الشيخ محمد رزق الجفري الذي كان يعولها، والتحقت مع أمينة رزق (ابنة شقيقتها التي تصغرها بعامين) بمدرسة ضياء الشرق الابتدائية الواقعة بعابدين، وبدأت حياتها العملية كسكرتيرة في سفارة بولندا بالقاهرة.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-1180311\",\"answer\":\"25 مارس 1908.\",\"evidence_quote\":\"أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908 وانتقلت للعيش في مدينة القاهرة في عام 1918 عندما بلغت العاشرة من عمرها بعد وفاة والدها الشيخ محمد رزق الجفري الذي كان يعولها، والتحقت مع أمينة رزق (ابنة شقيقتها التي تصغرها بعامين) بمدرسة ضياء الشرق الابتدائية الواقعة بعابدين، وبدأت حياتها العملية كسكرتيرة في سفارة بولندا بالقاهرة.\",\"uncertainty\":\"none\",\"answer_units\":\"\"}]}",
+        "prompt_tokens": 660,
+        "completion_tokens": 962,
+        "total_tokens": 1622,
+        "latency_ms": 20643.503
+      },
+      "route": "local_extractive"
     },
     {
       "case_id": "arabicaqa-1180311",
       "reference_answer": " 25 مارس 1908",
-      "answer": "25 مارس 1908",
-      "reference_overlap": 1.0,
+      "answer": "25 مارس 1908.",
+      "reference_overlap": 0.666667,
       "verification": {
         "status": "supported",
         "contract": "doaa.answer_shape.v1",
         "question_id": "arabicaqa-1180311",
-        "answer": "25 مارس 1908",
-        "evidence_quote": "أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908",
+        "answer": "25 مارس 1908.",
+        "evidence_quote": "أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908 وانتقلت للعيش في مدينة القاهرة في عام 1918 عندما بلغت العاشرة من عمرها بعد وفاة والدها الشيخ محمد رزق الجفري الذي كان يعولها، والتحقت مع أمينة رزق (ابنة شقيقتها التي تصغرها بعامين) بمدرسة ضياء الشرق الابتدائية الواقعة بعابدين، وبدأت حياتها العملية كسكرتيرة في سفارة بولندا بالقاهرة.",
         "uncertainty": "none",
-        "answer_units": "تاريخ",
+        "answer_units": "",
         "execution_authority": "none",
         "automatic_execution": false
       },
       "first_usage": {
-        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-1180309\",\"answer\":\"ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية\",\"evidence_quote\":\"أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-1180310\",\"answer\":\"مدينة طنطا\",\"evidence_quote\":\"أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-1180311\",\"answer\":\"25 مارس 1908\",\"evidence_quote\":\"أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908\",\"uncertainty\":\"none\",\"answer_units\":\"تاريخ\"}]}",
-        "prompt_tokens": 1017,
-        "completion_tokens": 818,
-        "total_tokens": 1835,
-        "latency_ms": 9555.8
-      }
+        "content": "{\"answers\":[{\"question_id\":\"arabicaqa-1180309\",\"answer\":\"ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية.\",\"evidence_quote\":\"أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908 وانتقلت للعيش في مدينة القاهرة في عام 1918 عندما بلغت العاشرة من عمرها بعد وفاة والدها الشيخ محمد رزق الجفري الذي كان يعولها، والتحقت مع أمينة رزق (ابنة شقيقتها التي تصغرها بعامين) بمدرسة ضياء الشرق الابتدائية الواقعة بعابدين، وبدأت حياتها العملية كسكرتيرة في سفارة بولندا بالقاهرة.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-1180310\",\"answer\":\"ولدت في مدينة طنطا.\",\"evidence_quote\":\"أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908 وانتقلت للعيش في مدينة القاهرة في عام 1918 عندما بلغت العاشرة من عمرها بعد وفاة والدها الشيخ محمد رزق الجفري الذي كان يعولها، والتحقت مع أمينة رزق (ابنة شقيقتها التي تصغرها بعامين) بمدرسة ضياء الشرق الابتدائية الواقعة بعابدين، وبدأت حياتها العملية كسكرتيرة في سفارة بولندا بالقاهرة.\",\"uncertainty\":\"none\",\"answer_units\":\"\"},{\"question_id\":\"arabicaqa-1180311\",\"answer\":\"25 مارس 1908.\",\"evidence_quote\":\"أمينة محمد ممثلة وراقصة ومخرجة ودوبلير ومنتجة مصرية من مواليد مدينة طنطا في 25 مارس 1908 وانتقلت للعيش في مدينة القاهرة في عام 1918 عندما بلغت العاشرة من عمرها بعد وفاة والدها الشيخ محمد رزق الجفري الذي كان يعولها، والتحقت مع أمينة رزق (ابنة شقيقتها التي تصغرها بعامين) بمدرسة ضياء الشرق الابتدائية الواقعة بعابدين، وبدأت حياتها العملية كسكرتيرة في سفارة بولندا بالقاهرة.\",\"uncertainty\":\"none\",\"answer_units\":\"\"}]}",
+        "prompt_tokens": 660,
+        "completion_tokens": 962,
+        "total_tokens": 1622,
+        "latency_ms": 20643.503
+      },
+      "route": "evidence_snippet"
     }
   ]
 }

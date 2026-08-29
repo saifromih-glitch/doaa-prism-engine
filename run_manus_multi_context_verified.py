@@ -4,6 +4,8 @@ from collections import defaultdict
 from pathlib import Path
 from openai import OpenAI
 from doaa_answer_shape import build_request, validate_response, parse_json
+from doaa_evidence_snippets import select_snippet
+from doaa_context_extractor import extract_supported_answer
 
 DATA = Path('benchmark-data/arabicaqa/multi-context-selection.json')
 OUT = Path('benchmark-data/arabicaqa/manus-multi-context-verified-run.json')
@@ -32,8 +34,14 @@ for row in data['cases']:
     base.append({'case_id':row['case_id'],'reference_answer':row['reference_answer'],'answer':r['content'],'reference_overlap':overlap(r['content'],row['reference_answer']),'usage':r})
 
 def messages(context, rows):
-    qs=[{'question_id':r['case_id'],'question':r['question'],'question_type':build_request(r['case_id'],r['question'],context)['question_type']} for r in rows]
-    return [{'role':'system','content':'doaa.alg.v1|أخرج JSON فقط. أجب عن كل سؤال من ctx فقط. evidence_quote اقتباس حرفي من ctx. لا تخمن ولا تخلط بين الأسئلة. إذا لم يكف الدليل فاستخدم uncertainty.'},{'role':'user','content':json.dumps({'ctx':context,'questions':qs},ensure_ascii=False,separators=(',',':'))}]
+    qs=[]
+    evidence=[]
+    for r in rows:
+        snippet=select_snippet(r['question'], context)
+        bounded=snippet.get('snippet') if snippet.get('status') == 'snippet_ready' else context
+        evidence.append({'question_id':r['case_id'],'evidence':bounded})
+        qs.append({'question_id':r['case_id'],'question':r['question'],'question_type':build_request(r['case_id'],r['question'],context)['question_type']})
+    return [{'role':'system','content':'doaa.alg.v2|أخرج JSON فقط. استخدم evidence الخاص بالسؤال فقط. evidence_quote اقتباس حرفي منه. لا تخمن ولا تخلط بين الأسئلة. إذا لم يكف الدليل فاستخدم uncertainty.'},{'role':'user','content':json.dumps({'evidence':evidence,'questions':qs},ensure_ascii=False,separators=(',',':'))}]
 
 doaa=[]
 for context, rows in groups.items():
@@ -42,8 +50,16 @@ for context, rows in groups.items():
     for row in rows:
         req=build_request(row['case_id'],row['question'],context); item0=items.get(row['case_id'],{})
         verdict=validate_response(item0,req)
-        doaa.append({'case_id':row['case_id'],'reference_answer':row['reference_answer'],'answer':item0.get('answer',''),'reference_overlap':overlap(item0.get('answer',''),row['reference_answer']),'verification':verdict,'first_usage':first})
-        if verdict['status']!='supported': failed.append(row)
+        route='evidence_snippet'
+        if verdict['status']!='supported':
+            local=extract_supported_answer(row['question'], context)
+            if local.get('status') == 'candidate':
+                local_item={'question_id':row['case_id'],'answer':local['answer'],'evidence_quote':local['evidence_quote'],'uncertainty':'none','answer_units':''}
+                local_verdict=validate_response(local_item, req)
+                if local_verdict['status']=='supported':
+                    item0=local_item; verdict=local_verdict; route='local_extractive'
+            if verdict['status']!='supported': failed.append(row)
+        doaa.append({'case_id':row['case_id'],'reference_answer':row['reference_answer'],'answer':item0.get('answer',''),'reference_overlap':overlap(item0.get('answer',''),row['reference_answer']),'verification':verdict,'first_usage':first,'route':route})
     if failed:
         retry=call(messages(context,failed),schema); retry_payload=parse_json(retry['content'])
         for row in failed:
