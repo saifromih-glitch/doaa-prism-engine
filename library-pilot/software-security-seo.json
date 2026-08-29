@@ -1,0 +1,32 @@
+{
+  "library_id": "doaa.library.pilot.software-security-seo.v1",
+  "status": "experimental_curated",
+  "language": "ar",
+  "governance": {"execution_authority":"none","automatic_promotion":false,"human_review_required":true},
+  "entries": [
+    {
+      "id":"sec-001","domain":"software_security","claim":"يجب التعامل مع دليل OWASP Secure Coding Practices بوصفه مرجعاً مؤرشَفاً، والرجوع إلى OWASP Developer Guide للمحتوى الحالي.",
+      "source_url":"https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/","source_title":"OWASP Secure Coding Practices Quick Reference Guide","source_status":"archived","license_note":"CC BY-SA 4.0 كما يظهر في صفحة المشروع","freshness":"verify_before_use","confidence":"high","allowed_use":"تحديد مصدر مرجعي وخطة تحقق","forbidden_inference":"لا يعني ذلك أن كل قاعدة أو إجراء أمني مناسب لكل نظام دون تحليل"
+    },
+    {
+      "id":"sec-002","domain":"software_security","claim":"OWASP Developer Guide يقدم مقدمة عملية لمفاهيم أمن التطبيقات والأنظمة ويربط بالمراجع المتخصصة بدلاً من تكرارها بالكامل.",
+      "source_url":"https://owasp.org/www-project-developer-guide/","source_title":"OWASP Developer Guide","source_status":"current_landing_page","license_note":"CC BY-SA 4.0 كما يظهر في صفحة المشروع","freshness":"verify_before_use","confidence":"high","allowed_use":"بناء checklist أولية وتحديد الحاجة لمراجع متخصصة","forbidden_inference":"لا يجوز اعتباره تدقيقاً أمنياً أو ضماناً لسلامة النظام"
+    },
+    {
+      "id":"sec-003","domain":"software_security","claim":"NIST SSDF إطار لممارسات تطوير برمجيات آمنة لتقليل مخاطر الثغرات عبر دورة التطوير.",
+      "source_url":"https://csrc.nist.gov/projects/ssdf","source_title":"Secure Software Development Framework | NIST CSRC","source_status":"official_project_page","license_note":"استخدم الاقتباس المحدود مع الإسناد وراجع شروط الوثيقة الأصلية","freshness":"verify_before_use","confidence":"high","allowed_use":"تنظيم أسئلة المراجعة حسب دورة التطوير","forbidden_inference":"لا يثبت الامتثال ولا يحدد مستوى الخطر لنظام بعينه"
+    },
+    {
+      "id":"seo-001","domain":"digital_marketing","claim":"اتباع Search Essentials يزيد احتمال ظهور الموقع في نتائج Google لكنه لا يضمن الفهرسة أو الترتيب.",
+      "source_url":"https://developers.google.com/search/docs/fundamentals/seo-starter-guide","source_title":"SEO Starter Guide: The Basics | Google Search Central","source_status":"official_documentation","license_note":"استخدم تلخيصاً منسوباً للمصدر، لا تنسب ضماناً غير موجود","freshness":"verify_before_use","confidence":"high","allowed_use":"صياغة فرضية تسويقية قابلة للقياس لا وعداً بنتيجة","forbidden_inference":"لا يجوز تحويلها إلى وعد بترتيب أو زيارات محددة"
+    },
+    {
+      "id":"seo-002","domain":"digital_marketing","claim":"المحتوى المفيد والموثوق والموجه للناس، سهل القراءة ومنظم وفريد ومحدث، من العوامل التي يبرزها دليل Google لتحسين حضور المحتوى.",
+      "source_url":"https://developers.google.com/search/docs/fundamentals/seo-starter-guide","source_title":"SEO Starter Guide: The Basics | Google Search Central","source_status":"official_documentation","license_note":"تلخيص منسوب إلى Google Search Central","freshness":"verify_before_use","confidence":"high","allowed_use":"إنشاء checklist تحريرية قبل النشر","forbidden_inference":"لا يثبت أن تطبيق كل عنصر سيحقق ترتيباً أو مبيعات"
+    },
+    {
+      "id":"seo-003","domain":"digital_marketing","claim":"ينبغي قياس أثر تحسين الظهور عبر أدوات القياس ومؤشرات محددة بدلاً من اعتبار الحماس أو الانطباع دليلاً على الطلب.",
+      "source_url":"https://search.google.com/search-console/about","source_title":"Google Search Console","source_status":"official_product_page","license_note":"استخدم وصف الوظيفة دون نسخ مواد محمية","freshness":"verify_before_use","confidence":"medium","allowed_use":"تحديد مؤشرات مثل الظهور والنقرات لأغراض الاختبار","forbidden_inference":"لا يجوز استنتاج الربحية من الظهور أو النقرات وحدهما"
+    }
+  ]
+}
