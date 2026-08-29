@@ -1,0 +1,18 @@
+{
+  "contract_id": "doaa.knowledge_memory.v1",
+  "purpose": "استرجاع أقل وحدات معرفة موثقة لازمة للمطالبة دون إرسال المكتبة كاملة",
+  "entry_required_fields": ["id","domain","claim","source_url","source_title","source_status","license_note","freshness","confidence","allowed_use","forbidden_inference"],
+  "retrieval_output_fields": ["query","selected_ids","selected_claims","coverage","source_warnings","unresolved_conflicts","prompt_payload","execution_authority"],
+  "selection_rules": [
+    "normalize Arabic text without changing meaning",
+    "match domain and query terms",
+    "rank exact and stem-prefix matches above broad matches",
+    "return at most the configured top_k entries",
+    "exclude stale or blocked entries unless explicitly requested for historical comparison",
+    "never infer a claim that is absent from a selected entry"
+  ],
+  "freshness_states": ["current","verify_before_use","stale","archived"],
+  "conflict_policy": "flag_for_review_and_do_not_merge_claims",
+  "governance": {"execution_authority":"none","automatic_promotion":false,"automatic_source_trust":false,"human_review_required_for_truth":true},
+  "forbidden": ["sending_entire_library_by_default","unsupported_semantic_expansion","silent_source_replacement","autonomous_learning_promotion","secret_encoding_to_evade_metering"]
+}
