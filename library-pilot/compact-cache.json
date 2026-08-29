@@ -1,0 +1,18 @@
+{
+  "7acdbf3797007d68d2353e9ba30fa76570d80ff1f6240fb9e6b4443cc14f4263": {
+    "records": [
+      {
+        "question_id": "q1",
+        "answer": "1) صفّح هبوط عربية جاهزة: نص محلي واضح، عناوين جذابة، CTA ونموذج اتصال؛ 2) إعداد تقني سريع: meta/hreflang، HTTPS، تحسين سرعة وتحميل الصور، sitemap؛ 3) اختبر وأطلق خلال 72 ساعة: فحص الوظائف والأداء وتشغيل حملة ترويجية أولية. مؤشر القياس: معدل التحويل (%)؛ ملاحظة أمان: تأكد من HTTPS وحماية مدخلات المستخدم ضد XSS/CSRF",
+        "evidence_quote": "seo-003: ينبغي قياس أثر تحسين الظهور عبر أدوات القياس ومؤشرات محددة بدلاً من اعتبار الحماس أو الانطباع دليلاً على الطلب. source=https://search.google.com/search-console/about",
+        "uncertainty": "source_incomplete",
+        "answer_units": "%"
+      }
+    ],
+    "rejected": [],
+    "missing_question_ids": [],
+    "status": "accepted",
+    "execution_authority": "none",
+    "automatic_execution": false
+  }
+}

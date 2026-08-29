@@ -1,0 +1,11 @@
+{
+  "contract_id":"doaa.compact_output.v1",
+  "format":"qid|answer|quote|uncertainty|units",
+  "delimiter":"|",
+  "required_fields":["qid","answer","quote","uncertainty","units"],
+  "uncertainty_values":["none","source_incomplete","not_found"],
+  "rules":["exactly one line per requested question","no extra commentary","quote must be copied from supplied evidence","answer must be non-empty","unknown or malformed lines are rejected"],
+  "local_expansion":"convert accepted compact records to doaa.answer_shape.v1 locally",
+  "governance":{"execution_authority":"none","automatic_promotion":false,"human_review_required_for_truth":true},
+  "forbidden":["semantic_guessing","silent_field_repair","accepting_extra_fields","retrying_entire_batch_for_one_bad_line"]
+}
